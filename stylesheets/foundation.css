@@ -398,7 +398,7 @@ that IE7/8 do not support :nth-child.
 
 .button:hover { 
 
-	color: white; 
+	color: white; text-decoration: none;
 
 	background: #970000; /* Old browsers */
 	background: -moz-linear-gradient(top, #970000 0%, #750000 100%); /* FF3.6+ */

@@ -403,14 +403,19 @@
 		margin-top: -70px; }
 
 	
-	.region-accordion h6 { line-height: 2; }
-	.region-accordion h6 a {color: #222;  }
+	.region-accordion h6 { 
+		line-height: 2; padding-left: 20px; font-weight: 500;
+		background: url(../images/countries/bullet.png) no-repeat 0 11px; }
+	.region-accordion a {color: #222;  }
 	.region-accordion h6:focus { outline: none; }
 	.region-accordion ul { 
-		font-size: 1em; line-height: 2; padding-left: 20px; margin-bottom: 0.25em; }
+		font-size: 1em; line-height: 2; padding-left: 30px; margin-bottom: 0.25em; }
 
 
-
+	
+	@media only screen and (max-width: 767px) {
+		.countries-map { display: none; }
+		.region-accordion { margin-bottom: 2.5em; } }	
 
 
 
