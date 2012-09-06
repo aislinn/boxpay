@@ -239,6 +239,13 @@
 	.smarttv-tv {
 		background: url(../images/product-pages/smarttv-tv.jpg) no-repeat right 0; height: 340px;
 		background-size:82%;   }	
+		
+	.mobile-phone { 
+		background: url(../images/product-pages/mobile-phone.jpg) no-repeat right 0; height: 520px;
+		background-size:75%; }	
+		
+	.mobile-hand { 
+		background: url(../images/product-pages/mobile-hand.jpg) no-repeat right 0; height: 520px; }	
 	
 	
 	@media only screen and (max-width: 767px) {
@@ -246,7 +253,9 @@
 		.in-app-phones,
 		.in-app-android,
 		.whitelabel-code,
-		.smarttv-tv  { display: none; }}	
+		.smarttv-tv,
+		.mobile-phone,
+		.mobile-hand  { display: none; }}	
 		
 		
 	@media only screen and (min-width: 870px) {	
