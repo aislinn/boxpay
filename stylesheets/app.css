@@ -46,8 +46,15 @@
 	@media only screen and (max-width: 767px) { 
 		html { font-size: 68.75%; }
 		.primary-row { margin-top: 1em; }
-		.primary-container { padding: 4em 0; }
+		.primary-container { padding: 3em 0; }
 		.divider { margin: 0 0 2.5em 0 ; } }
+		
+	@media only screen and (max-width: 480px) { 
+		.primary-row { margin-top: 0em; 
+			-moz-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+			-webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+			box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25); }
+		.primary-container { padding: 2em 0; } }		
 
 
 
@@ -150,15 +157,15 @@
 	
 	p.show-for-small { font-size: 1em; line-height: 1;  }	
 	
-	
-	@media only screen and (max-width: 767px) { 
-		header { height: 80px; }
-		header .nav-logo { margin-top: 25px; } }
-		
-		
+			
 	@media only screen and (max-width: 900px) {
 		header .nav-bar > li { margin-left: 14px; /*font-size: 0.8125em;*/ font-size: 0.875em;  }}	
 		
+	
+	@media only screen and (max-width: 767px) { 
+		header { height: 70px; }
+		header .nav-logo { margin-top: 21px; } }	
+	
 	
 	@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
 	only screen and (-moz-min-device-pixel-ratio: 1.5),
@@ -170,8 +177,20 @@
 	    background: url('../images/nav/boxpay@2x.png');
 	  }
 	}	
+	
+	
+	@media only screen and (max-width: 480px) { 
+		header { height: 50px; }
+		header .nav-logo { background-size:cover; width: 107px; height: 20px; margin-top: 15px; }
+		header .sidebar-button { margin-top: -24px; padding: 8px 20px; } }
+	
+	
 		
 	
+
+
+
+
 
 
 /* -----------------------------------------
@@ -205,12 +224,34 @@
 	
 	.web-tablet-imac { background: url(../images/product-pages/web-tablet-imac.jpg) no-repeat; height: 450px; margin-top: -2em;  }
 	
-	.in-app-phones { background: url(../images/product-pages/inapp-phones.jpg) no-repeat; height: 450px; margin-top: -2em;  }
+	.in-app-phones { 
+		background: url(../images/product-pages/inapp-phones.jpg) no-repeat; height: 450px;
+		background-size:100%;  }
+	
+	.in-app-android { 
+		background: url(../images/product-pages/inapp-android.jpg) no-repeat; height: 340px; 
+		margin-top: -20px; background-size:93%;	}
+		
+	.whitelabel-code { 
+		background: url(../images/product-pages/whitelabel-code.jpg) no-repeat; height: 425px;
+		background-size:100%; }	
+		
+	.smarttv-tv {
+		background: url(../images/product-pages/smarttv-tv.jpg) no-repeat right 0; height: 340px;
+		background-size:82%;   }	
 	
 	
 	@media only screen and (max-width: 767px) {
 		.web-tablet-imac,
-		.in-app-phones { display: none; }}	
+		.in-app-phones,
+		.in-app-android,
+		.whitelabel-code,
+		.smarttv-tv  { display: none; }}	
+		
+		
+	@media only screen and (min-width: 870px) {	
+		.whitelabel-facts { margin-top: 2em; }
+	}
 		
 		
 		
@@ -398,7 +439,7 @@
 
 
 	.countries-map { 
-		background: url(../images/countries/map.jpg) no-repeat left top;
+		background: url(../images/countries/map.png) no-repeat left top;
 		height: 250px;
 		margin-top: -70px; }
 
@@ -414,8 +455,27 @@
 
 	
 	@media only screen and (max-width: 767px) {
-		.countries-map { display: none; }
-		.region-accordion { margin-bottom: 2.5em; } }	
+	
+		.region-accordion { margin-bottom: 2.5em; }
+		.region-accordion h6 { background-position: 0 9px; }
+		.countries-map { 
+			position: absolute; width: 60% !important; background-size:100%; height: 240px;
+			right: 0; bottom: -244px; background-position: right top; z-index: 1; } }	
+
+
+	@media only screen and (max-width: 550px) {
+		.countries-map { width: 50% !important; background-size:150%; background-position: left top; }
+		.three.columns.end.push-eight { z-index: 2; } }
+		
+		
+	@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+	only screen and (-moz-min-device-pixel-ratio: 1.5),
+	only screen and (-o-min-device-pixel-ratio: 3/2),
+	only screen and (min-device-pixel-ratio: 1.5) {
+	  
+	  .region-accordion h6 {
+	  	background-size:10px 10px;
+	    background: url(../images/countries/bullet@2x.png) no-repeat 0 8px; } }
 
 
 
