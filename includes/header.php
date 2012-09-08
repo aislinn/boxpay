@@ -1,4 +1,4 @@
-<header id="header">
+<header>
 			
 		  <div class="row">	
 		  <div class="ten columns centered">
@@ -14,7 +14,7 @@
     					<li><a href="#">Product</a></li>
     					<li><a href="about.php">About</a></li>
     					<li><a href="#">Developers</a></li>
-    					<li><a href="#">Help</a></li>
+    					<li><a href="#">FAQ</a></li>
     					<li><a href="#">Blog</a></li>
     					<li class="login"><a href="#">Login</a> <span>or</span> <a href="#">Sign Up</a></li>					
     			</ul>											

@@ -1,0 +1,821 @@
+/*
+Theme created for use with Sequence.js (http://www.sequencejs.com/)
+
+Theme:   Sliding Horizontal Parallax (Responsive)
+Version:   0.2.2 Beta
+Theme Author:   Ian Lunn @IanLunn
+Author URL:   http://www.ianlunn.co.uk/
+Theme URL:   http://www.sequencejs.com/themes/sliding-horizontal-parallax/
+
+This is a FREE theme and is dual licensed under the following: 
+http://www.opensource.org/licenses/mit-license.php | http://www.gnu.org/licenses/gpl.html
+
+Sequence.js and its dependencies are (c) Ian Lunn Design 2012 unless otherwise stated.
+Aside from these comments, you may modify and distribute this file as you please. Have fun!
+ */
+
+
+#header-container{
+	background:  #222;
+	width: 100%;
+	overflow: hidden;
+}
+
+#header {
+	
+	color: #fff;
+	height: 540px;
+	margin: 0 auto;
+	position: relative;
+	
+	overflow-x: visible;
+	
+	/*max-width: 1280px;*/
+	width: 100%;
+}
+
+
+
+
+.next,.prev {
+	color: white;
+	cursor: pointer;
+	display: none;
+	font-weight: bold;
+	padding: 10px 5px;
+	position: absolute;
+	top: 30%;
+	z-index: 1000;
+	height: 75px;
+	margin-top: -47.5px;
+}
+
+.pause {
+	bottom: 0;
+	cursor: pointer;
+	position: absolute;
+	z-index: 1000;
+}
+
+.paused {
+	opacity: 0.3;
+}
+
+.prev {
+	left: 1%;
+}
+
+.next {
+	right: 1%;
+}
+
+.prev img, .next img{
+	height: 100%;
+	width: auto;
+}
+
+#sequence-preloader{
+	background: #d9d9d9;
+}
+
+#nav {
+	bottom: 1%;
+	display: none;
+	right: 6%;
+	position: absolute;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+#nav li {
+	display: inline-block;
+	height: 140px;
+}
+
+#nav li img {
+	cursor: pointer;
+	opacity: 0.5;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+#nav li img.active {
+	opacity: 1;
+}
+
+@media only screen and (min-width : 1224px) {
+	/*only display the hover effect on desktops/laptops*/
+	#nav li img:hover {
+		opacity: 1;
+	
+		-webkit-transition-duration: 1s;
+		-moz-transition-duration: 1s;
+		-o-transition-duration: 1s;
+		-ms-transition-duration: 1s;
+		transition-duration: 1s;
+	}
+
+}
+
+#sequence li{
+	height: 100%;
+	position: absolute;
+	top: -48%;
+	width: 100%;
+}
+
+
+#sequence li#iphone { top: -48%;  }
+#sequence li#ipad { top: -51%;  }
+#sequence li#laptop { top: -55%;  }
+
+
+#sequence li * {
+	position: absolute;
+}
+
+#sequence li img{
+	height: 96%;
+}
+
+
+
+
+
+#sequence li h5 .button {  position: relative; }
+#sequence li h5 .subtitle-login { margin-top: 1.3em;  }
+#sequence li h5 .subtitle-pricepoints { margin-top: 0.6em; }
+
+
+#sequence li .button.large { margin-top: 1.3em; }
+
+
+
+#sequence {
+	
+	display: block;
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	max-width: 1280px;
+	width: 100%;
+	
+	/*backface-visibility prevents graphical glitches when frames are animating*/
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.next,.prev {
+	position: absolute;
+	opacity: 0.6;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+	z-index: 11;
+}
+
+.next:hover,.prev:hover {
+	opacity: 1;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+#iphone .title {
+
+	left: 65%;
+	width: 40%;
+	opacity: 0;
+	bottom: 1%;
+	z-index: 50;
+}
+
+#iphone .title.animate-in {
+	left: 46%;
+	opacity: 1;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+#iphone .title.animate-out {
+	left: 65%;
+	opacity: 0;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+#ipad .title {
+
+	left: -5%;
+	width: 40%;
+	opacity: 0;
+	bottom: 1%;
+	z-index: 50;
+}
+
+#ipad .title.animate-in {
+	left: 15%;
+	opacity: 1;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+#ipad .title.animate-out {
+	left: -5%;
+	opacity: 0;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+#laptop .title {
+
+	left: -5%;
+	width: 45%;
+	opacity: 0;
+	bottom: 1%;
+	z-index: 50;
+}
+
+#laptop .title.animate-in {
+	left: 15%;
+	opacity: 1;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+#laptop .title.animate-out {
+	left: -5%;
+	opacity: 0;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
+#iphone .subtitle {
+
+	left: 65%;
+	width: 44%;
+	opacity: 0;
+	top: 99%;
+}
+
+#iphone .subtitle.animate-in {
+	left: 46%;
+	opacity: 1;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+#iphone .subtitle.animate-out {
+	left: 65%;
+	opacity: 0;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
+
+#ipad .subtitle {
+
+	left: -5%;
+	width: 48%;
+	opacity: 0;
+	top: 99%;
+}
+
+#ipad .subtitle.animate-in {
+	left: 15%;
+	opacity: 1;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+#ipad .subtitle.animate-out {
+	left: -5%;
+	opacity: 0;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
+
+#laptop .subtitle {
+
+	left: -5%;
+	width: 46%;
+	opacity: 0;
+	top: 99%;
+}
+
+#laptop .subtitle.animate-in {
+	left: 15%;
+	opacity: 1;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+#laptop .subtitle.animate-out {
+	left: -5%;
+	opacity: 0;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
+.iphone {
+	left: 13%;
+	
+	bottom: -100%;
+	opacity: 0;
+	position: relative;
+	height: auto !important;
+	max-height: 568px !important;
+	width: 30%;
+	min-width: 225px; /*prevents the iphone from shrinking when the browser is resized*/
+	max-width: 330px;
+}
+
+.iphone.animate-in {
+	left: 13%;
+	bottom: -48%;
+	opacity: 1;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.iphone.animate-out {
+	left: 13%;
+	opacity: 0;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
+.ipad {
+	right: 0%;
+	
+	bottom: -100%;
+	opacity: 0;
+	position: relative;
+	height: auto !important;
+	max-height: 568px !important;
+	width: 61%;
+	min-width: 225px; /*prevents the iphone from shrinking when the browser is resized*/
+	max-width: 640px;
+}
+
+.ipad.animate-in {
+	right: -8%;
+	bottom: -51%;
+	opacity: 1;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.ipad.animate-out {
+	right: 0%;
+	opacity: 0;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
+.laptop {
+	right: -18%;
+	
+	bottom: -100%;
+	opacity: 0;
+	position: relative;
+	height: auto !important;
+	max-height: 568px !important;
+	width: 61%;
+	min-width: 225px; /*prevents the iphone from shrinking when the browser is resized*/
+	max-width: 640px;
+}
+
+.laptop.animate-in {
+	right: -18%;
+	bottom: -55%;
+	opacity: 1;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.laptop.animate-out {
+	right: -18%;
+	opacity: 0;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
+
+.slide1 { background: red; }
+.slide2 { background: blue; }
+.slide3 { background: green; }
+
+
+
+
+
+@media only screen and (max-width : 1250px) {
+
+
+#laptop .subtitle, #laptop .title,
+#ipad .subtitle, #ipad .title { left: -7.5%; }
+
+#laptop .subtitle.animate-in, #laptop .title.animate-in,
+#ipad .subtitle.animate-in, #ipad .title.animate-in  { left: 12.5%; }
+
+#laptop .subtitle.animate-out, #laptop .title.animate-out,
+#ipad .subtitle.animate-out, #ipad .title.animate-out { left: -7.5%; }
+
+#ipad .subtitle { width: 42%;  }
+#ipad .subtitle br.break { display: none; }
+
+
+}
+
+
+@media only screen and (max-width : 1250px) { 
+
+.iphone, .iphone.animate-in, .iphone.animate-out { left: 11%; }
+
+}
+
+
+
+@media only screen and (max-width : 1170px) {
+
+
+#laptop .subtitle, #laptop .title,
+#ipad .subtitle, #ipad .title { left: -10%; }
+
+#laptop .subtitle.animate-in, #laptop .title.animate-in,
+#ipad .subtitle.animate-in, #ipad .title.animate-in { left: 10%; }
+
+#laptop .subtitle.animate-out, #laptop .title.animate-out,
+#ipad .subtitle.animate-out, #ipad .title.animate-out  { left: -10%; }
+
+
+.iphone, .iphone.animate-in, .iphone.animate-out { left: 10%; }
+
+#iphone .title {  width: 46%; }
+
+}
+
+
+
+@media only screen and (max-width : 1080px) {
+
+
+#laptop .subtitle, #laptop .title,
+#ipad .subtitle, #ipad .title  { left: -12.50%; }
+
+#laptop .subtitle.animate-in, #laptop .title.animate-in,
+#ipad .subtitle.animate-in, #ipad .title.animate-in { left: 7.5%; }
+
+#laptop .subtitle.animate-out, #laptop .title.animate-out,
+#ipad .subtitle.animate-out, #ipad .title.animate-out { left: -12.5%; }
+
+
+.iphone, .iphone.animate-in, .iphone.animate-out { left: 7%; }
+
+#iphone .title.animate-in,
+#iphone .subtitle.animate-in { left: 44%; }
+
+
+}
+
+
+
+@media only screen and (max-width : 960px) {
+
+/*#header { height: 500px; }*/
+.iphone { width: 33%; }
+
+}
+
+
+
+
+@media only screen and (max-width : 767px) {
+
+
+.iphone, .ipad, .laptop { visibility: hidden; }
+
+#laptop .subtitle, #laptop .title,
+#ipad .subtitle, #ipad .title  { width: 86%; }
+
+
+#iphone .subtitle, #iphone .title { width: 86%; }
+
+
+#iphone .title.animate-in, #iphone .subtitle.animate-in { left: 7%; }
+
+
+#ipad .title, #ipad .subtitle,
+#ipad .title.animate-out, #ipad .subtitle.animate-out,
+#laptop .title, #laptop .subtitle,
+#laptop .title.animate-out, #laptop .subtitle.animate-out { left: 65%; }
+
+
+#sequence li .button { display: inline-block; }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width : 992px) {
+	.title{
+		width: 42%;
+	}
+}
+
+
+
+@media only screen and (max-width : 768px) {
+	#header{
+		height: 540px;
+	}
+
+	
+	.next,.prev {
+		height: 60px;
+		margin-top: -40px;
+	}
+	
+	.iphone{
+		max-height: 480px !important;
+		width: auto;
+	}
+}
+
+@media only screen
+and (max-width : 568px) {
+	
+
+	#nav{
+		bottom: 40px;
+	}
+	
+	#nav li img{
+		height: 100px;
+	}
+}
+
+@media only screen
+and (max-width : 518px) {
+	#header{
+		height: 450px;
+	}
+}
+
+@media only screen
+and (max-width : 468px) {
+	#header{
+		height: 415px;
+	}
+	
+	#nav{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@media only screen
+and (max-width : 418px) {
+	#header{
+		height: 375px;
+	}
+}
+
+@media only screen
+and (max-width : 368px) {
+	#header{
+		height: 325px;
+	}
+
+}
+
+@media 	only screen
+		and (max-width : 320px)
+		and (orientation : portrait) { /*iphone portrait*/
+	#header{
+		height: 320px;
+	}
+	
+	.iphone{
+		min-width: 45%;
+		width: 45%;
+	}
+	
+	.iphone.animate-in{
+		margin-left: -22.5%;
+	}
+	
+	.iphone.animate-out{
+		margin-left: -22.5%;
+	}
+}
+
+@media 	only screen
+		and (min-width : 321px)
+		and (max-width : 480px)
+		and (orientation : landscape) {
+		#header{
+			height: 260px;
+		}
+		
+		.iphone{
+			min-width: 24%;
+			width: 24%;
+		}
+		
+		.iphone.animate-in{
+			left: 17.5%;
+			margin-left: 0;
+		}
+		
+		.iphone.animate-out{
+			left: 17.5%;
+			margin-left: 0;
+		}
+		
+		#nav{
+			right: 17.5%;
+		}
+}

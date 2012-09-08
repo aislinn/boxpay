@@ -7,7 +7,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 
-	<title>Web &amp; Tablet | boxPAY</title>
+	<title>boxPAY</title>
   
 	<!-- Included CSS Files -->
 	
@@ -53,10 +53,65 @@
 		$(document).foundationNavigation();
 	</script>
 	
+	
+	
+
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="screen" href="static/stylesheets/demo-styles-ie.css" /><![endif]-->
+	<link rel="stylesheet" type="text/css" media="screen" href="static/stylesheets/sequencejs-theme.modern-slide-in.css" />
+	
+	
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	if (typeof jQuery == 'undefined'){
+	    document.write(unescape("%3Cscript src='javascripts/jquery.js' type='text/javascript'%3E%3C/script%3E"));
+	}
+	</script>
+	
+	<script type="text/javascript" src="static/js/sequence.jquery-min.js"></script>
+	<script type="text/javascript">	
+			
+			/mobile/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
+			  if (!pageYOffset) window.scrollTo(0, 1);
+			}, 1000);
+			
+			$(document).ready(function(){
+				var options = {
+					nextButton: true,
+					prevButton: true,
+					animateStartingFrameIn: true,
+					transitionThreshold: 250,
+					autoPlayDelay: 6000,
+					
+					afterLoaded: function(){
+						$("#nav").fadeIn(100);
+						$("#nav li:nth-child("+(sequence.settings.startingFrameID)+") img").addClass("active");
+					},
+					beforeNextFrameAnimatesIn: function(){
+						$("#nav li:not(:nth-child("+(sequence.nextFrameID)+")) img").removeClass("active");
+						$("#nav li:nth-child("+(sequence.nextFrameID)+") img").addClass("active");
+					}
+				};
+	
+				var sequence = $("#sequence").sequence(options).data("sequence");
+				
+				$("#nav li").click(function(){
+					if(!sequence.active){
+						$(this).children("img").removeClass("active").children("img").addClass("active");
+						sequence.nextFrameID = $(this).index()+1;
+						sequence.goTo(sequence.nextFrameID);
+					}
+				});
+			});
+		</script>	
+		
+	
+	
+	
+	
 
 </head>
 
 
-  <body id="page" class="off-canvas hide-extras">		
+  <body id="<?= basename($_SERVER['PHP_SELF'], ".php")?>" class="off-canvas hide-extras">		
 
 	<div class="container">

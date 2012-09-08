@@ -2,20 +2,83 @@
 <?php include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>		
 	
 		
-	<div class="row primary-row">	
+
   		
   		
   		
   		<section role="main">
   			
   			
-  			<div class="row primary-container">
+  			
+  			<div id="header-container">
+  			
+  			
+  			<img class="prev" src="static/images/homeslider/bt-prev.png" alt="Previous Frame" />
+  			<img class="next" src="static/images/homeslider/bt-next.png" alt="Next Frame" />
+  			
+  			<div id="header">
+  									
+  					<div id="sequence">
+  						<ul>
+  							
+  							
+  							<li id="iphone">
+  							
+  							
+  								<h1 class="title animate-in">Charge users to their mobile phone bill in 70+ countries</h1>
+  								<h3 class="subtitle animate-in">Start accepting carrier and SMS payments today<br/>
+  								
+  								<a class="large button" href="#">Sign up now</a>
+  								
+  								</h3>
+  								
+  								
+  								<img class="iphone animate-in" src="static/images/homeslider/model3.png" alt="Model 3" />
+  							
+  							
+  							</li>
+  							
+  							
+  							
+  							<li id="ipad">
+  								<h1 class="title">Subscription billing and higher price points</h1>
+  								<h3 class="subtitle">Customize your payment options for each market.
+  								<br class="break"/>If you need pricing flexibility, we can help
+  								<br/>
+  								<a class="large button" href="#">Sign up now</a>
+  								</h3>
+  								
+  								<img class="ipad" src="static/images/homeslider/model2.png" alt="Model 2" />
+  							</li>
+  							
+  							
+  							
+  							<li id="laptop" class="frame3">
+  								<h1 class="title ">Impressive payouts and advanced payment terms</h1>
+  								<h5 class="subtitle ">We’ve also made it really easy for you to see how much you get paid, your billing cycles and provide FULL analytics on transaction data
+  								
+  								
+  								<br/>
+  								<a class="button subtitle-login" href="#">Login to view your payments</a>
+  								
+  								<br/>
+  								<a class="button subtitle-pricepoints" href="#">View country Pricepoints</a>
+  								
+  								</h5>
+  								<img class="laptop " src="static/images/homeslider/model1.png" alt="Model 1" />
+  			
+  							</li>
+  							
+  						</ul>
+  					</div>
+  					
+  				</div>
+  			
+  			</div>
   			
   			
   			
-  			
-  			
-  			<div class="homesub">
+  			<div class="row homesub">
   				  <div class="ten columns centered">
   				  
   				  	<h1>Cross platform monetization. It’s all here</h1>
@@ -38,7 +101,7 @@
   				
   				
   				
-  			</div>		
+  				
   			
   			
   		
@@ -49,7 +112,7 @@
   		
   	<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/sidebar.php')?>		
 	
-	</div><!-- container -->
-			
+	
+		<div>	
  
 <?php include($_SERVER['DOCUMENT_ROOT'].'/includes/footer.php')?>

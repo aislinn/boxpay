@@ -5,6 +5,7 @@
 -----------------------------------------------------
 :: Layout
 :: Fonts
+:: Sidebar
 :: Header
 :: Footer
 :: Homepage
@@ -198,7 +199,7 @@
 	Footer
 ----------------------------------------- */
 
-	footer { background: #1c1c1c; height: 130px; margin-top: 2em;  }
+	footer { background: #1c1c1c; height: 130px; margin-top: 2em; float: left; width: 100%;  }
 	footer ul { margin-top: 30px;  }
 	footer .text-right ul { margin-top: 36px; }
 	
@@ -253,20 +254,29 @@
 		.footerlink.linkedin { background: url(../images/footer/footer-linkedin@2x.png) no-repeat; } }	
 	
 	
+	
+/* -----------------------------------------
+	Sidebar
+----------------------------------------- */
+
+
+	.js [role="main"] { border-radius: 0; background: #fff; }
+
+	
+
+	
+	
+	
 
 /* -----------------------------------------
 	Homepage
 ----------------------------------------- */
 
-
+	
+	.js #index [role="main"] { padding: 0; }
 
 	.homebanner { height: 540px; background: #222; color: #fff; }
-	
-	
 	.homesub  {  text-align: center; padding-top: 64px; }
-	
-	
-	
 	.homesub .block-grid.six-up { margin-bottom: 80px; margin-top: 2em; margin: 0 -8px; }
 	
 	.homesub .block-grid.six-up img { margin-bottom: 1em; width: 100%; }
@@ -301,12 +311,16 @@
 			
 		.homesub .block-grid.six-up img { margin-bottom: 0.5em; }	
 		.homesub .block-grid.six-up span { display: block; height: 2em; }	  }
+		
+		
+	@media only screen and (min-width:650px) and (max-width: 767px) {
+		/*.homesub .block-grid.six-up img { width: 85%; } */
+		.homesub .block-grid.six-up { padding: 0 10%;  }}	
 	
 
 	@media only screen and (max-width: 480px) {
 		.homesub .block-grid.six-up img {  }
-		.homesub .block-grid.mobile-two-up > li	{ width: 50%;  } 
-		 }
+		.homesub .block-grid.mobile-two-up > li	{ width: 50%;  } }
 				
 	
 	
@@ -577,6 +591,4 @@
 	  .region-accordion h6 {
 	  	background-size:10px 10px;
 	    background: url(../images/countries/bullet@2x.png) no-repeat 0 8px; } }
-
-
 
