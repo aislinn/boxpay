@@ -14,6 +14,14 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 unless otherwise s
 Aside from these comments, you may modify and distribute this file as you please. Have fun!
  */
 
+#sequence ul { font-size: 1em; }
+
+#sequence h3 { color: #fff; }
+#sequence h5 { font-size: 1.28571429em; }
+
+#sequence h3 .button.large { font-size: 0.66666667em; }
+#sequence h5 .button { font-size: 0.875em; width: 340px; }
+
 
 #header-container{
 	background:  #222;
@@ -715,7 +723,7 @@ Aside from these comments, you may modify and distribute this file as you please
 	
 	.next,.prev {
 		height: 60px;
-		margin-top: -40px;
+		margin-top: -125px;
 	}
 	
 	.iphone{

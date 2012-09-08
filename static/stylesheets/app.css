@@ -44,6 +44,11 @@
 		
 	.divider { height: 10px; background: url(../images/body/divider-full.jpg) no-repeat center; margin: 1em 0 3.5em 0 ; }	
 	
+	
+	.button.large { font-size: 1em; padding: 15px 60px; }
+	
+	
+	
 
 	@media only screen and (max-width: 767px) { 
 		html { font-size: 68.75%; }
@@ -79,7 +84,7 @@
 	
 	h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 60%; color: #6f6f6f; line-height: 0; }
 	
-	h1 { font-size: 2.57142857em; line-height:1.33333333 ; margin-bottom: 0.3333333em; font-weight: 400;  }  /*36/14*/
+	h1 { font-size: 2.57142857em; line-height:1.16666667 ; margin-bottom: 0.3333333em; font-weight: 400;  }  /*36/14*/
 	h2 { font-size: 2.14285714em; margin-bottom: 0.5em; font-weight: 400;  } /*30/14*/
 	h3 { font-size: 1.71428571em; font-weight: 400; line-height: 1.5; color: #828282; margin-bottom: 0.25em; } /*24/14*/
 	h4 { font-size: 1.5em; font-weight: 400; line-height: 1.4; color: #828282;} /*21/14*/
@@ -276,8 +281,8 @@
 	.js #index [role="main"] { padding: 0; }
 
 	.homebanner { height: 540px; background: #222; color: #fff; }
-	.homesub  {  text-align: center; padding-top: 64px; }
-	.homesub .block-grid.six-up { margin-bottom: 80px; margin-top: 2em; margin: 0 -8px; }
+	.homesub  {  text-align: center; padding-top: 84px; padding-bottom: 60px; }
+	.homesub .block-grid.six-up {  margin: 2em -8px 0px -8px; }
 	
 	.homesub .block-grid.six-up img { margin-bottom: 1em; width: 100%; }
 	.homesub .block-grid.six-up span { width: 100%; }
@@ -307,7 +312,10 @@
 		.homesub .block-grid.mobile-two-up > li	{ 
 			width: 33.333%;
 			font-size: 1.28571429em; /*18/16*/
-			margin-bottom: 1.5em; }
+			margin-bottom: 1.5em;
+			 }
+			
+		.homesub .block-grid.six-up { margin-top: ; }
 			
 		.homesub .block-grid.six-up img { margin-bottom: 0.5em; }	
 		.homesub .block-grid.six-up span { display: block; height: 2em; }	  }
@@ -320,7 +328,12 @@
 
 	@media only screen and (max-width: 480px) {
 		.homesub .block-grid.six-up img {  }
+		.homesub .block-grid.six-up { padding: 0 5%; }
 		.homesub .block-grid.mobile-two-up > li	{ width: 50%;  } }
+		
+	
+	@media only screen and (min-width: 768px) {	
+		.homesub .block-grid.six-up { margin: 30px -30px 0 -30px; } }
 				
 	
 	

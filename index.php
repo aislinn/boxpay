@@ -59,10 +59,10 @@
   								
   								
   								<br/>
-  								<a class="button subtitle-login" href="#">Login to view your payments</a>
+  								<a class="button subtitle-login small" href="#">Login to view your payments</a>
   								
   								<br/>
-  								<a class="button subtitle-pricepoints" href="#">View country Pricepoints</a>
+  								<a class="button subtitle-pricepoints small" href="#">View country Pricepoints</a>
   								
   								</h5>
   								<img class="laptop " src="static/images/homeslider/model1.png" alt="Model 1" />
@@ -82,7 +82,7 @@
   				  <div class="ten columns centered">
   				  
   				  	<h1>Cross platform monetization. It’s all here</h1>
-  				  	<h4>Start billing today using the self-serve payment box tool. If you’re a developer looking for a custom solution, we can help you with that too.</h4>
+  				  	<h3>Start billing today using the self-serve payment box tool. If you’re a developer looking for a custom solution, we can help you with that too.</h3>
   			
   					<ul class="block-grid six-up mobile-two-up">
   						<li class="homesub_widget"><img src="static/images/homepage/platform_widget.jpg" alt="Self-serve widget" /><span>Self-serve widget</span></li>
