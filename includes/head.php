@@ -7,7 +7,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 
-	<title>boxPAY</title>
+	<title><?php if (isset($subtitle)) { echo $subtitle; } ?> | boxPAY</title>
   
 	<!-- Included CSS Files -->
 	
@@ -27,7 +27,13 @@
 	
 	
 	<!-- Included JS Files -->
-	<script src="static/js/jquery.min.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	if (typeof jQuery == 'undefined'){
+	    document.write(unescape("%3Cscript src='javascripts/jquery.js' type='text/javascript'%3E%3C/script%3E"));
+	}
+	</script>
+
 	<!-- Combine and Compress These JS Files -->
 	<script src="static/js/jquery.reveal.js"></script>
 	<script src="static/js/jquery.orbit-1.4.0.js"></script>
@@ -56,16 +62,15 @@
 	
 	
 
+	
+	
+	
+
 	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="screen" href="static/stylesheets/demo-styles-ie.css" /><![endif]-->
 	<link rel="stylesheet" type="text/css" media="screen" href="static/stylesheets/sequencejs-theme.modern-slide-in.css" />
 	
 	
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript">
-	if (typeof jQuery == 'undefined'){
-	    document.write(unescape("%3Cscript src='javascripts/jquery.js' type='text/javascript'%3E%3C/script%3E"));
-	}
-	</script>
+
 	
 	<script type="text/javascript" src="static/js/sequence.jquery-min.js"></script>
 	<script type="text/javascript">	
@@ -105,7 +110,16 @@
 		</script>	
 		
 	
-	
+	<script type="text/javascript">
+		$(document).ready(function() {
+		  $(".faq-a").hide();
+		  //toggle the componenet with class msg_body
+		  $(".faq-q").click(function()
+		  {
+		    $(this).next(".faq-a").slideToggle(500);
+		  });
+		});
+	</script>
 	
 	
 

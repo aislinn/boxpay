@@ -15,6 +15,7 @@
 :: Documentation
 :: Legals
 :: Countries
+:: FAQ
 
 */
 
@@ -96,13 +97,15 @@
 	h1 + h5 { line-height: 2; margin-top:  -0.05555556em; }
 	h2 + h6 { margin-top: 2em; }
 	
+	h3 + h4 { margin-top: 1em; }
+	
 	strong { font-weight: 600; }
 	
 	pre { font-size: 1.14285714em; }
 	
 	
 	/* Lists ---------------------- */
-	ul, ol { font-size: 1.14285714em; line-height: 1.6; margin-bottom: 1.5em; list-style-position: outside; }
+	ul, ol { font-size: 1.14285714em; line-height: 1.71428571; margin-bottom: 1.5em; list-style-position: outside; }
 	
 	ul { list-style-type: square; }
 	
@@ -116,6 +119,8 @@
 	ul.disc li ul { list-style: inherit; }
 	ul.no-bullet { list-style: none; }
 	ul.large li { padding-bottom: 1em; }
+	
+	ul.definition { margin-left: 0; }
 	
 	ul span.numbered { width: 2em; height: 2em; float: left; }
 	
@@ -395,7 +400,7 @@
 	.mgmt-links div { display: inline-block;  display: table-cell; height: 120px; vertical-align: middle; }
 	.mgmt-links img { margin: 0 14px 0 -5px;  float: left; width: 120px; height: 120px; }
 			
-	.about-job-title { font-style: italic; }
+	.about-job-title { font-style: italic; color: #828282; }
 	.about-links { font-size: 0.875em; display: block; line-height: 2; }
 	
 	.about-video img { margin-top: 44px; margin-bottom: 2em; }
@@ -466,10 +471,10 @@
 
 	.documentation-nav li.active a { color: #fff; }
 	
-	.passage { font-size: 0.875em; }
+/*	.passage { font-size: 0.875em; }*/
 	
 	.passage p + ul { margin-top: -1em; margin-left: 20px; }
-/*	.passage p + ul.no-bullet { margin-left: 0; }*/
+	.passage p + ul.definition { margin-left: 0; }
 	
 	.passage p + code { margin-top: -1.71428571em; }
 	
@@ -550,14 +555,15 @@
 	Legals
 ----------------------------------------- */
 
-
-	.legal-sidebar h6 { text-transform: uppercase; }
+	.legal-sidebar { margin-top: 1em; }
+	
+	.legal-sidebar h6 { text-transform: uppercase; margin-bottom: 1em; }
 
 	@media only screen and (min-width :921px)  {
 	.legal-sidebar { padding-left: 50px; } }
 	
 	@media only screen and (min-width :767px) and (max-width :920px) {
-		.legal-sidebar { padding-left: 25px; } }
+	.legal-sidebar { padding-left: 25px; } }
 	
 
 
@@ -604,4 +610,38 @@
 	  .region-accordion h6 {
 	  	background-size:10px 10px;
 	    background: url(../images/countries/bullet@2x.png) no-repeat 0 8px; } }
+
+
+
+/* -----------------------------------------
+	FAQ
+----------------------------------------- */
+
+	.faqs .divider {  margin: 1em 0  1.5em; }
+	
+	.faqs h3 { color: #222; }
+
+	.faq-q {
+		background: url(../images/countries/bullet.png) no-repeat 0 7px;
+		padding-left: 20px;
+		
+		cursor: pointer; position: relative;
+		font-size: 1.125em; font-weight: 600; color: #BF2222; }
+		
+	.faq-a { padding-left: 20px; }	
+		
+	.divider + h3 { margin-top: -1em; }	
+	
+	
+	@media only screen and (max-width: 767px) {
+		.faq-q { background-position: 0 4px; } }
+	
+	
+	@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+	only screen and (-moz-min-device-pixel-ratio: 1.5),
+	only screen and (-o-min-device-pixel-ratio: 3/2),
+	only screen and (min-device-pixel-ratio: 1.5) {
+	  
+	  faq-q { background: url(../images/countries/bullet@2x.png) no-repeat 0 7px; } }
+	
 

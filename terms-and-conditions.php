@@ -1,5 +1,6 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/head.php')?>		
-<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
+<?php $subtitle = "Merchant Terms";
+include($_SERVER['DOCUMENT_ROOT'].'/includes/head.php');
+include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
 	
 		
 	<div class="row primary-row">	
@@ -24,7 +25,7 @@
   							
   							<p>2.1. In this Agreement:</p>
   							
-  							<ul class="no-bullet">
+  							<ul class="no-bullet definition">
   							
   							<li><strong>&ldquo;boxPAY Trademark&rdquo;</strong> means the boxPAY name and logo and any associated trademark.</li>
   							<li><strong>&ldquo;Payment Services&rdquo;</strong> means any use by you of the Service to procure payment for any goods or services on your behalf or on behalf of any other party.</li>
@@ -225,17 +226,7 @@
   						</div>
   						
   						
-  						<div class="three columns passage legal-sidebar">
-  						<h6>Legal Documents</h6>
-  						
-  						<ul class="no-bullet">
-  							<li><a href="terms-and-conditions.html">Merchant Terms</a></li>
-  							<li><a href="terms-of-use.html">Customer Terms</a></li>
-  							<li><a href="privacy.html">Privacy Policy</a></li>
-  						
-  						</ul>
-  						
-  						</div>  						
+  						<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/sidebar-legals.php')?>						
   					
   					
   					

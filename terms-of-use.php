@@ -1,5 +1,6 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/head.php')?>		
-<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
+<?php $subtitle = "Customer Terms";
+include($_SERVER['DOCUMENT_ROOT'].'/includes/head.php');		
+include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
 	
 	
 	<div class="row primary-row">	
@@ -17,8 +18,7 @@
   							<h1>Customer Terms</h1>
   							
   							
-  							<p>BY USING THE SERVICE, YOU AGREE TO BE BOUND BY THE TERMS AND CONDITIONS OF THIS AGREEMENT (INCLUDING ALL POLICIES), EACH AS MAY BE MODIFIED FROM TIME TO TIME.<br/>
-  							IF YOU DO NOT AGREE TO THESE TERMS AND CONDITIONS, YOU MAY NOT USE OR ACCESS THE SERVICE</p>
+  							<p>BY USING THE SERVICE, YOU AGREE TO BE BOUND BY THE TERMS AND CONDITIONS OF THIS AGREEMENT (INCLUDING ALL POLICIES), EACH AS MAY BE MODIFIED FROM TIME TO TIME. IF YOU DO NOT AGREE TO THESE TERMS AND CONDITIONS, YOU MAY NOT USE OR ACCESS THE SERVICE</p>
   							
   							
   							<h4>1. Parties</h4>
@@ -32,7 +32,7 @@
   							
   							<p>2.1. In this Agreement:</p>
   							  							
-  							<ul class="no-bullet">
+  							<ul class="no-bullet definition">
   							
   							<li><strong>&ldquo;boxPAY Trademark&rdquo;</strong> means the boxPAY name and logo and any associated trademark.</li>
   							<li><strong>&ldquo;Cell Phone&rdquo;</strong> means an SMS-enabled cellular or mobile phone whose SIM is subject to a current contract with a Telecom Operator (whether on a pre-paid credit or payment on invoice basis)</li>
@@ -214,17 +214,7 @@
   						</div>
   						
   						
-  						<div class="three columns passage legal-sidebar">
-  						<h6>Legal Documents</h6>
-  						
-  						<ul class="no-bullet">
-  							<li><a href="terms-and-conditions.html">Merchant Terms</a></li>
-  							<li><a href="terms-of-use.html">Customer Terms</a></li>
-  							<li><a href="privacy.html">Privacy Policy</a></li>
-  						
-  						</ul>
-  						
-  						</div>
+						<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/sidebar-legals.php')?>	
   					
   					
   					

@@ -1,5 +1,6 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/head.php')?>		
-<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>	
+<?php $subtitle = "Privacy Policy"; 
+include($_SERVER['DOCUMENT_ROOT'].'/includes/head.php');
+include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>	
 	
 	
 	<div class="row primary-row">	
@@ -111,18 +112,7 @@
   						</div>
   						
   						
-  						<div class="three columns passage legal-sidebar">
-  						<h6>Legal Documents</h6>
-  						
-  						<ul class="no-bullet">
-  							<li><a href="terms-and-conditions.html">Merchant Terms</a></li>
-  							<li><a href="terms-of-use.html">Customer Terms</a></li>
-  							<li><a href="privacy.html">Privacy Policy</a></li>
-  						
-  						</ul>
-  						
-  						</div>
-  						
+  						<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/sidebar-legals.php')?>  						
   					
   					
   					

@@ -1,5 +1,6 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/head.php')?>		
-<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
+<?php $subtitle = "Web &amp; Tablet";
+include($_SERVER['DOCUMENT_ROOT'].'/includes/head.php');		
+include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
 		
 		
 	<div class="row primary-row">	
