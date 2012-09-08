@@ -11,8 +11,8 @@
 		  <div class="ten columns phone-two">
 		    <nav id="menu" role="navigation" class="hide-for-small">
     			<ul id="mainNav" class="nav-bar">
-    				<li><a href="#">Product</a></li>
-    					<li><a href="#">About</a></li>
+    					<li><a href="#">Product</a></li>
+    					<li><a href="about.php">About</a></li>
     					<li><a href="#">Developers</a></li>
     					<li><a href="#">Help</a></li>
     					<li><a href="#">Blog</a></li>

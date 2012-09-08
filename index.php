@@ -1,174 +1,55 @@
-<!DOCTYPE html>
-
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8" />
-
-  <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width" />
-
-  <title>Welcome to BoxPay</title>
-  
-  <!-- Included CSS Files (Uncompressed) -->
-  <!--
-  <link rel="stylesheet" href="stylesheets/foundation.css">
-  -->
-  
-  <!-- Included CSS Files (Compressed) -->
-  <link rel="stylesheet" href="static/stylesheets/foundation.css">
-  <link rel="stylesheet" href="static/stylesheets/app.css">
-
-  <script src="static/js/modernizr.foundation.js"></script>
-
-  <!-- IE Fix for HTML5 Tags -->
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-
-</head>
-<body>
-
-  <div class="row">
-    <div class="twelve columns">
-      <h2>Welcome to Foundation</h2>
-      <p>This is version <strong>3.0.9</strong> generated on August 27, 2012.</p>
-      <hr />
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="eight columns">
-      <h3>The Grid</h3>
-
-      <!-- Grid Example -->
-      <div class="row">
-        <div class="twelve columns">
-          <div class="panel">
-            <p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="six columns">
-          <div class="panel">
-            <p>Six columns</p>
-          </div>
-        </div>
-        <div class="six columns">
-          <div class="panel">
-            <p>Six columns</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="four columns">
-          <div class="panel">
-            <p>Four columns</p>
-          </div>
-        </div>
-        <div class="four columns">
-          <div class="panel">
-            <p>Four columns</p>
-          </div>
-        </div>
-        <div class="four columns">
-          <div class="panel">
-            <p>Four columns</p>
-          </div>
-        </div>
-      </div>
-      
-      
-      
-      
-      <h3>Buttons</h3>
-
-      <div class="row">
-        <div class="six columns">
-          <p><a href="#" class="small button">Small Button</a></p>
-          <p><a href="#" class="button">Medium Button</a></p>
-          <p><a href="#" class="large button">Large Button</a></p>
-        </div>
-        <div class="six columns">
-          <p><a href="#" class="small alert button">Small Alert Button</a></p>
-          <p><a href="#" class="success button">Medium Success Button</a></p>
-          <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
-        </div>
-      </div>
-      
-    </div>
-
-    <div class="four columns">
-      <h4>Getting Started</h4>
-      <p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-
-      <h4>Other Resources</h4>
-      <p>Once you've exhausted the fun in this document, you should check out:</p>
-      <ul class="disc">
-        <li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
-        <li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-        <li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
-      </ul>
-    </div>
-  </div>
-
-  
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Orbit</h3>
-      <div id="featured">
-        <img src="http://placehold.it/1200x250&text=Slide_1" alt="slide image">
-        <img src="http://placehold.it/1200x250&text=Slide_2" alt="slide image">
-        <img src="http://placehold.it/1200x250&text=Slide_3" alt="slide image">
-      </div>
-    </div>
-  </div>
-  
-  
-  
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Reveal</h3>
-      <p><a href="#" data-reveal-id="exampleModal" class="button">Example modal</a></p>
-    </div>
-  </div>
-  
-  <div id="exampleModal" class="reveal-modal">
-    <h2>This is a modal.</h2>
-    <p>
-      Reveal makes these very easy to summon and dismiss. The close button is simple an anchor with a unicode 
-      character icon and a class of <code>close-reveal-modal</code>. Clicking anywhere outside the modal will 
-      also dismiss it.
-    </p>
-    <a class="close-reveal-modal">×</a>
-  </div>
-  
-  
-  <!-- Included JS Files (Uncompressed) -->
-  <!--
-  
-  <script src="javascripts/modernizr.foundation.js"></script>
-  
-  <script src="javascripts/jquery.js"></script>
-  
-  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
-  
-  <script src="javascripts/jquery.foundation.reveal.js"></script>
-  
-  <script src="javascripts/jquery.foundation.orbit.js"></script>
-  
-  <script src="javascripts/jquery.foundation.buttons.js"></script>
-  
-  -->
-  
-  <!-- Included JS Files (Compressed) -->
-  <script src="javascripts/foundation.min.js"></script>
-  
-  <!-- Initialize JS Plugins -->
-  <script src="javascripts/app.js"></script>
-</body>
-</html>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/head.php')?>		
+<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>		
+	
+		
+	<div class="row primary-row">	
+  		
+  		
+  		
+  		<section role="main">
+  			
+  			
+  			<div class="row primary-container">
+  			
+  			
+  			
+  			
+  			
+  			<div class="homesub">
+  				  <div class="ten columns centered">
+  				  
+  				  	<h1>Cross platform monetization. It’s all here</h1>
+  				  	<h4>Start billing today using the self-serve payment box tool. If you’re a developer looking for a custom solution, we can help you with that too.</h4>
+  			
+  					<ul class="block-grid six-up mobile-two-up">
+  						<li class="homesub_widget"><img src="static/images/homepage/platform_widget.jpg" alt="Self-serve widget" /><span>Self-serve widget</span></li>
+  						<li class="homesub_app"> <img src="static/images/homepage/platform_app.jpg" alt="App developers" /><span>App developers</span></li>
+  						<li class="homesub_mobile"> <img src="static/images/homepage/platform_optimized.jpg" alt="Mobile & tablet optimized" /><span>Mobile &amp; tablet optimized</span></li>
+  						<li class="homesub_tv"> <img src="static/images/homepage/platform_tv.jpg" alt="Smart tv" /><span>Smart tv</span></li>
+  						<li class="homesub_api"> <img src="static/images/homepage/platform_label.jpg" alt="White label & API" /><span>White label &amp; API</span></li>
+  						<li class="homesub_sub"> <img src="static/images/homepage/platform_sub.jpg" alt="Subscription" /><span>Subscription</span></li>
+  			
+  					</ul>
+  			
+  				 </div>
+  			
+  			  </div><!-- homesub -->
+  				
+  				
+  				
+  				
+  			</div>		
+  			
+  			
+  		
+  		</section>
+  		
+  		
+  		
+  		
+  	<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/sidebar.php')?>		
+	
+	</div><!-- container -->
+			
+ 
+<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/footer.php')?>
