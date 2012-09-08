@@ -19,10 +19,10 @@
   -->
   
   <!-- Included CSS Files (Compressed) -->
-  <link rel="stylesheet" href="stylesheets/foundation.css">
-  <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="stylesheet" href="static/stylesheets/foundation.css">
+  <link rel="stylesheet" href="static/stylesheets/app.css">
 
-  <script src="javascripts/modernizr.foundation.js"></script>
+  <script src="static/js/modernizr.foundation.js"></script>
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>

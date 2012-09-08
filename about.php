@@ -1,84 +1,5 @@
-<!DOCTYPE html>
-
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8" />
-
-	<!-- Set the viewport width to device width for mobile -->
-	
-	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-
-
-	<title>About | boxPAY</title>
-  
-	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="stylesheets/foundation.css">
-	<link rel="stylesheet" href="stylesheets/offcanvas.css">
-	<link rel="stylesheet" href="stylesheets/app.css">
-	
-	<!-- Typekit -->	
-	
-	 <script type="text/javascript" src="//use.typekit.net/nsb4bvi.js"></script>
-	 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	
-	
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" href="css/ie.css">
-	<![endif]-->
-
-	<script src="js/modernizr.foundation.js"></script>
-
-	<!-- IE Fix for HTML5 Tags -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-</head>
-
-  <body id="page" class="off-canvas hide-extras">		
-
-	<div class="container">
-		
-		<header id="header">
-			
-		  <div class="row">	
-		  <div class="ten columns centered">
-		  <div class="row">
-		  
-		  <div class="two columns phone-two">
-		    <a href="index.html" class="nav-logo">BoxPay</a>
-		  </div>
-
-		  <div class="ten columns phone-two">
-		    <nav id="menu" role="navigation" class="hide-for-small">
-    			<ul id="mainNav" class="nav-bar">
-    				<li><a href="#">Product</a></li>
-    					<li><a href="#">About</a></li>
-    					<li><a href="#">Developers</a></li>
-    					<li><a href="#">Help</a></li>
-    					<li><a href="#">Blog</a></li>
-    					<li class="login"><a href="#">Login</a> <span>or</span> <a href="#">Sign Up</a></li>					
-    			</ul>											
-    		</nav>
-    		
-  			<p class="show-for-small">
-  			  <a class='sidebar-button button right' id="sidebarButton" href="#sidebar" >Menu</a>
-  			</p> 
-		  
-		  </div>
-		  
-		  
-		  
-		  </div>
-		  </div> 
-		  </div>	
-		</header>	
-	
-	
+<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/head.php')?>		
+<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>		
 	
 		
 	<div class="row primary-row">	
@@ -104,7 +25,7 @@
   						<div class="five columns about-video">
   						
   						<a href="#" data-reveal-id="exampleModal">
-  							<img src="images/about/video-still.jpg" alt="" />
+  							<img src="static/images/about/video-still.jpg" alt="" />
   						</a>
   						
   						
@@ -135,7 +56,7 @@
   							
   							<ul class="block-grid mobile two-up mgmt-links">
   							
-  							<li><img src="images/about/mgmt-gavin.jpg" alt="Gavin McConnon" /> 
+  							<li><img src="static/images/about/mgmt-gavin.jpg" alt="Gavin McConnon" /> 
   							
   								<div>
   								<h5>Gavin McConnon</h5>
@@ -148,7 +69,7 @@
   							</li>
   							
   							
-  							<li><img src="images/about/mgmt-iain.jpg" alt="Iain McConnon" /> 
+  							<li><img src="static/images/about/mgmt-iain.jpg" alt="Iain McConnon" /> 
   							
   								<div>
   								<h5>Iain McConnon</h5>
@@ -161,7 +82,7 @@
   							</li>
   							
   							
-  							<li><img src="images/about/mgmt-shane.jpg" alt="Shane Connelly" /> 
+  							<li><img src="static/images/about/mgmt-shane.jpg" alt="Shane Connelly" /> 
   							
   								<div>
   								<h5>Shane Connelly</h5>
@@ -174,7 +95,7 @@
   							</li>
   							
   							
-  							<li><img src="images/about/mgmt-kyle.jpg" alt="Kyle Hitchcox" /> 
+  							<li><img src="static/images/about/mgmt-kyle.jpg" alt="Kyle Hitchcox" /> 
   							
   								<div>
   								<h5>Kyle Hitchcox</h5>
@@ -187,7 +108,7 @@
   							</li>
   							
   							
-  							<li><img src="images/about/mgmt-amanda.jpg" alt="Amanda Keating" /> 
+  							<li><img src="static/images/about/mgmt-amanda.jpg" alt="Amanda Keating" /> 
   							
   								<div>
   								<h5>Amanda Keating</h5>
@@ -200,7 +121,7 @@
   							</li>
   							
   							
-  							<li><img src="images/about/mgmt-paul.jpg" alt="Paul Dunne" /> 
+  							<li><img src="static/images/about/mgmt-paul.jpg" alt="Paul Dunne" /> 
   							
   								<div>
   								<h5>Paul Dunne</h5>
@@ -213,7 +134,7 @@
   							</li>
   							
   							
-  							<li><img src="images/about/mgmt-richard.jpg" alt="Richard Middleton" /> 
+  							<li><img src="static/images/about/mgmt-richard.jpg" alt="Richard Middleton" /> 
   							
   								<div>
   								<h5>Richard Middleton</h5>
@@ -227,7 +148,7 @@
   							
   							
   							
-  							<li><img src="images/about/mgmt-aaron.jpg" alt="Aaron Nobles" /> 
+  							<li><img src="static/images/about/mgmt-aaron.jpg" alt="Aaron Nobles" /> 
   							
   								<div>
   								<h5>Aaron Nobles</h5>
@@ -241,7 +162,7 @@
   							
   							
   							
-  							<li><img src="images/about/mgmt-shane-mc.jpg" alt="Shane McConnon" /> 
+  							<li><img src="static/images/about/mgmt-shane-mc.jpg" alt="Shane McConnon" /> 
   							
   								<div>
   								<h5>Shane McConnon</h5>
@@ -254,7 +175,7 @@
   							</li>
   							
   							
-  							<li><img src="images/about/mgmt-kiran.jpg" alt="Kiran Shah" /> 
+  							<li><img src="static/images/about/mgmt-kiran.jpg" alt="Kiran Shah" /> 
   							
   								<div>
   								<h5>Kiran Shah</h5>
@@ -267,7 +188,7 @@
   							</li>
   							
   							
-  							<li><img src="images/about/mgmt-kiran.jpg" alt="Stev Tam" /> 
+  							<li><img src="static/images/about/mgmt-kiran.jpg" alt="Stev Tam" /> 
   							
   								<div>
   								<h5>Stev Tam</h5>
@@ -280,7 +201,7 @@
   							
   							</li>
   							
-  							<li><img src="images/about/mgmt-kiran.jpg" alt="Najaf Raza" /> 
+  							<li><img src="static/images/about/mgmt-kiran.jpg" alt="Najaf Raza" /> 
   							
   								<div>
   								<h5>Najaf Raza</h5>
@@ -293,7 +214,7 @@
   							
   							</li>
   							
-  							<li><img src="images/about/mgmt-kiran.jpg" alt="Mohammad Nahid Khan" /> 
+  							<li><img src="static/images/about/mgmt-kiran.jpg" alt="Mohammad Nahid Khan" /> 
   							
   								<div>
   								<h5>Mohammad Nahid Khan</h5>
@@ -306,7 +227,7 @@
   							
   							</li>
   							
-  							<li><img src="images/about/mgmt-kiran.jpg" alt="Michael Leung" /> 
+  							<li><img src="static/images/about/mgmt-kiran.jpg" alt="Michael Leung" /> 
   							
   								<div>
   								<h5>Michael Leung</h5>
@@ -343,88 +264,23 @@
   		
   		
   		
-  		<!-- Mobile Menu HEre-->
-  		<section id="sidebar" role="complementary">
-				<nav id="sideMenu" role="navigation">
-    			<ul id="sideMainNav" class="nav-bar">
-    				<li><a href="">Product</a></li>
-    				<li><a href="about.html">About</a></li>
-    				<li><a href="">Developers</a></li>
-    				<li><a href="">Help</a></li>
-    				<li><a href="">Blog</a></li>
-    				<li><a href="">Login</a></li>
-    				<li><a href="">Sign Up</a></li>							
-    			</ul>											
-    		</nav>
-  		</section>
-		
-	</div><!-- container -->
+		  		<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/sidebar.php')?>
+				
+			</div><!-- container -->
 			
   
-  
-  
-   <footer>
-     
-     <div class="row">
-     	<div class="ten columns centered">
-     		<div class="row">
-     	
-     	
-	     		<div class="nine columns">
-	     		<ul>
-	   			<li><a href="#">Events</a></li>
-	   			<li><a href="#">Press &amp; Media</a></li>
-	   			<li><a href="#">Legal</a></li>
-	   			<li><a href="#">Careers</a></li>
-	   			  		
-	     		</ul>
-	     		</div>
-	     		
-	     		
-	     		
-	     		<div class="three columns text-right copyright">
-	     		  	  <span>&copy; boxPAY 2012</span>
-	     		 </div>
-     		
-     		
-     		
-   			</div>
-     	 </div>
-     </div>	
-     	
-     
-     </footer>
-   	
-  </div><!-- container -->
+<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/footer.php')?>
   
   
   
-  <div id="exampleModal" class="reveal-modal">
+<div id="exampleModal" class="reveal-modal">
    
     
     <div class="videoWrapper"> 
-      		<iframe src="http://player.vimeo.com/video/27256015?title=0&amp;byline=0&amp;portrait=0" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      	<iframe src="http://player.vimeo.com/video/27256015?title=0&amp;byline=0&amp;portrait=0" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div>
     
     <a class="close-reveal-modal">×</a>
   
-  </div>
+</div>
   
-  
-  
-	
-	
-	<!-- Included JS Files -->
-	<script src="js/jquery.min.js"></script>
-	<!-- Combine and Compress These JS Files -->
-	<script src="js/jquery.reveal.js"></script>
-	<script src="js/jquery.orbit-1.4.0.js"></script>
-	<script src="js/jquery.customforms.js"></script>
-	<script src="js/jquery.placeholder.min.js"></script>
-	<script src="js/jquery.tooltips.js"></script>
-	<!-- End Combine and Compress These JS Files -->
-	<script src="js/app.js"></script>
-	
-  <script type="text/javascript" src="js/jquery.offcanvas.js"></script>
-
-</body>
