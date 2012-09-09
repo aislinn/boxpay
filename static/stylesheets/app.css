@@ -413,6 +413,11 @@
 		background: url(../images/product-pages/whitelabel-code.jpg) no-repeat; height: 425px;
 		background-size:100%; }	
 		
+	.whitelabel-shortcodes { 
+		background: url(../images/product-pages/whitelabel-shortcodes.jpg) no-repeat ; height: 460px;
+		background-size:100%; }		
+		
+		
 	.smarttv-tv {
 		background: url(../images/product-pages/smarttv-tv.jpg) no-repeat right 0; height: 340px;
 		background-size:82%;   }	

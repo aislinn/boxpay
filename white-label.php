@@ -37,7 +37,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   						</div>
   						
   						
-  						<div class="four columns"></div>
+  						<div class="four columns whitelabel-shortcodes"></div>
   						
   					
   					
