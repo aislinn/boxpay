@@ -17,6 +17,8 @@
 	<link rel="stylesheet" href="static/stylesheets/offcanvas.css">
 	<link rel="stylesheet" href="static/stylesheets/app.css">
 	
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
 	<!-- Typekit -->	
 	<script type="text/javascript" src="//use.typekit.net/nsb4bvi.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -112,11 +114,11 @@
 	
 	<script type="text/javascript">
 		$(document).ready(function() {
-		  $(".faq-a").hide();
+		  $(".faq-a, .press-a").hide();
 		  //toggle the componenet with class msg_body
-		  $(".faq-q").click(function()
+		  $(".faq-q, .press-q").click(function()
 		  {
-		    $(this).next(".faq-a").slideToggle(500);
+		    $(this).next(".faq-a, .press-a").slideToggle(500);
 		  });
 		});
 	</script>

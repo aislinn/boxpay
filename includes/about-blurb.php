@@ -1,0 +1,3 @@
+<h6>About boxPAY Ltd.</h6>
+
+<p>boxPAY is a mobile payments platform that provides web merchants, game developers, and other e-businesses the ability to charge customers for digital content through a mobile phone instead of a credit card. Customers can make a purchase on a merchant website with no pre-registration required, and the charge is added to their mobile bill or deducted from a prepaid balance. boxPAY utilizes SMS and direct carrier billing, and can be integrated into a merchant website from our user-friendly, self-service website in minutes. boxPAY is connected to mobile carriers in over 60 countries and has offices on four continents. <a href="http://www.boxpay.com">www.boxpay.com</a></p>

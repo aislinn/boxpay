@@ -1,11 +1,9 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/head.php')?>		
-<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>		
+<?php $subtitle = "Worldwide Mobile Payments Made Easy - SMS and Direct Carrier Billing";
+include($_SERVER['DOCUMENT_ROOT'].'/includes/head.php');
+include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>			
 	
 		
 
-  		
-  		
-  		
   		<section role="main">
   			
   			
