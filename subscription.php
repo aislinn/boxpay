@@ -47,16 +47,32 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   				<div class="twelve columns">
   					<div class="row">
   					
-  						<div class="five columns"></div>
+  						<div class="five columns offset-by-one sub-graph"></div>
   						
   						
-  						<div class="six columns end">
-  						
-  						
+  						<div class="four columns offset-by-one end">
+  							<p>This graph represents a merchant’s revenue over a one-month period
+  							using subscription mobile billing.</p>
   						</div>
   					
   					
   					</div>
+  					
+  					
+  					
+  					<div class="row">
+  					
+  						<div class="five columns offset-by-one"></div>
+  						
+  						
+  						<div class="five columns end">
+  							<p>The life time revenue of all their customers over the same period.</p>
+  						</div>
+  					
+  					
+  					</div>
+  					
+  					
   				</div>
   				
   				

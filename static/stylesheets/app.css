@@ -114,7 +114,7 @@
 	ul { list-style-type: square; }
 	
 	ul li ul, ul li ol { margin-left: 20px; margin-bottom: 0; }
-	ul.square, ul.circle, ul.disc { margin-left: 25px; }
+	ul.square, ul.circle, ul.disc { margin-left: 20px; }
 	ul.square { list-style-type: square; }
 	ul.square li ul { list-style: inherit; }
 	ul.circle { list-style-type: circle; }
@@ -427,7 +427,12 @@
 		background-size:75%; }	
 		
 	.mobile-hand { 
-		background: url(../images/product-pages/mobile-hand.jpg) no-repeat right 0; height: 520px; }	
+		background: url(../images/product-pages/mobile-hand.jpg) no-repeat right 0; height: 520px; }
+		
+		
+	.sub-graph { 
+		background: url(../images/product-pages/subscription-graph.jpg) no-repeat ; height: 280px;
+		 }		
 	
 	
 	@media only screen and (max-width: 767px) {
@@ -437,12 +442,24 @@
 		.whitelabel-code,
 		.smarttv-tv,
 		.mobile-phone,
-		.mobile-hand  { display: none; }}	
+		.mobile-hand,
+		.whitelabel-shortcodes  { display: none; }
 		
+		.sub-graph { background-position: 15px 0; }
+		}	
+		
+		
+	@media only screen and (max-width: 450px) {
+		.sub-graph { background-size:90%; }	}
+		
+	@media only screen and (min-width: 768px) {	
+		.sub-graph { background-size:100%; } }
 		
 	@media only screen and (min-width: 870px) {	
-		.whitelabel-facts { margin-top: 2em; }
-	}
+		.whitelabel-facts { margin-top: 2em; } }
+	
+	@media only screen and (min-width: 430px) and (max-width: 767px)  {
+		.sub-graph { margin-bottom:2em; } }
 		
 		
 		
