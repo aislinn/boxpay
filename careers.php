@@ -15,7 +15,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   					<div class="row">
   					
   					  					
-  						<div class="eight columns">
+  						<div class="eleven columns">
   						
   						<h1>Careers</h1>
   						
@@ -26,28 +26,56 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   						</div>
   						
   						
-  						<div class="four columns offset-by-one end">
   						
-  						<!--<div class="region-accordion">
-  								<h6><a href="#">Database Administrator</a></h6>
-  										
-  								<h6><a href="#">Group Financial Accountant</a></h6>
-  							  							
-  								<h6><a href="#">Senior Developer C#.Net/ASP.NET</a></h6>
-  							
-  								<h6><a href="#">Account Manager</a></h6>
-  								
-  						
-  								
-  								<h6><a href="#">San Francisco Outside Sales Manager</a></h6>
-  							</div>
-  							
-  						-->
-  						
-  						</div>
-
   					
   					</div>
+  					
+  					
+  					
+  					<div class="row">
+  					
+  					<div class="twelve columns">
+  					
+  					<ul class="block-grid two-up job-listings">
+  					
+  					<li class="faq-q"><a href="#">Database Administrator</a></li>
+  					<li class="faq-q"><a href="#">Group Financial Accountant</a></li>
+  					<li class="faq-q"><a href="#">Senior Developer C#.Net/ASP.NET</a></li>
+  					<li class="faq-q"><a href="#">Account Manager</a></li>
+  					<li class="faq-q"><a href="#">San Francisco Outside Sales Manager</a></li>
+  					  					
+  					</ul>
+  					
+  					
+  					<!--
+  					<div class="six columns end">
+  									
+  										<div class="region-accordion">
+  											<h6><a href="#">Database Administrator</a></h6>
+  													
+  											<h6><a href="#">Group Financial Accountant</a></h6>
+  										  							
+  											<h6><a href="#">Senior Developer C#.Net/ASP.NET</a></h6>
+  										
+  											<h6><a href="#">Account Manager</a></h6>
+  											
+  									
+  											
+  											<h6><a href="#">San Francisco Outside Sales Manager</a></h6>
+  										</div>
+  					
+  									</div>
+  					-->
+  					
+  					
+  					</div>
+  					
+  					</div>
+  					
+  					
+  					
+  					
+  					
   				</div>
   				
   				
@@ -58,9 +86,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   					<div class="row">
   					
   						
-  						<div class="two columns end push-nine"></div>
+  					
   						
-  						<div class="seven columns pull-four">
+  						<div class="seven columns  offset-by-one">
   						
   						
   						
@@ -309,10 +337,15 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   						</div>
   						
   						
+  						<div class="three columns  end">
+  						
+  						<a class="button right" href="mailto:jobs@boxpay.com">Apply Now</a>
   						
   						</div>
-  					
-  					
+  						
+  						
+  						
+  						</div>
   					</div>
   				
   				

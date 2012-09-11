@@ -93,7 +93,8 @@
 	h6 { font-size: 1.14285714em;  font-weight: 600;  margin-bottom: 0; line-height: 1.5;
 	} /*16/14*/
 	
-	h1 + p { margin-top: 1.14285714em; }
+	h1 + p,
+	h1 + ul { margin-top: 1.14285714em; }
 	
 	h1 + h3 { margin-top: -0.14285714em; }
 	h1 + h5 { line-height: 2; margin-top:  -0.05555556em; }
@@ -367,6 +368,9 @@
 
 
 	@media only screen and (max-width: 767px) {
+	
+		.homesub .block-grid > li { clear: none !important; }
+			
 		.homesub .block-grid.mobile-two-up > li	{ 
 			width: 33.333%;
 			font-size: 1.28571429em; /*18/16*/
@@ -742,4 +746,63 @@
 		content: ""; width: 11px; height: 1.14285714em; position: absolute; margin: 0 0 0 8px;
 		background: url(../images/common/external-link.png) no-repeat center bottom; }
 	
+
+	  
+/* -----------------------------------------
+	Contact
+----------------------------------------- */
+
+
+	.map-container { 
+		display: inline-block; position: relative; width: 100%; 
+	    margin-top: 2em; margin-bottom: 3em; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+
+	.map-inner { margin-top: 37%; /* 4:3 aspect ratio */ }
+ 
+	.map { position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
+
+	h1 + .block-grid.four-up { margin-top: 1.14285714em; } 
+	
+	.contact-numbers li { line-height: 2;  } 
+
+	@media only screen and (min-width: 767px) {
+		.contact-detail li { font-size: 0.875em;  }
+		.contact-detail li strong { font-size: 1.14285714em; } }
+		
+	@media only screen and (max-width: 580px) {
+		.contact-numbers.block-grid.two-up > li { width: 100%; } }
+	
+	
+	@media only screen and (max-width: 550px) {
+		.map-inner { margin-top: 45%; /* 4:3 aspect ratio */ } }
+		
+	@media only screen and (max-width: 480px) {
+		.map-inner { margin-top: 60%; /* 4:3 aspect ratio */ } }
+		
+		
+	
+	
+	/* -----------------------------------------
+		Contact
+	----------------------------------------- */	
+		
+	.block-grid .faq-q { font-size: 1em; }	
+	
+	.block-grid.two-up.job-listings { margin: 0 0 2em 0; }
+	.block-grid.two-up.job-listings li { padding: 0 15px; }
+	
+	
+	@media only screen and (min-width: 767px) {
+		.block-grid.two-up.job-listings { margin-top: 1em; } }
+	
+	
+	@media only screen and (max-width: 580px) {
+		.job-listings.block-grid.two-up > li { width: 100%; } }
+		
+		
+
+	
+	
+	
+	  
 
