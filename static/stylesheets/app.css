@@ -350,7 +350,7 @@
 	Sidebar
 ----------------------------------------- */
 
-	.js [role="main"] {  }
+	.js [role="main"] { background: #fff; }
 	.js [role="main"] { border-radius: 0; /*background: #1C1C1C;*/ }
 	
 	#sidebar .nav-bar { margin-top: 0; background: #2e2e2e; }
@@ -404,6 +404,72 @@
 	.homeslide1 h1 { margin-top: 142px; }
 	.homeslide2 h1 { margin-top: 118px; padding-right: 50px; }
 	.homeslide3 h1 { margin-top: 118px;  }
+	
+	
+	.row .ten.billingpartners {width: 100%; }
+	.row .ten.billingpartners h3 { color: #222; }
+	
+	
+	.partners { margin-bottom: 1.5em; }
+	
+	.partners.featured { margin-left: 40px; }
+	
+	.partners li { 
+		display: inline-block; margin: 0 15px; text-indent: -9999px;
+		background: url('../images/homepage/logos.jpg') no-repeat;  }
+		
+	.partners li.irishtimes { 
+		background-position: -40px -57px;
+		width: 218px; height: 30px; }	
+		
+		
+	.partners li.paymentwall { 
+		background-position:  -48px -8px;
+		width: 190px; height: 40px; }	
+		
+		
+	.partners li.newspaperdirect { 
+		background-position: -61px -272px;
+		width: 185px; height: 35px; }	
+		
+	
+	.partners li.techcrunch { 
+		background-position: -83px -118px;
+		width: 134px; height: 32px; }		
+	
+	.partners li.slashgear { 
+		background-position: -43px -168px;
+		width: 224px; height: 32px; }
+		
+	.partners li.venturebeat { 
+		background-position: -62px -222px;
+		width: 173px; height: 30px; }	
+		
+		
+		
+	.homesub blockquote { 
+		border-left: none; font-size:1.14285714em; line-height: 2; text-align: left; }	
+	
+	.homesub blockquote cite { float: right; margin-top: 2em; color: #222; }
+
+	
+	
+	@media only screen and (max-width: 767px) {
+	
+		.partners { margin-bottom: 2.5em; }
+	
+		.partners li { 
+			display: block; text-align: center; margin: 0;
+			 width: 100% !important; }
+		.partners.featured { margin-left: 0px; }	 
+		
+		.partners li.irishtimes { background-position: center -57px; height: 40px; }
+		.partners li.paymentwall { background-position: center -8px; }
+		.partners li.newspaperdirect { background-position: center -272px; }
+		
+		.partners li.techcrunch { background-position: center -118px; margin-left: -6px; margin-top: 10px; }
+		.partners li.slashgear { background-position: center -168px; margin-left: -8px;  height:40px ; }
+		.partners li.venturebeat { background-position: center -222px; margin-left: -3px; }  }
 
 
 	@media only screen and (max-width: 767px) {
@@ -434,7 +500,15 @@
 		
 	
 	@media only screen and (min-width: 768px) {	
-		.homesub .block-grid.six-up { margin: 30px -30px 0 -30px; } }
+		.homesub .block-grid.six-up { margin: 30px -30px 0 -30px; }
+		.row .ten.billingpartners {  margin-bottom: 3em; }
+		.columns.centered.homeblurb { margin-bottom: 4em; } }
+		
+		
+		
+	@media only screen and (max-width: 710px) {
+	
+		.billingpartners {width: 100%;} }	
 				
 	
 	

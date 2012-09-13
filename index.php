@@ -11,18 +11,16 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   			<div id="header-container">
   			
   			
-  			<img class="prev" src="static/images/homeslider/bt-prev.png" alt="Previous Frame" />
-  			<img class="next" src="static/images/homeslider/bt-next.png" alt="Next Frame" />
+  				<img class="prev" src="static/images/homeslider/bt-prev.png" alt="Previous Frame" />
+  				<img class="next" src="static/images/homeslider/bt-next.png" alt="Next Frame" />
   			
-  			<div id="header">
+  				<div id="header">
   									
   					<div id="sequence">
   						<ul>
   							
   							
   							<li id="iphone">
-  							
-  							
   								<h1 class="title animate-in">Charge users to their mobile phone bill in 70+ countries</h1>
   								<h3 class="subtitle animate-in">Start accepting carrier and SMS payments today<br/>
   								
@@ -32,8 +30,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   								
   								
   								<img class="iphone animate-in" src="static/images/homeslider/model3.png" alt="Model 3" />
-  							
-  							
+  					
   							</li>
   							
   							
@@ -45,7 +42,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   								<br/>
   								<a class="large button" href="#">Sign up now</a>
   								</h3>
-  								
+  						
   								<img class="ipad" src="static/images/homeslider/model2.png" alt="Model 2" />
   							</li>
   							
@@ -70,14 +67,17 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   						</ul>
   					</div>
   					
-  				</div>
+  				</div><!--header-->
   			
-  			</div>
+  			</div><!-- header container-->
   			
   			
   			
   			<div class="row homesub">
-  				  <div class="ten columns centered">
+  				  
+  				  
+  				  
+  				  <div class="ten columns centered homeblurb">
   				  
   				  	<h1>Cross platform monetization. It’s all here</h1>
   				  	<h3>Start billing today using the self-serve payment box tool. If you’re a developer looking for a custom solution, we can help you with that too.</h3>
@@ -93,8 +93,54 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   					</ul>
   			
   				 </div>
+  				 
+  				 
+  				 <div class="twelve columns divider"></div>
+  				 
+  				 <div class="row">
+  				 	<div class="ten columns centered billingpartners">
+  				 	
+  				 
+  				 		<h3>Billing Partners</h3>
+  				 		
+  				 			<ul class="partners">
+  				 				<li class="paymentwall">Paymentwall</li>
+  				 				<li class="irishtimes">The Irish Times</li>
+  				 				<li class="newspaperdirect">Newspaper Direct</li>
+  				 			</ul>
+  				 	
+  				 		<h3>Featured In</h3>
+  				 
+  				 			<ul class="partners featured">
+  				 				<li class="techcrunch">TechCrunch</li>
+  				 				<li class="slashgear">Slash Gear</li>
+  				 				<li class="venturebeat">Venture Beat</li>
+  				 			</ul>
+  				 			
+  				 	</div>
+  				 </div>
+  				 
+  				 
+  				 <div class="twelve columns divider"></div>
+  				 
+  				 
+  				 <div class="row">
+  				 	<div class="ten columns centered">
+  				 	
+  				 	<blockquote>"Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc faucibus ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at e lacinia dui, a porttitor lectus"
+  				 	
+  				 	<cite>John Dow, Company Name Ltd.</cite>
+  				 	</blockquote>
+  				 	
+  				 	
+  				 	</div>
+  				 </div>
+  				 
+  				 
+  				 
+  				 
   			
-  			  </div><!-- homesub -->
+  			 </div><!-- homesub -->
   				
   				
   				
