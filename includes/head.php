@@ -11,19 +11,25 @@
   
 	<!-- Included CSS Files -->
 	
-	<base href="http://localhost:8888/" />
 	
-	<link rel="stylesheet" href="static/stylesheets/foundation.css">
-	<link rel="stylesheet" href="static/stylesheets/offcanvas.css">
-	<link rel="stylesheet" href="static/stylesheets/app.css">
+
+	<!--<base href="http://localhost:8888/" />-->
 	
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	
+	
+		
+	<link rel="stylesheet" href="/static/stylesheets/foundation.css">
+	<link rel="stylesheet" href="/static/stylesheets/offcanvas.css">
+	<link rel="stylesheet" href="/static/stylesheets/app.css">
+	
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	
 	<!-- Typekit -->	
 	<script type="text/javascript" src="//use.typekit.net/nsb4bvi.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<!-- Modernizr -->
-	<script src="static/js/modernizr.foundation.js"></script>
+	<script src="/static/js/modernizr.foundation.js"></script>
 	<!-- HTML5 -->	
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	
@@ -37,15 +43,16 @@
 	</script>
 
 	<!-- Combine and Compress These JS Files -->
-	<script src="static/js/jquery.reveal.js"></script>
-	<script src="static/js/jquery.orbit-1.4.0.js"></script>
-	<script src="static/js/jquery.customforms.js"></script>
-	<script src="static/js/jquery.placeholder.min.js"></script>
-	<script src="static/js/jquery.tooltips.js"></script>
+	<script src="/static/js/jquery.reveal.js"></script>
+	<script src="/static/js/jquery.orbit-1.4.0.js"></script>
+	<script src="/static/js/jquery.customforms.js"></script>
+	<script src="/static/js/jquery.placeholder.min.js"></script>
+	<script src="/static/js/jquery.tooltips.js"></script>
 	<!-- End Combine and Compress These JS Files -->
-	<script src="static/js/app.js"></script>
-	<script src="static/js/jquery-ui-1.8.23.custom.min.js"></script>	
-	<script src="static/js/jquery.offcanvas.js"></script>
+	<script src="/static/js/app.js"></script>
+	<script src="/static/js/jquery-ui-1.8.23.custom.min.js"></script>	
+	<script src="/static/js/jquery.offcanvas.js"></script>
+	<script src="/static/js/jquery.foundation.tabs.js"></script>	
 	
 	<script>
 		$(function() {
@@ -55,10 +62,9 @@
 				active: 'none'
 			});
 		});
-	</script>
-	
-	<script type="text/javascript">
 		$(document).foundationNavigation();
+		$(document).foundationTabs();
+		$(document).foundationCustomForms();
 	</script>
 	
 	
@@ -68,13 +74,13 @@
 	
 	
 
-	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="screen" href="static/stylesheets/demo-styles-ie.css" /><![endif]-->
-	<link rel="stylesheet" type="text/css" media="screen" href="static/stylesheets/sequencejs-theme.modern-slide-in.css" />
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="screen" href="/static/stylesheets/demo-styles-ie.css" /><![endif]-->
+	<link rel="stylesheet" type="text/css" media="screen" href="/static/stylesheets/sequencejs-theme.modern-slide-in.css" />
 	
 	
 
 	
-	<script type="text/javascript" src="static/js/sequence.jquery-min.js"></script>
+	<script type="text/javascript" src="/static/js/sequence.jquery-min.js"></script>
 	<script type="text/javascript">	
 			
 			/mobile/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {

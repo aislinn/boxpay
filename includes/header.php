@@ -5,7 +5,7 @@
 		  <div class="row">
 		  
 		  <div class="two columns phone-two">
-		    <a href="#" class="nav-logo">BoxPay</a>
+		    <a href="/" class="nav-logo">BoxPay</a>
 		  </div>
 
 		  <div class="ten columns phone-two">
@@ -14,29 +14,29 @@
     					<li class="has-flyout">
     						<a href="#">Product</a>
     						<ul class="flyout">
-    						      <li class="countries"><a href="#">Countries</a></li>
+    						      <li class="countries"><a href="/country/ireland.php">Countries</a></li>
     						      <li class="features"><a href="#">Features</a></li>
-    						      <li class="tablet"><a href="web-and-tablet.php">Browser &amp; Tablet</a></li>
-    						      <li class="mobile"><a href="mobile-optimized.php">Mobile Optimized</a></li>
-    						      <li class="in-app"><a href="in-app.php">In-App</a></li>
-    						      <li class="smart-tv"><a href="smart-tv.php">Smart TV</a></li>
-    						      <li class="white-label"><a href="white-label.php">White Label &amp; API</a></li>
-    						      <li class="subscription"><a href="subscription.php">Subscription</a></li>
+    						      <li class="tablet"><a href="/web-and-tablet.php">Browser &amp; Tablet</a></li>
+    						      <li class="mobile"><a href="/mobile-optimized.php">Mobile Optimized</a></li>
+    						      <li class="in-app"><a href="/in-app.php">In-App</a></li>
+    						      <li class="smart-tv"><a href="/smart-tv.php">Smart TV</a></li>
+    						      <li class="white-label"><a href="/white-label.php">White Label &amp; API</a></li>
+    						      <li class="subscription"><a href="/subscription.php">Subscription</a></li>
     						 </ul>	
     					
     					</li>
     					
     					
     					
-    					<li><a href="about.php">About</a></li>
+    					<li><a href="/about.php">About</a></li>
     					<li><a href="#">Developers</a></li>
     					
     					
     					<li class="has-flyout">
     						<a href="#">FAQ</a>
     						<ul class="flyout">
-    						      <li><a href="merchant-faq.php">Merchant FAQ</a></li>
-    						      <li><a href="customer-faq.php">Customer FAQ</a></li>
+    						      <li><a href="/merchant-faq.php">Merchant FAQ</a></li>
+    						      <li><a href="/customer-faq.php">Customer FAQ</a></li>
     						 </ul>	
     					</li>
     					

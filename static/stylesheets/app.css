@@ -17,6 +17,9 @@
 :: Countries
 :: FAQ
 :: Press and Media
+:: Contact
+:: Blog
+:: Forms
 
 
 */
@@ -55,7 +58,7 @@
 
 	@media only screen and (max-width: 767px) { 
 		html { font-size: 68.75%; }
-		.primary-row { margin-top: 1em; }
+		.primary-row { margin-top: 0; }
 		.primary-container { padding: 3em 0; }
 		.divider { margin: 0 0 2.5em 0 ; } }
 		
@@ -86,7 +89,7 @@
 	h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 60%; color: #6f6f6f; line-height: 0; }
 	
 	h1 { font-size: 2.57142857em; line-height:1.16666667 ; margin-bottom: 0.3333333em; font-weight: 400;  }  /*36/14*/
-	h2 { font-size: 2.14285714em; margin-bottom: 0.5em; font-weight: 400;  } /*30/14*/
+	h2 { font-size: 2.14285714em; margin-bottom: 0.5em; font-weight: 400; line-height: 1.25 } /*30/14*/
 	h3 { font-size: 1.71428571em; font-weight: 400; line-height: 1.25; color: #828282; margin-bottom: 0.25em; } /*24/14*/
 	h4 { font-size: 1.5em; font-weight: 400; line-height: 1.4; color: #828282;} /*21/14*/
 	h5 { font-size: 1.28571429em; line-height: 1.5;  margin-bottom: 1.5em;} /*18/14*/
@@ -229,8 +232,19 @@
 		
 	
 	@media only screen and (max-width: 767px) { 
-		header { height: 70px; }
-		header .nav-logo { margin-top: 21px; } }	
+		header { 
+			
+			height: 70px; 
+			/*background: #b00f0f; /* Old browsers *!/
+			background: -moz-linear-gradient(top, #b00f0f 0%, #920c0c 100%); /* FF3.6+ *!/
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b00f0f), color-stop(100%,#920c0c)); /* Chrome,Safari4+ *!/
+			background: -webkit-linear-gradient(top, #b00f0f 0%,#920c0c 100%); /* Chrome10+,Safari5.1+ *!/
+			background: -o-linear-gradient(top, #b00f0f 0%,#920c0c 100%); /* Opera 11.10+ *!/
+			background: -ms-linear-gradient(top, #b00f0f 0%,#920c0c 100%); /* IE10+ *!/
+			background: linear-gradient(to bottom, #b00f0f 0%,#920c0c 100%); /* W3C *!/
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b00f0f', endColorstr='#920c0c',GradientType=0 ); /* IE6-9 *!/*/}
+		
+		header .nav-logo { margin-top: 21px; background: url('../images/nav/boxpaywhite.png') no-repeat left top; } }	
 	
 	
 	@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
@@ -246,9 +260,17 @@
 	
 	
 	@media only screen and (max-width: 480px) { 
-		header { height: 50px; }
-		header .nav-logo { background-size:cover; width: 107px; height: 20px; margin-top: 15px; }
-		header .sidebar-button { margin-top: -24px; padding: 8px 20px; } }
+	
+	
+		header {height: 50px; }
+		
+		header .nav-logo { 
+			/*background: url('../images/nav/boxpaywhite.png') no-repeat left top; */
+			background-size:cover; width: 107px; height: 20px; margin-top: 15px; }
+			
+		header .sidebar-button { margin-top: -24px; padding: 8px 20px; }
+		
+		header .sidebar-button {  } }
 	
 	
 		
@@ -284,9 +306,14 @@
 	.footerlink.facebook { background: url(../images/footer/footer-fb.png) no-repeat; margin-left: 1em; }
 	.footerlink.twitter { background: url(../images/footer/footer-twitter.png) no-repeat; }
 	.footerlink.linkedin { background: url(../images/footer/footer-linkedin.png) no-repeat; }
-	.footerlink.copyright { width: auto; height: auto; }
+	.footerlink.copyright { width: auto; height: auto; text-transform: none; }
 	
 	.footerlink.copyright-single { display: none; }
+	
+	
+	@media only screen and (min-width: 767px) and (max-width: 980px) {
+		footer li { text-transform: none; margin-right: 16px; } }
+	
 	
 	
 	@media only screen and (max-width: 767px) { 
@@ -323,13 +350,25 @@
 	Sidebar
 ----------------------------------------- */
 
-
-	.js [role="main"] { border-radius: 0; background: #fff; }
+	.js [role="main"] {  }
+	.js [role="main"] { border-radius: 0; /*background: #1C1C1C;*/ }
+	
+	#sidebar .nav-bar { margin-top: 0; background: #2e2e2e; }
+	#sidebar .nav-bar > li > a:first-child { font-size:1.14285714em; }
+	
+	#sidebar .nav-bar > li { line-height: 2.5em; }
+	#sidebar .nav-bar > li ul { margin-left: 0;  }
+	
+	ul.flyout li a, #sidebar .nav-bar li ul li a { font-size: 1em; padding: 10px 20px; }
+	
+	#sidebar { padding: 0; }
 
 	
-
+	[role="main"]:before { background: #333; }
 	
+	#sidebar .nav-bar { border-bottom: 1px solid #2e2e2e;}
 	
+	#sidebar .nav-bar > li { box-shadow: none; -moz-box-shadow: none;  }
 	
 
 /* -----------------------------------------
@@ -403,7 +442,14 @@
 	Product Pages
 ----------------------------------------- */	
 	
-	.web-tablet-imac { background: url(../images/product-pages/web-tablet-imac.jpg) no-repeat; height: 450px; margin-top: -2em;  }
+	.web-tablet-imac { 
+		background: url(../images/product-pages/web-tablet-imac.jpg) no-repeat; height: 450px; margin-top: -2em;
+		background-size:100%;  }
+		
+	.web-tablet-ipad { 
+		background: url(../images/product-pages/web-tablet-ipad.jpg) no-repeat; height: 470px;
+		background-size:100%; }	
+		
 	
 	.in-app-phones { 
 		background: url(../images/product-pages/inapp-phones.jpg) no-repeat; height: 450px;
@@ -426,6 +472,11 @@
 		background: url(../images/product-pages/smarttv-tv.jpg) no-repeat right 0; height: 340px;
 		background-size:82%;   }	
 		
+	.smarttv-control { 
+		background: url(../images/product-pages/smarttv-control.jpg) no-repeat right 0; height: 500px;
+		background-size:100%; margin-top: -1em; }	
+		
+		
 	.mobile-phone { 
 		background: url(../images/product-pages/mobile-phone.jpg) no-repeat right 0; height: 520px;
 		background-size:75%; }	
@@ -435,8 +486,7 @@
 		
 		
 	.sub-graph { 
-		background: url(../images/product-pages/subscription-graph.jpg) no-repeat ; height: 280px;
-		 }		
+		background: url(../images/product-pages/subscription-graph.jpg) no-repeat ; height: 280px; }		
 	
 	
 	@media only screen and (max-width: 767px) {
@@ -447,7 +497,9 @@
 		.smarttv-tv,
 		.mobile-phone,
 		.mobile-hand,
-		.whitelabel-shortcodes  { display: none; }
+		.whitelabel-shortcodes,
+		.smarttv-control,
+		.web-tablet-ipad  { display: none; }
 		
 		.sub-graph { background-position: 15px 0; }
 		}	
@@ -457,13 +509,19 @@
 		.sub-graph { background-size:90%; }	}
 		
 	@media only screen and (min-width: 768px) {	
-		.sub-graph { background-size:100%; } }
+		.sub-graph { background-size:100%; }
+		.smarttv-facts { margin-top: 2em;  padding-left: 40px;
+		} }
 		
 	@media only screen and (min-width: 870px) {	
 		.whitelabel-facts { margin-top: 2em; } }
 	
 	@media only screen and (min-width: 430px) and (max-width: 767px)  {
 		.sub-graph { margin-bottom:2em; } }
+		
+	@media only screen and (max-width: 429px){
+		.sub-graph {	height: 255px;  } }
+		
 		
 		
 		
@@ -721,10 +779,14 @@
 	only screen and (-o-min-device-pixel-ratio: 3/2),
 	only screen and (min-device-pixel-ratio: 1.5) {
 	  
-	  	.faq-q { background: url(../images/countries/bullet@2x.png) no-repeat 0 7px; } }
+	  	.faq-q {
+	  		background-size:10px 10px; 
+	  		background: url(../images/countries/bullet@2x.png) no-repeat 0 3px; } }
 	  
 	  
 	  
+	 
+	 
 	  
 /* -----------------------------------------
 	Press and Media
@@ -777,32 +839,148 @@
 		.map-inner { margin-top: 45%; /* 4:3 aspect ratio */ } }
 		
 	@media only screen and (max-width: 480px) {
+	
 		.map-inner { margin-top: 60%; /* 4:3 aspect ratio */ } }
 		
 		
 	
 	
 	/* -----------------------------------------
-		Contact
+		Careers
 	----------------------------------------- */	
 		
-	.block-grid .faq-q { font-size: 1em; }	
+	ul.tabs-content { font-size: 1em; }	
+	ul.tabs-content ul { margin-bottom: 1.5em; }
+		
+	dl.tabs.job-listings { border-bottom: none; float: left; height: auto;  }	
 	
-	.block-grid.two-up.job-listings { margin: 0 0 2em 0; }
-	.block-grid.two-up.job-listings li { padding: 0 15px; }
+	dl.tabs.job-listings dd a { 
+		height: auto;
+		text-align: left;
+		font-size: 1.14285714em;
+		line-height: 1.5; 
+		color: #bf2222;}
+		
+	dl.tabs.job-listings dd.active { border-top: none; margin-top: 0; cursor: pointer; }	
+	dl.tabs.job-listings dd.active a { border-left: none; border-right: none; background: inherit; }
+		
+	.job-listings .faq-q { font-size: 1em; }	
+	
+	.job-listings { margin: 0 0 2em 0; }
+	.job-listings li { padding: 0 15px; }
 	
 	
-	@media only screen and (min-width: 767px) {
-		.block-grid.two-up.job-listings { margin-top: 1em; } }
+	.apply-now {  }
+	
+	
+	@media only screen and (min-width: 768px) and (max-width: 960px)  {
+		.apply-now.button {  padding: 15px 40px; } }
+	
+	
+	@media only screen and (min-width: 768px) {
+		.job-listings { /*margin-top: 1em; */} }
 	
 	
 	@media only screen and (max-width: 580px) {
-		.job-listings.block-grid.two-up > li { width: 100%; } }
+		dl.tabs.job-listings.two-up dt, dl.tabs.job-listings.two-up dd { width: 100%; } }
 		
 		
+		
+/* -----------------------------------------
+	Blog
+----------------------------------------- */	
 
+
+	.post { margin-bottom: 4em; }
+
+	.byline { font-size: 1.14285714em; font-style: italic; color: #828282; line-height: 1.5; margin-bottom: 1em; }	
+	
+	
+	.comment-body { border-bottom: 1px solid #ddd; }
+	
+	.comment-body { padding: 1.5em 0 0 0; }
+	
+	
+	.comments h2 { border-bottom: 1px solid #ddd; }
+	
+	.comments h2, .comment-form h2 { 
+		font-size: 1.5em; text-transform: uppercase; 
+		padding-bottom: 1em; margin-bottom: 0; }
+		
+		
+	.comments { margin-bottom: 3em; }	
+		
+	.submissions { border-bottom: none; border-top: none; }	
+		
+	.comment-info span, .comment-info h4  { display: inline-block; }
+	
+	.comment-info h4 { margin-bottom: 0.666em; padding-right: 10px; }
+	.comment-info span { font-size: 1em; color: #828282; }
+	
+	
+	.comment-form fieldset { border: none; }
+	.comment-form p { font-size: 1em;  margin-bottom: 0.5em;}
+	.comment-form textarea { resize: vertical; height: 140px; }
+	
+	input[type="submit"] { border: none; }
 	
 	
 	
+	
+	.SubHead { color: #828282; font-size:1em; text-transform: uppercase;  }
+	
+	.SubHead label { display: inline-block; text-transform: none; font-style: normal; color: #828282; font-size: 1em; }
+	
+	
+	.block h5 { text-transform: uppercase; margin-bottom: 0.5em; }
+	
+	
+	.email-subscribe form { position: relative; margin-bottom: 2.5em; }
+	
+	.email-subscribe-submit { 
+		height: 34px; padding: 0 14px; 
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		position: absolute; right: 0; top: 0; }
+	
+	
+	
+	
+	
+	@media only screen and (max-width: 767px) {
+		.comment-form .button { margin-top: 1em; margin-bottom: 1em; }
+		
+		input[type="submit"].button.email-subscribe-submit
+		 { width: auto; padding-left: 14px; padding-right: 14px; } }
+		
+		
+			
+	/* -----------------------------------------
+		Forms
+	----------------------------------------- */	
+	
+	
+	
+	input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea	{ font-size: 0.875em; }
+	
+	
+			
+	/* -----------------------------------------
+		Sign Up
+	----------------------------------------- */
+	
+	form.custom div.custom.dropdown { margin-top: 0; margin-bottom: 18px; }
+	form.custom div.custom.dropdown ul { width: 100%; }
+	
+	form.custom div.custom.dropdown a.current {  border-color: #CCC; min-height: 34px; line-height: 32px; }
+	form.custom div.custom.dropdown a.selector { border-color: #CCC; height: 34px; }
+
+	form.custom label { font-size: 1em; margin-bottom: 0.5em; }
+	form.custom label.terms { display: inline-block;  margin-bottom: 1.5em; }	
+	
+	form.custom span.custom { height: 1em; width: 1em; margin-right: 6px; }
+		
+	form.custom span.custom.checkbox::before { top: -1px; left: -1px; }	
 	  
 

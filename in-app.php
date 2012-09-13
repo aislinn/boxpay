@@ -62,7 +62,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   							</ul>
   							
   							
-  							<a href="#" class="button right">Get started</a>
+  							<a href="/sign-up.php" class="button right">Get started</a>
   						
   						</div>
   					

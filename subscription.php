@@ -60,19 +60,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   					
   					
   					
-  					<div class="row">
-  					
-  						<div class="five columns offset-by-one"></div>
-  						
-  						
-  						<div class="five columns end">
-  							<p>The life time revenue of all their customers over the same period.</p>
-  						</div>
-  					
-  					
-  					</div>
-  					
-  					
+  		  					
   				</div>
   				
   				

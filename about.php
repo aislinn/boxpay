@@ -189,7 +189,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   							</li>
   							
   							
-  							<li><img src="static/images/about/mgmt-kiran.jpg" alt="Stev Tam" /> 
+  							<li><img src="static/images/about/mgmt-avatar.jpg" alt="Stev Tam" /> 
   							
   								<div>
   								<h5>Stev Tam</h5>
@@ -202,7 +202,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   							
   							</li>
   							
-  							<li><img src="static/images/about/mgmt-kiran.jpg" alt="Najaf Raza" /> 
+  							<li><img src="static/images/about/mgmt-avatar.jpg" alt="Najaf Raza" /> 
   							
   								<div>
   								<h5>Najaf Raza</h5>
@@ -215,7 +215,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   							
   							</li>
   							
-  							<li><img src="static/images/about/mgmt-kiran.jpg" alt="Mohammad Nahid Khan" /> 
+  							<li><img src="static/images/about/mgmt-avatar.jpg" alt="Mohammad Nahid Khan" /> 
   							
   								<div>
   								<h5>Mohammad Nahid Khan</h5>
@@ -228,7 +228,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   							
   							</li>
   							
-  							<li><img src="static/images/about/mgmt-kiran.jpg" alt="Michael Leung" /> 
+  							<li><img src="static/images/about/mgmt-avatar.jpg" alt="Michael Leung" /> 
   							
   								<div>
   								<h5>Michael Leung</h5>

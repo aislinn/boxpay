@@ -14,10 +14,10 @@
 	     		<div class="seven columns">
 	     		<ul>
 	   			<li><a href="#">Events</a></li>
-	   			<li><a href="press.php">Press &amp; Media</a></li>
-	   			<li><a href="terms-and-conditions.php">Legal</a></li>
-	   			<li><a href="careers.php">Careers</a></li>
-	   			<li><a href="contact.php">Contact</a></li>
+	   			<li><a href="/press.php">Press &amp; Media</a></li>
+	   			<li><a href="/terms-and-conditions.php">Legal</a></li>
+	   			<li><a href="/careers.php">Careers</a></li>
+	   			<li><a href="/contact.php">Contact</a></li>
 	   			  		
 	     		</ul>
 	     		</div>

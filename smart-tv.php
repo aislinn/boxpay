@@ -54,10 +54,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   				<div class="twelve columns">
   					<div class="row">
   					
-  						<div class="five columns"></div>
+  						<div class="five columns smarttv-control"></div>
   						
   						
-  						<div class="six columns end">
+  						<div class="six columns end smarttv-facts">
   							<h2>Smart TV facts</h2>
   							<ul class="no-bullet large">
   								<li>The easiest and fastest way to charge users within a Smart TV</li>
@@ -69,7 +69,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   							</ul>
   							
   							
-  							<a href="#" class="button right">Get started</a>
+  							<a href="/sign-up.php" class="button right">Get started</a>
   						
   						</div>
   					

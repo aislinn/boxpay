@@ -13,7 +13,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   				<div class="eleven columns offset-by-one">
   					<div class="row">
   					
-  						<div class="eight columns">
+  						<div class="seven columns">
   							<h1>Web &amp; Tablet</h1>
   							<p>To make a purchase the customer simply enters their mobile phone number into your website and boxPAY sends them a text message with a PIN. Your customer simply enters the PIN back into your website to confirm the transaction. The whole process takes about 10 seconds and requires no registration or long forms to fill out.</p>
   							
@@ -31,7 +31,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   						</div>
   						
   						
-  						<div class="four columns web-tablet-imac"></div>
+  						<div class="five columns web-tablet-imac"></div>
   						
   					
   					</div>
@@ -44,7 +44,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   				<div class="twelve columns">
   					<div class="row">
   					
-  						<div class="six columns"></div>
+  						<div class="six columns web-tablet-ipad"></div>
   						
   						
   						<div class="five columns end">
@@ -60,7 +60,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   							</ul>
   							
   							
-  							<a href="#" class="button right">Get started</a>
+  							<a href="/sign-up.php" class="button right">Get started</a>
   						
   						</div>
   					

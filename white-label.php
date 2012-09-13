@@ -24,7 +24,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   							
   							
   							<h2>Getting started</h2>
-  							<h4>Customize our standard payment box using the white label or API</h4>
+  							<h4>Customize our standard payment box using the white label or API option</h4>
   							
   							
   							<ul class="no-bullet large">
@@ -66,7 +66,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   							</ul>
   							
   							
-  							<a href="#" class="button right">Get started</a>
+  							<a href="/sign-up.php" class="button right">Get started</a>
   						
   						</div>
   					
