@@ -69,7 +69,12 @@
 			-moz-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
 			-webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
 			box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25); }
-		.primary-container { padding: 2em 0; } }		
+		.primary-container { padding: 2em 0; } }	
+		
+		
+	/*  ---- IE8 ----  */
+	
+	.lt-ie9 .primary-row { border: 1px solid #ccc; }		
 
 
 
@@ -264,20 +269,18 @@
 	
 	
 	@media only screen and (max-width: 480px) { 
-	
-	
+
 		header {height: 50px; }
-		
 		header .nav-logo { 
 			/*background: url('../images/nav/boxpaywhite.png') no-repeat left top; */
 			background-size:cover; width: 107px; height: 20px; margin-top: 15px; }
-			
-		header .sidebar-button { margin-top: -24px; padding: 8px 20px; }
-		
-		header .sidebar-button {  } }
+		header .sidebar-button { margin-top: -24px; padding: 8px 20px; } }
 	
 	
 	
+	/*---- IE8 ----*/	
+	
+	.lt-ie9 a.sidebar-button {display: none;  }
 	
 
 
@@ -539,6 +542,12 @@
 		.billingpartners {width: 100%;} }	
 		
 		
+	/*---- IE8 ----*/	
+	
+	.lt-ie9	.homesub .block-grid.six-up { margin: 30px -30px 0 -30px; }
+	.lt-ie9	.row .ten.billingpartners {  margin-bottom: 3em; }
+	.lt-ie9 .columns.centered.homeblurb { margin-bottom: 2em; } 
+		
 		
 		
 /* -----------------------------------------
@@ -605,8 +614,10 @@
 			.subtitle-pricepoints { width: 260px; } }
 		
 		
-
-				
+		/*---- IE8 ----*/	
+		
+		.lt-ie9 .subtitle-login { width: 260px; }
+		.lt-ie9	.subtitle-pricepoints { width: 260px; }
 	
 	
 /* -----------------------------------------
@@ -656,6 +667,9 @@
 		background: url(../images/product-pages/mobile-hand.jpg) no-repeat right 0; height: 520px; }
 		
 		
+	.sub-calendar { 
+		background: url(../images/product-pages/sub-ipad.jpg) no-repeat ; height: 460px; }
+		
 	.sub-graph { 
 		background: url(../images/product-pages/subscription-graph.jpg) no-repeat ; height: 280px; }	
 		
@@ -674,10 +688,10 @@
 		.mobile-hand,
 		.whitelabel-shortcodes,
 		.smarttv-control,
-		.web-tablet-ipad  { display: none; }
+		.web-tablet-ipad,
+		.sub-calendar  { display: none; }
 		
-		.sub-graph { background-position: 15px 0; }
-		}	
+		.sub-graph { background-position: 15px 0; } }	
 		
 		
 	@media only screen and (max-width: 450px) {
@@ -686,9 +700,7 @@
 	@media only screen and (min-width: 768px) {	
 		.sub-graph { background-size:100%; }
 		.smarttv-facts { margin-top: 2em;  padding-left: 40px;}
-		.graph-key p { height: 220px; display: table-cell; vertical-align: middle;  }	
-		
-		 }
+		.graph-key p { height: 220px; display: table-cell; vertical-align: middle;  } }
 		
 	@media only screen and (min-width: 870px) {	
 		.whitelabel-facts { margin-top: 2em; } }
@@ -700,6 +712,9 @@
 		.sub-graph {	height: 255px;  } }
 		
 		
+	/*---- IE8 ----*/	
+	
+	.lt-ie9 .whitelabel-shortcodes { background-position: top right; float: right;  }
 		
 		
 /* -----------------------------------------
@@ -717,13 +732,19 @@
 	.about-job-title { font-style: italic; color: #828282; }
 	.about-links { font-size: 0.875em; display: block; line-height: 2; }
 	
+	.about-video a { border: none !important; color: #fff; }
 	.about-video img { margin-top: 44px; margin-bottom: 2em; }
 	
-	
+	.video-still-ie { display: none; }
 	
 	.videoWrapper { position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0;}
 	
-	.videoWrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+	.videoWrapper iframe,
+	.videoWrapper embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+	
+	
+	.lt-ie .about-video a { display: none; }
+	.lt-ie .video-still-ie { display: block; }
 	
 	
 
@@ -732,7 +753,7 @@
 	
 	
 	@media only screen and (max-width : 950px) {
-		.about-video img { margin-top: 60px; }}
+		.about-video img { margin-top: 60px; } }
 	
 	
 	
@@ -740,7 +761,7 @@
 		.mgmt-links img { width: 100px; height: 100px; margin-right: 12px; }
 		.mgmt-links div { height: 100px; }
 		.mgmt-links.block-grid.two-up > li { padding-bottom: 14px; }
-		.about-video { text-align: center;  }
+	/*	.about-video { text-align: center;  }*/
 		.about-video img { margin-top: 0px; } }
 		
 	
@@ -879,6 +900,11 @@
 	@media only screen and (min-width :767px) and (max-width :920px) {
 	.legal-sidebar { padding-left: 25px; } }
 	
+	
+	/*---- IE8 ----*/	
+	
+	.lt-ie9 .legal-sidebar { padding-left: 35px; }
+	
 
 
 /* -----------------------------------------
@@ -924,6 +950,11 @@
 	  .region-accordion h6 {
 	  	background-size:10px 10px;
 	    background: url(../images/countries/bullet@2x.png) no-repeat 0 8px; } }
+	    
+	 
+	/*---- IE8 ----*/	
+	
+	.lt-ie9 .pull-five { right: auto; left: -16.66667%;  }    
 
 
 
@@ -1066,6 +1097,9 @@
 			.feature4 { background: url(../images/features/secure@2x.jpg) no-repeat top left; }
 			.feature5 { background: url(../images/features/reporting@2x.jpg) no-repeat top left; } }	
 		
+		/*---- IE8 ----*/	
+		
+		.lt-ie9 div.features { margin-left: -10px; }
 		
 	
 	
@@ -1116,7 +1150,13 @@
 			
 			.button.meeting.right { float: left; margin-bottom: 2em; }
 			
-			.event-date, .event-location { background-size:15px;  } }	 
+			.event-date, .event-location { background-size:15px;  } }	
+			
+			
+		/*---- IE8 ----*/	
+		
+		.lt-ie9 .button.meeting { padding-left: 45px; padding-right: 45px; } 
+		.lt-ie9 .event-date { background-position: -2px center; }	 }	 
 	
 	
 	
@@ -1246,6 +1286,8 @@
 		Sign Up
 	----------------------------------------- */
 	
+
+	
 	form.custom div.custom.dropdown { margin-top: 0; margin-bottom: 18px; }
 	form.custom div.custom.dropdown ul { width: 100%; }
 	
@@ -1258,5 +1300,23 @@
 	form.custom span.custom { height: 1em; width: 1em; margin-right: 6px; }
 		
 	form.custom span.custom.checkbox::before { top: -1px; left: -1px; }	
+	
+	.signup-img { 
+		background: url(../images/product-pages/whitelabel-shortcodes.jpg) no-repeat 0 -30px; 
+		height: 460px; margin-top: -4px; }
+		
+	@media only screen and (max-width: 767px) {
+	 	.signup-img { display: none;  }
+	 	#sign-up p.eight { width: 100%; } }		
+		
+		
+	@media only screen and (min-width: 768px) and (max-width:930px) {
+		#sign-up p.eight { width: 100%; } }
+	
+	
+	/*---- IE8 ----*/	
+	
+	.lt-ie9 form.custom div.custom.dropdown a.current { line-height: 30px; } 
+	.lt-ie9 form.custom div.custom.dropdown a.selector { height: 36px !important; }
 	  
 

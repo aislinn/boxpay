@@ -26,8 +26,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   						<div class="five columns about-video">
   						
   						<a href="#" data-reveal-id="exampleModal">
-  							<img src="static/images/about/video-still.jpg" alt="" />
+  							<img src="static/images/about/video-still.jpg" alt="boxPAY Video" />
   						</a>
+  						
+  						<img src="static/images/about/video-still-ie.jpg" alt="boxPAY" class="video-still-ie" />
   						
   						
   						
@@ -247,7 +249,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   							
   							
   							</ul>
-  							  						
+  							
+  							
+  						  							  						
   						</div>
   						
   					</div>

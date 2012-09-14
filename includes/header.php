@@ -44,7 +44,7 @@
     					
     					
     					<li><a href="#">Blog</a></li>
-    					<li class="login"><a href="#">Login</a> <span>or</span> <a href="#">Sign Up</a></li>					
+    					<li class="login"><a href="#">Login</a> <span>or</span> <a href="/sign-up.php">Sign Up</a></li>					
     			</ul>											
     		</nav>
     		

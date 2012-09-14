@@ -32,7 +32,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   						</div>
   						
   						
-  						<div class="three columns offset-by-one end"></div>
+  						<div class="four columns sub-calendar"></div>
   						
   					
   					
