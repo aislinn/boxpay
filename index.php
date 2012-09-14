@@ -17,7 +17,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   					<div id="homeslide">
   					  	
   					  	
-  					  	<!--
+  					
   					  	<div class="homeslide1">
   					  		<div class="row">
   					  		
@@ -42,14 +42,14 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   					      
   					    </div>
   					    
-  					   -->
+  				
   					    
   			  				    	
   					<div class="homeslide2">
   					
   						<div class="row">
   						<div class="seven columns offset-by-one">	
-  					 		 <h1>Subscription billing and higher price points</h1>
+  					 		 <h1>Subscription billing &amp; higher price points</h1>
   					 		 <h3>Customize your payment options for each market.
   					 		 <br class="break"/>If you need pricing flexibility, we can help
   					 		 <br/>

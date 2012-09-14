@@ -17,6 +17,8 @@
 :: Countries
 :: FAQ
 :: Press and Media
+:: Features
+:: Careers
 :: Contact
 :: Blog
 :: Forms
@@ -106,6 +108,8 @@
 	h3 + h4 { margin-top: 1em; }
 	
 	h3 + p { margin-top: 1em; }
+	
+	h3 + ul { margin-top: 1em; }
 	
 	strong { font-weight: 600; }
 	
@@ -545,6 +549,10 @@
 		
 		 #homeslide *  { color: #fff;  }
 
+		
+		#header-container { height: 540px; width: 100%; }
+		
+
 		.homeslide1 { background: url(../images/homepage/homeslide1.jpg) no-repeat center top; }
 		.homeslide2 { background: url(../images/homepage/homeslide2.jpg) no-repeat center top; }
 		
@@ -576,11 +584,23 @@
 		.subtitle-pricepoints { margin-top: 0.5em; }
 		
 		
+		@media only screen and (max-width: 767px) {
+			.home-iphone,
+			.home-laptop { display: none; }
+			
+			
+			#header-container { height: 400px; }
+			
+			.homeslide1 h1 { margin-top: 90px; }
+			.homeslide2 h1 { margin-top: 60px;  }
+			.homeslide3 h1 { margin-top: 50px;  }
+			
+			.homeslide3 br { display: none; }
+			
+			}
 		
 		
-		
-		
-		
+
 				
 	
 	
@@ -997,6 +1017,50 @@
 	
 		.map-inner { margin-top: 30%; /* 4:3 aspect ratio */ } }
 		
+		
+		
+		
+	/* -----------------------------------------
+		Features
+	----------------------------------------- */		
+		
+		
+		.features { padding-left: 115px; }
+		
+		.feature1 { background: url(../images/features/market.jpg) no-repeat top left; }
+		.feature2 { background: url(../images/features/integration.jpg) no-repeat top left; }
+		.feature3 { background: url(../images/features/payouts.jpg) no-repeat top left; }
+		.feature4 { background: url(../images/features/secure.jpg) no-repeat top left; }
+		.feature5 { background: url(../images/features/reporting.jpg) no-repeat top left; }
+		
+		
+		
+		@media only screen and (max-width: 480px) { 
+			
+			.features { background-size: 45px; padding-left: 60px; } }
+			
+			
+		@media only screen and (min-width: 480px) { 
+			
+			.features-detail .button { margin-top: -3em; } }	
+			
+			
+		@media only screen and (min-width: 768px) { 	
+			 
+			 .features { margin-left: -10px; } }
+			
+			
+		@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+		only screen and (-moz-min-device-pixel-ratio: 1.5),
+		only screen and (-o-min-device-pixel-ratio: 3/2),
+		only screen and (min-device-pixel-ratio: 1.5) {
+		
+			.feature1 { background: url(../images/features/market@2x.jpg) no-repeat top left; }
+			.feature2 { background: url(../images/features/integration@2x.jpg) no-repeat top left; }
+			.feature3 { background: url(../images/features/payouts@2x.jpg) no-repeat top left; }
+			.feature4 { background: url(../images/features/secure@2x.jpg) no-repeat top left; }
+			.feature5 { background: url(../images/features/reporting@2x.jpg) no-repeat top left; }
+			 }	
 		
 		
 	

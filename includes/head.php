@@ -95,7 +95,8 @@
 	<script type="text/javascript">
 	   $(window).load(function() {
 	       $('#homeslide').orbit({
-	       		animation: 'fade' 
+	       		animation: 'fade',
+	       		timer: false 
 	       
 	       
 	       });
@@ -105,14 +106,14 @@
 
 	
 	
+<!--	
+
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="screen" href="/static/stylesheets/demo-styles-ie.css" /><![endif]--*>
+	<link rel="stylesheet" type="text/css" media="screen" href="/static/stylesheets/sequencejs-theme.modern-slide-in.css" />-->
+	
 	
 
-	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="screen" href="/static/stylesheets/demo-styles-ie.css" /><![endif]-->
-	<link rel="stylesheet" type="text/css" media="screen" href="/static/stylesheets/sequencejs-theme.modern-slide-in.css" />
-	
-	
-
-	
+	<!--
 	<script type="text/javascript" src="/static/js/sequence.jquery-min.js"></script>
 	<script type="text/javascript">	
 			
@@ -149,7 +150,7 @@
 				});
 			});
 		</script>	
-		
+		-->
 	
 	<script type="text/javascript">
 		$(document).ready(function() {
