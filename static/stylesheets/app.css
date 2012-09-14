@@ -598,6 +598,11 @@
 			.homeslide3 br { display: none; }
 			
 			}
+			
+			
+		@media only screen and (min-width: 768px) { 	
+			.subtitle-login { width: 260px; }
+			.subtitle-pricepoints { width: 260px; } }
 		
 		
 
@@ -1025,7 +1030,7 @@
 	----------------------------------------- */		
 		
 		
-		.features { padding-left: 115px; }
+		div.features { padding-left: 115px; }
 		
 		.feature1 { background: url(../images/features/market.jpg) no-repeat top left; }
 		.feature2 { background: url(../images/features/integration.jpg) no-repeat top left; }
@@ -1037,7 +1042,7 @@
 		
 		@media only screen and (max-width: 480px) { 
 			
-			.features { background-size: 45px; padding-left: 60px; } }
+			div.features { background-size: 45px; padding-left: 60px; } }
 			
 			
 		@media only screen and (min-width: 480px) { 
@@ -1047,7 +1052,7 @@
 			
 		@media only screen and (min-width: 768px) { 	
 			 
-			 .features { margin-left: -10px; } }
+			 div.features { margin-left: -10px; } }
 			
 			
 		@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
@@ -1059,10 +1064,61 @@
 			.feature2 { background: url(../images/features/integration@2x.jpg) no-repeat top left; }
 			.feature3 { background: url(../images/features/payouts@2x.jpg) no-repeat top left; }
 			.feature4 { background: url(../images/features/secure@2x.jpg) no-repeat top left; }
-			.feature5 { background: url(../images/features/reporting@2x.jpg) no-repeat top left; }
-			 }	
+			.feature5 { background: url(../images/features/reporting@2x.jpg) no-repeat top left; } }	
 		
 		
+	
+	
+	/* -----------------------------------------
+		Events
+	----------------------------------------- */
+	
+		.events h4 { 
+			margin-bottom: 0.25em; color: #222; display: inline-block; 
+			font-size: 1.14285714em; font-weight: 500; }	
+		.events h2 {  color: #828282; }
+		.events span { color: #828282;  font-style: italic; line-height: 1.5; display: inline-block;
+		}
+		
+		.event-location { background: url('../images/events/event-location.jpg') no-repeat left ; padding-left: 20px;   }
+		
+		.event-date { background: url('../images/events/event-date.jpg') no-repeat left ; padding-left: 20px; margin-right: 16px;  }
+	
+		.events .large li { padding-bottom: 0.5em; }
+		.events .large li div { display: inline-block; width: 49%; }
+		
+		
+		@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+		only screen and (-moz-min-device-pixel-ratio: 1.5),
+		only screen and (-o-min-device-pixel-ratio: 3/2),
+		only screen and (min-device-pixel-ratio: 1.5) {
+		
+			.event-date { background: url(../images/events/event-date@2x.jpg) no-repeat left ; background-size:16px;  }
+			.event-location { background: url(../images/events/event-location@2x.jpg) no-repeat left ;  background-size:16px;  }	 }
+	
+	
+		
+	
+	
+		@media only screen and (max-width: 600px) { 
+			
+			.events .large li .six { width: 100%; }
+			.events .large li div { display: block; width: 100%; margin-bottom: 1em; }
+			.events .large li div span { display: block; } 
+			 }
+			 
+		@media only screen and (min-width: 767px) {
+			.button.meeting { padding-left: 45px; padding-right: 45px; }
+			.event-date { background-position: -2px center; }	 }
+			 
+			 
+		@media only screen and (max-width: 767px) {
+			
+			.button.meeting.right { float: left; margin-bottom: 2em; }
+			
+			.event-date, .event-location { background-size:15px;  } }	 
+	
+	
 	
 	
 	/* -----------------------------------------
