@@ -97,7 +97,9 @@
 	   $(window).load(function() {
 	       $('#homeslide').orbit({
 	       		animation: 'fade',
-	       		timer: false 
+	       		timer: false,
+	       		captions: false,
+	       		bullets: true 
 	       
 	       
 	       });

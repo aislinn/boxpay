@@ -56,16 +56,21 @@
 	.button.large { font-size: 1em; padding: 15px 60px; }
 	
 	
+	@media only screen and (min-width: 768px) and (max-width: 1000px) { 
+	
+		.primary-row { margin-top: 1em; } }
+	
 	
 
 	@media only screen and (max-width: 767px) { 
 		html { font-size: 68.75%; }
-		.primary-row { margin-top: 0; }
+	/*	body { background: #fff;  }*/
+		.primary-row { margin-top: 1em; }
 		.primary-container { padding: 3em 0; }
 		.divider { margin: 0 0 2.5em 0 ; } }
 		
 	@media only screen and (max-width: 480px) { 
-		.primary-row { margin-top: 0em; 
+		.primary-row { margin-top: 0.75em; 
 			-moz-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
 			-webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
 			box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25); }
@@ -253,7 +258,7 @@
 			background: linear-gradient(to bottom, #b00f0f 0%,#920c0c 100%); /* W3C *!/
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b00f0f', endColorstr='#920c0c',GradientType=0 ); /* IE6-9 *!/*/}
 		
-		header .nav-logo { margin-top: 21px; background: url('../images/nav/boxpaywhite.png') no-repeat left top; } }	
+		header .nav-logo { margin-top: 21px; background: url('../images/nav/boxpay.png') no-repeat left top; } }	
 	
 	
 	@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
@@ -397,6 +402,9 @@
 	#sidebar .nav-bar > li { 
 		box-shadow: none; -moz-box-shadow: none; border: none;
 		border-bottom: 1px solid #444; }
+		
+	#sideMainNav { margin-bottom: 0; }	
+		
 	
 
 /* -----------------------------------------
@@ -585,28 +593,85 @@
 		.homeslide1 h1 { margin-top: 160px; }
 		.homeslide2 h1 { margin-top: 150px; padding-right: 70px; }
 		.homeslide3 h1 { margin-top: 118px;  }
-		
-		
-		
+
 		.subtitle-login { margin-top: 1em; }
-		
 		.subtitle-pricepoints { margin-top: 0.5em; }
+		
+		
+		ul.orbit-bullets { display: none; }
+		ul.orbit-bullets li { 
+			background: url('../images/foundation/orbit/bullets.png') no-repeat 0 0 ;
+			height: 18px;
+			width: 18px; }
+		
+		#header-container ul.orbit-bullets li.active { background-position: -19px 0 !important; }	
+		
+		
+		@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+		only screen and (-moz-min-device-pixel-ratio: 1.5),
+		only screen and (-o-min-device-pixel-ratio: 3/2),
+		only screen and (min-device-pixel-ratio: 1.5) {
+		
+			ul.orbit-bullets li { 
+				background: url(../images/foundation/orbit/bullets@2x.png) no-repeat 0 0 ;
+			 	background-size:36px;} }
+		
+		
+		
+		@media only screen and (max-width: 870px) {
+			
+			#header-container .break { display: none; } }
 		
 		
 		@media only screen and (max-width: 767px) {
 			.home-iphone,
 			.home-laptop { display: none; }
 			
-			
-			#header-container { height: 400px; }
-			
-			.homeslide1 h1 { margin-top: 90px; }
-			.homeslide2 h1 { margin-top: 60px;  }
-			.homeslide3 h1 { margin-top: 50px;  }
+			div.orbit-wrapper div.slider-nav span { display: none; }
+			#header-container { height: 380px; }
 			
 			.homeslide3 br { display: none; }
+			ul.orbit-bullets { display: block; bottom: 5px; }
 			
-			}
+			
+			.homeslide1 h1 { margin-top: 110px; }
+			.homeslide2 h1 { margin-top: 110px; }
+			.homeslide3 h1 { margin-top: 90px; }
+			
+			#header-container .large.button { float: left; }
+			#header-container .break { display: block; } }
+			
+			
+		@media only screen and (max-width: 620px) {
+		
+			
+			 .homeslide1 h1 { margin-top: 110px;  }
+			 .homeslide2 h1 { margin-top: 110px; padding-right: 0;}
+			 .homeslide3 h1 { margin-top: 90px; }
+			 
+			 .homesub { padding-top: 50px; }
+			 
+			  }
+			 
+		
+		@media only screen and (max-width: 500px) {
+			.homeslide1 h1 { margin-top: 100px; }
+			.homeslide2 h1 { margin-top: 90px; }
+			.homeslide3 h1 { margin-top: 80px; }
+			} 	
+			
+		@media only screen and (max-width: 480px) {
+			.homeslide1 h1 { margin-top: 80px; }
+			.homeslide2 h1 { margin-top: 70px;  }
+			.homeslide3 h1 { margin-top: 55px;  }
+			
+			#header-container .large.button { float: none; }
+			#header-container .break { display: none; }
+			
+			.homesub { padding-top: 40px; }
+			
+			} 		
+			
 			
 			
 		@media only screen and (min-width: 768px) { 	
@@ -1318,5 +1383,34 @@
 	
 	.lt-ie9 form.custom div.custom.dropdown a.current { line-height: 30px; } 
 	.lt-ie9 form.custom div.custom.dropdown a.selector { height: 36px !important; }
+	
+	
+	.lt-ie9 .signup-img  { background-position: top right; float: right; margin-top: -30px; }
+	
+	
+	/* -----------------------------------------
+		Sign In
+	----------------------------------------- */
+	
+	#sign-in .divider,
+	#password-recovery .divider { margin-bottom: 2.5em; margin-top: 0; }
+	
+	#sign-in form,
+	#password-recovery form { margin-bottom: 2.5em; }
+	
+	#sign-in h1,
+	#password-recovery h1,
+	#password-recovery h3,
+	#password-recovery p { text-align: center; }
+	
+	
+	#password-recovery h3 + p { margin-top: 0em; }
+	
+	#sign-in .button,
+	#password-recovery .button { margin-bottom: 0.66667em; }
+	
+	#sign-in .forgot,
+	#password-recovery .forgot { text-align: center; float: left; width: 100%; margin-top: -2em; }
 	  
+	 [class*="column"] + [class*="column"].end.login { float: none; } 
 

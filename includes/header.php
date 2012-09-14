@@ -43,8 +43,8 @@
     					
     					
     					
-    					<li><a href="#">Blog</a></li>
-    					<li class="login"><a href="#">Login</a> <span>or</span> <a href="/sign-up.php">Sign Up</a></li>					
+    					<li><a href="/blog.php">Blog</a></li>
+    					<li class="login"><a href="/sign-in.php">Login</a> <span>or</span> <a href="/sign-up.php">Sign Up</a></li>					
     			</ul>											
     		</nav>
     		
