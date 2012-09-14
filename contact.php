@@ -76,8 +76,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   					<div class="map-inner"></div>
   					
   						
-  					    <div class="map">
-	  					       <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ie/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=The+Malting+Tower,+Grand+Canal+Quay&amp;aq=1&amp;oq=The+Malting+Tower,+&amp;sll=53.3834,-8.21775&amp;sspn=6.725342,17.424316&amp;ie=UTF8&amp;hq=&amp;hnear=The+Malting+Tower,+Grand+Canal+Quay,+Dublin+2,+County+Dublin&amp;ll=53.340092,-6.239233&amp;spn=0.004663,0.010697&amp;t=m&amp;z=16&amp;output=embed&iwloc=near"></iframe><br /><!--<small><a href="https://maps.google.ie/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=The+Malting+Tower,+Grand+Canal+Quay&amp;aq=1&amp;oq=The+Malting+Tower,+&amp;sll=53.3834,-8.21775&amp;sspn=6.725342,17.424316&amp;ie=UTF8&amp;hq=&amp;hnear=The+Malting+Tower,+Grand+Canal+Quay,+Dublin+2,+County+Dublin&amp;ll=53.340092,-6.239233&amp;spn=0.004663,0.010697&amp;t=m&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>-->
+  					    <div class="map" id="map" data-center="The Malting Tower, Grand Canal Quay, Dublin 2, Ireland">
+  					
+  					    
   					    </div>
   				
   				</div>

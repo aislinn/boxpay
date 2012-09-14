@@ -54,6 +54,13 @@
 	<script src="/static/js/jquery.offcanvas.js"></script>
 	<script src="/static/js/jquery.foundation.tabs.js"></script>	
 	
+	
+	<script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=AIzaSyA2BE9yomU4puvJCtL-cA7ai6PHHr-m0o8"></script>
+	
+	
+	<script src="/static/js/gmaps.js"></script>
+	<script src="/static/js/mobile-gmaps.js"></script>
+	
 	<script>
 		$(function() {
 			$( "#accordion" ).accordion({
@@ -68,6 +75,32 @@
 	</script>
 	
 	
+	
+	<script type="text/javascript">
+	$(document).ready(function() {
+	   
+	    $("#map").gMap( {	
+	    	latitude:	53.340120;
+	    	longitude: -6.239204,
+	    	zoom: 		12 });
+	    	
+	    	
+//	    $('#map').mobileGmap();
+		
+	});
+	</script>
+	
+	
+	
+	<script type="text/javascript">
+	   $(window).load(function() {
+	       $('#homeslide').orbit({
+	       		animation: 'fade' 
+	       
+	       
+	       });
+	   });
+	</script>
 	
 
 	

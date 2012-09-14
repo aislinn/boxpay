@@ -16,7 +16,7 @@
     						<ul class="flyout">
     						      <li class="countries"><a href="/country/ireland.php">Countries</a></li>
     						      <li class="features"><a href="#">Features</a></li>
-    						      <li class="tablet"><a href="/web-and-tablet.php">Browser &amp; Tablet</a></li>
+    						      <li class="tablet"><a href="/browser-and-tablet.php">Browser &amp; Tablet</a></li>
     						      <li class="mobile"><a href="/mobile-optimized.php">Mobile Optimized</a></li>
     						      <li class="in-app"><a href="/in-app.php">In-App</a></li>
     						      <li class="smart-tv"><a href="/smart-tv.php">Smart TV</a></li>

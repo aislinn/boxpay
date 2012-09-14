@@ -40,7 +40,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   					
   					</div>
   				</div>
-  				
+  				 
   				
   				<div class="twelve columns divider"></div>
   				

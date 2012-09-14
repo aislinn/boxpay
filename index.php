@@ -11,63 +11,97 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   			<div id="header-container">
   			
   			
-  				<img class="prev" src="static/images/homeslider/bt-prev.png" alt="Previous Frame" />
-  				<img class="next" src="static/images/homeslider/bt-next.png" alt="Next Frame" />
-  			
-  				<div id="header">
-  									
-  					<div id="sequence">
-  						<ul>
-  							
-  							
-  							<li id="iphone">
-  								<h1 class="title animate-in">Charge users to their mobile phone bill in 70+ countries</h1>
-  								<h3 class="subtitle animate-in">Start accepting carrier and SMS payments today<br/>
-  								
-  								<a class="large button" href="#">Sign up now</a>
-  								
-  								</h3>
-  								
-  								
-  								<img class="iphone animate-in" src="static/images/homeslider/model3.png" alt="Model 3" />
+
   					
-  							</li>
-  							
-  							
-  							
-  							<li id="ipad">
-  								<h1 class="title">Subscription billing and higher price points</h1>
-  								<h3 class="subtitle">Customize your payment options for each market.
-  								<br class="break"/>If you need pricing flexibility, we can help
-  								<br/>
-  								<a class="large button" href="#">Sign up now</a>
-  								</h3>
-  						
-  								<img class="ipad" src="static/images/homeslider/model2.png" alt="Model 2" />
-  							</li>
-  							
-  							
-  							
-  							<li id="laptop" class="frame3">
-  								<h1 class="title ">Impressive payouts and advanced payment terms</h1>
-  								<h5 class="subtitle ">We’ve also made it really easy for you to see how much you get paid, your billing cycles and provide FULL analytics on transaction data
-  								
-  								
-  								<br/>
-  								<a class="button subtitle-login small" href="#">Login to view your payments</a>
-  								
-  								<br/>
-  								<a class="button subtitle-pricepoints small" href="#">View country Pricepoints</a>
-  								
-  								</h5>
-  								<img class="laptop " src="static/images/homeslider/model1.png" alt="Model 1" />
-  			
-  							</li>
-  							
-  						</ul>
+  					
+  					<div id="homeslide">
+  					  	
+  					  	
+  					  	<!--
+  					  	<div class="homeslide1">
+  					  		<div class="row">
+  					  		
+  					  		
+  					  			<div class="four columns home-iphone offset-by-one">
+  										
+  					  			</div>
+  					  		
+  					  	
+  					  			<div class="six columns offset-by-one end">
+					      				<h1>Charge users to their mobile phone bill in 70+ countries</h1>
+					      				<h3>Start accepting carrier and SMS payments today<br/>
+					      				
+					      				<a class="large button" href="sign-up.php">Sign up now</a>
+					      				
+					      				</h3>				      
+					      
+  					      		</div>
+  					      		
+  					      		
+  					      	</div>
+  					      
+  					    </div>
+  					    
+  					   -->
+  					    
+  			  				    	
+  					<div class="homeslide2">
+  					
+  						<div class="row">
+  						<div class="seven columns offset-by-one">	
+  					 		 <h1>Subscription billing and higher price points</h1>
+  					 		 <h3>Customize your payment options for each market.
+  					 		 <br class="break"/>If you need pricing flexibility, we can help
+  					 		 <br/>
+  					 		 <a class="large button" href="sign-up.php">Sign up now</a>
+  					 		 </h3>
+  					  
+  					  	</div>
+  					  	</div>
+  					  
   					</div>
   					
-  				</div><!--header-->
+  					  						
+  						 <div class="homeslide3">
+  						  
+  						  <div class="row">
+  						  <div class="seven columns offset-by-one home-laptop-container">	
+  						  
+  						      <h1>Impressive payouts and advanced payment terms</h1>
+  						      <h5>We’ve also made it really easy for you to see how much you get paid, your billing cycles and provide FULL analytics on transaction data
+  						      
+  						      
+  						      <br/>
+  						      <a class="button subtitle-login small" href="#">Login to view your payments</a>
+  						      
+  						      <br/>
+  						      <a class="button subtitle-pricepoints small" href="country/ireland.php">View country Pricepoints</a>
+  						      
+  						      </h5>
+  						      
+  						      
+  						      <div class="home-laptop"></div>
+  						  
+  						  
+  						  </div>
+  						  
+  						  
+  						  
+  						  
+  						  
+  						  
+  						  </div>
+  						  
+  						  
+  						  
+  						  
+  						</div>
+  						
+  						
+  					
+  					
+  					
+  				</div><!--homslider-->
   			
   			</div><!-- header container-->
   			
@@ -104,17 +138,17 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   				 		<h3>Billing Partners</h3>
   				 		
   				 			<ul class="partners">
-  				 				<li class="paymentwall">Paymentwall</li>
-  				 				<li class="irishtimes">The Irish Times</li>
-  				 				<li class="newspaperdirect">Newspaper Direct</li>
+  				 				<li class="paymentwall"><a href="http://www.paymentwall.com/" target="_blank">Paymentwall</a></li>
+  				 				<li class="irishtimes"><a href="http://www.irishtimes.com/" target="_blank">The Irish Times</a></li>
+  				 				<li class="newspaperdirect"><a href="http://www.newspaperdirect.com/" target="_blank">Newspaper Direct</a></li>
   				 			</ul>
   				 	
   				 		<h3>Featured In</h3>
   				 
   				 			<ul class="partners featured">
-  				 				<li class="techcrunch">TechCrunch</li>
-  				 				<li class="slashgear">Slash Gear</li>
-  				 				<li class="venturebeat">Venture Beat</li>
+  				 				<li class="techcrunch"><a href="http://techcrunch.com/">TechCrunch</a></li>
+  				 				<li class="slashgear"><a href="http://www.slashgear.com/">Slash Gear</a></li>
+  				 				<li class="venturebeat"><a href="http://venturebeat.com/">Venture Beat</a></li>
   				 			</ul>
   				 			
   				 	</div>

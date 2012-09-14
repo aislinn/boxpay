@@ -50,11 +50,27 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   						<div class="five columns offset-by-one sub-graph"></div>
   						
   						
-  						<div class="four columns offset-by-one end">
+  						<div class="four columns offset-by-one end graph-key">
   							<p>This graph represents a merchant’s revenue over a one-month period
   							using subscription mobile billing.</p>
+  							
+  		
   						</div>
+  		
   					
+  					</div>
+  					
+  					
+  					
+  					
+  					<div class="row">
+  					
+  					<div class="ten columns centered">
+  					
+  						<a href="/sign-up.php" class="button right">Get started</a>
+  					
+  					
+  					</div>
   					
   					</div>
   					

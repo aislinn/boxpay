@@ -4,7 +4,7 @@
 			
 				<li><a href="/country/ireland.php">Countries</a></li>
 				<li><a href="/features.php">Features</a></li>
-				<li><a href="/web-and-tablet.php">Browser &amp; tablet</a></li>
+				<li><a href="/browser-and-tablet.php">Browser &amp; tablet</a></li>
 				<li><a href="/mobile-optimized.php">Mobile optimized</a></li>
 				<li><a href="/in-app.php">In-app</a></li>
 				<li><a href="/smart-tv.php">Smart TV</a></li>
