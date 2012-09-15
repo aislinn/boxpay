@@ -1,4 +1,4 @@
-<?php $subtitle = "Careers | Looking to Work in the Growing Mobile Payments Industry?";
+<?php $subtitle = "Careers";
 include($_SERVER['DOCUMENT_ROOT'].'/includes/head.php');		
 include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>	
 	

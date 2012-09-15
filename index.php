@@ -72,7 +72,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   						      
   						      
   						      <br/>
-  						      <a class="button subtitle-login small" href="#">Login to view your payments</a>
+  						      <a class="button subtitle-login small" href="sign-in.php">Login to view your payments</a>
   						      
   						      <br/>
   						      <a class="button subtitle-pricepoints small" href="country/ireland.php">View country Pricepoints</a>
@@ -80,7 +80,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   						      </h5>
   						      
   						      
-  						      <div class="home-laptop"></div>
+  					<!--	      <div class="home-laptop"></div>-->
   						  
   						  
   						  </div>
@@ -117,12 +117,38 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   				  	<h3>Start billing today using the self-serve payment box tool. If you’re a developer looking for a custom solution, we can help you with that too.</h3>
   			
   					<ul class="block-grid six-up mobile-two-up">
-  						<li class="homesub_widget"><img src="static/images/homepage/platform_widget.jpg" alt="Self-serve widget" /><span>Self-serve widget</span></li>
-  						<li class="homesub_app"> <img src="static/images/homepage/platform_app.jpg" alt="App developers" /><span>App developers</span></li>
-  						<li class="homesub_mobile"> <img src="static/images/homepage/platform_optimized.jpg" alt="Mobile & tablet optimized" /><span>Mobile &amp; tablet optimized</span></li>
-  						<li class="homesub_tv"> <img src="static/images/homepage/platform_tv.jpg" alt="Smart tv" /><span>Smart tv</span></li>
-  						<li class="homesub_api"> <img src="static/images/homepage/platform_label.jpg" alt="White label & API" /><span>White label &amp; API</span></li>
-  						<li class="homesub_sub"> <img src="static/images/homepage/platform_sub.jpg" alt="Subscription" /><span>Subscription</span></li>
+  						<li class="homesub_widget">
+  							<a href="in-app.php"><img src="static/images/homepage/platform_widget.jpg" alt="Self-serve widget" />
+  							<span>Self-serve widget</span></a>
+  						</li>
+  						
+  						
+  						<li class="homesub_app"> 
+  							<a href="browser-and-tablet.php"><img src="static/images/homepage/platform_app.jpg" alt="Browser &amp; tablet" />
+  							<span>Browser &amp; tablet</span></a>
+  						</li>
+  						
+  						<li class="homesub_mobile"> 
+  							<a href="mobile-optimized.php"><img src="static/images/homepage/platform_optimized.jpg" alt="Mobile optimized" />
+  							<span>Mobile optimized</span></a>
+  						</li>
+  						
+  						
+  						<li class="homesub_tv"> 
+  							<a href="smart-tv.php"><img src="static/images/homepage/platform_tv.jpg" alt="Smart tv" />
+  							<span>Smart tv</span></a>
+  						</li>
+  							
+  							
+  						<li class="homesub_api"> 
+  							<a href="white-label.php"><img src="static/images/homepage/platform_label.jpg" alt="White label & API" />
+  							<span>White label &amp; API</span></a>
+  						</li>
+  						
+  						<li class="homesub_sub"> 
+  							<a href="subscription.php"><img src="static/images/homepage/platform_sub.jpg" alt="Subscription" />
+  							<span>Subscription</span></a>
+  						</li>
   			
   					</ul>
   			

@@ -2,6 +2,9 @@
 		<nav id="sideMenu" role="navigation">
 		<ul id="sideMainNav" class="nav-bar">
 			
+				<li><a href="/sign-in.php">Login</a></li>
+				<li><a href="/sign-up.php">Sign Up</a></li>	
+				
 				<li><a href="/country/ireland.php">Countries</a></li>
 				<li><a href="/features.php">Features</a></li>
 				<li><a href="/browser-and-tablet.php">Browser &amp; tablet</a></li>
@@ -15,13 +18,12 @@
 				<li><a href="/docs/index.php">Developers</a></li>
 		
 				<li><a href="/merchant-faq.php">Merchant FAQ</a></li>
-				<li><a href="/consumer-faq.php">Consumer FAQ</a></li>
+				<li><a href="/customer-faq.php">Customer FAQ</a></li>
 		
 					
 					
 				<li><a href="/blog.php">Blog</a></li>
-				<li><a href="#">Login</a></li>
-				<li><a href="/sign-up.php">Sign Up</a></li>							
+								
 		</ul>											
 	</nav>
 </section>

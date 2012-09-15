@@ -88,7 +88,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   				<div class="twelve columns divider"></div>
   				
   				<div class="ten columns offset-by-one end">
-  					<a href="#" class="forgot">Forgot your password?</a>
+  					<a href="password-recovery.php" class="forgot">Forgot your password?</a>
   				</div>
   				
   				
