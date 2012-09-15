@@ -627,6 +627,15 @@
 		#header-container ul.orbit-bullets li.active { background-position: -19px 0 !important; }	
 		
 		
+		#homeslide { background:  #1c1c1c; height: 540px; }
+		#homeslide div { visibility: hidden; }
+		
+		#homeslide.orbit { background: none; }
+		#homeslide.orbit div { visibility: visible; }
+		
+		
+		
+		
 		@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
 		only screen and (-moz-min-device-pixel-ratio: 1.5),
 		only screen and (-o-min-device-pixel-ratio: 3/2),
