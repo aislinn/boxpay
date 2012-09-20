@@ -15,108 +15,16 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   					
   						<div class="three columns">
   							
+  							<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/sidebar-docs.php')?>
   							
-  							
-  							<ul class="no-bullet documentation-nav nav-bar vertical">
-	  							<li class="has-flyout">
-	  								<a href="#">Getting Started</a>
-	  								<ul class="flyout">
-		  								<li><a href="#">How it works</a></li>
-		  								<li><a href="#">Sign up</a></li>
-		  								<li><a href="#">Your account</a></li>
-	  								</ul>
-	  							</li>
-	  							
-	  							
-	  							
-	  								  							
-	  								<li class="has-flyout">
-	  									<a href="#">Self Serve Widget</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">Create a New Payment Box</a></li>
-	  										<li><a href="#">Integrate Into Your Website</a></li>
-	  										<li><a href="#">Payment Notification</a></li>
-	  										<li><a href="#">Testing</a></li>
-	  										<li><a href="#">Desktop Demo</a></li>
-	  										<li><a href="#">Mobile Optimized Demo</a></li>
-	  									
-	  									</ul>
-	  								</li>
-	  								
-
-	  								<li class="has-flyout">
-	  									<a href="#">Android Billing SDK</a>
-	  									<ul class="flyout">
-	  										<li class="active"><a href="#">Documentation</a></li>
-	  										<li><a href="#">Download</a></li>
-	  										<li><a href="#">Demo</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">Smart TV Billing</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">Smart TV Documentation</a></li>
-	  										<li><a href="#">Demo</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">White Label and API</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">CSS Override / White label Documentation</a></li>
-	  										<li><a href="#">Merchant API Documentation</a></li>
-	  										<li><a href="#">Core API Documentation</a></li>
-	  										<li><a href="#">Getting Access</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">Application Forms</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">USA Direct Carrier Billing</a></li>
-	  										<li><a href="#">General Service Approval</a></li>
-	  										<li><a href="#">Subscription</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">General</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">Merchant FAQ</a></li>
-	  										<li><a href="#">Security</a></li>
-	  										<li><a href="#">Pricing</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">Integration Support</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">Integration Support</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">Sales Support</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">Sales Support</a></li>
-	  									</ul>
-	  								</li>
-	  							
-	  							
-	  							
-
-  							</ul>
-  							
-  							
+  								
+  						  							
   						</div>
   						
   						
   						<div class="seven columns offset-by-one end passage">
   						
-  							<h1>Android billing SDK documentation</h1>
+  							<h2>Android billing SDK documentation</h1>
   							<h3>Introduction</h3>
   							
   							<p>The boxPAY in-app payments SDK for Android provides merchants with the functionality required to 

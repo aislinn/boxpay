@@ -34,6 +34,8 @@ html { font-size: 87.5%; }
 
 body { background: white; font-family: 'freight-sans-pro', sans-serif; line-height: 1; color: #222222; position: relative; -webkit-font-smoothing: antialiased; }
 
+pre { font-family: 'freight-sans-pro', sans-serif; }
+
 /* Links ---------------------- */
 a { color: #bf2222; text-decoration: none; line-height: inherit; }
 

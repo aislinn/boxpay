@@ -17,107 +17,15 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   						<div class="three columns">
   							
   							
-  							
-  							<ul class="no-bullet documentation-nav nav-bar vertical">
-	  							<li class="has-flyout">
-	  								<a href="#">Getting Started</a>
-	  								<ul class="flyout">
-		  								<li><a href="#">How it works</a></li>
-		  								<li><a href="#">Sign up</a></li>
-		  								<li><a href="#">Your account</a></li>
-	  								</ul>
-	  							</li>
-	  							
-	  							
-	  							
-	  								  							
-	  								<li class="has-flyout">
-	  									<a href="#">Self Serve Widget</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">Create a New Payment Box</a></li>
-	  										<li><a href="#">Integrate Into Your Website</a></li>
-	  										<li><a href="#">Payment Notification</a></li>
-	  										<li><a href="#">Testing</a></li>
-	  										<li><a href="#">Desktop Demo</a></li>
-	  										<li><a href="#">Mobile Optimized Demo</a></li>
-	  									
-	  									</ul>
-	  								</li>
-	  								
-
-	  								<li class="has-flyout">
-	  									<a href="#">Android Billing SDK</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">Documentation</a></li>
-	  										<li><a href="#">Download</a></li>
-	  										<li><a href="#">Demo</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">Smart TV Billing</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">Smart TV Documentation</a></li>
-	  										<li><a href="#">Demo</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">White Label and API</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">CSS Override / White label Documentation</a></li>
-	  										<li><a href="#">Merchant API Documentation</a></li>
-	  										<li class="active"><a href="#">Core API Documentation</a></li>
-	  										<li><a href="#">Getting Access</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">Application Forms</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">USA Direct Carrier Billing</a></li>
-	  										<li><a href="#">General Service Approval</a></li>
-	  										<li><a href="#">Subscription</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">General</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">Merchant FAQ</a></li>
-	  										<li><a href="#">Security</a></li>
-	  										<li><a href="#">Pricing</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">Integration Support</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">Integration Support</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">Sales Support</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">Sales Support</a></li>
-	  									</ul>
-	  								</li>
-	  							
-	  							
-	  							
-
-  							</ul>
-  							
-  							
+  							<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/sidebar-docs.php')?>
+  								
+  						  							
   						</div>
   						
   						
   						<div class="seven columns offset-by-one end passage">
   						
-  							<h1>Core API documentation</h1>
+  							<h2>Core API documentation</h2>
   							<h3>Introduction</h3>
   							
   							<p>boxPAY provides ready-made payment solutions for a variety of platforms: </p>
@@ -364,37 +272,36 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   								<td>PaymentItemInfo</td>
   								<td>Refer to PaymentItemInfo in Appendix E for more details</td>
   								</tr>	
-  								
-  								<!-- hjh jj hkjhk jhjk -->
+  		
   								
   								<tr>
-  								<td>RequestProcessed</td>
-  								<td>A Boolean value (true or false) to indicate whether or not the request was processed successfully.</td>
+  								<td>SessionId</td>
+  								<td>A string value that uniquely identifies the payment session</td>
   								</tr>	
   								
   								<tr>
-  								<td>RequestProcessed</td>
-  								<td>A Boolean value (true or false) to indicate whether or not the request was processed successfully.</td>
+  								<td>Shortcode</td>
+  								<td>The telephone number associated with the billing. Depending on the payment capture method, the user may be required to send a message to this number in order to make the payment.</td>
   								</tr>	
   								
   								<tr>
-  								<td>RequestProcessed</td>
-  								<td>A Boolean value (true or false) to indicate whether or not the request was processed successfully.</td>
+  								<td>Keyword</td>
+  								<td>If supplied, this is the message that the user/user’s handset must send to the Shortcode.</td>
   								</tr>	
   								
   								<tr>
-  								<td>RequestProcessed</td>
-  								<td>A Boolean value (true or false) to indicate whether or not the request was processed successfully.</td>
+  								<td>PaymentCapture Method</td>
+  								<td>String value indicating the user interaction procedure necessary for completing this payment. This value will determine what instructions the user should be given to complete the payment. More details on this in Appendix B.</td>
   								</tr>	
   								
   								<tr>
-  								<td>RequestProcessed</td>
-  								<td>A Boolean value (true or false) to indicate whether or not the request was processed successfully.</td>
+  								<td>MSISDNRequired</td>
+  								<td>A Boolean value (true or false) to indicate if the MSISDN is required prior to user interaction (e.g Sending a message). If true then the MSISDN should be set in the InitiatePayment call or the SetMSISDN call.</td>
   								</tr>	
   								
   								<tr>
-  								<td>RequestProcessed</td>
-  								<td>A Boolean value (true or false) to indicate whether or not the request was processed successfully.</td>
+  								<td>PaymentStatus</td>
+  								<td>Refer to PaymentStatus in Appendix E for more details</td>
   								</tr>		
   		
   							</tbody>
@@ -403,8 +310,1461 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   							  		
   							  		
   							  		
+  						<h3>2. SetMSISDN</h3>
+  						
+  						<p>This call need only be made subsequent to the InitiatePayment call when the MSISDN has been omitted from the InitiatePayment call AND the StatusReason value of the InitiatePayment call is “AwaitingMSISDNEntry”. (i.e. the payment can only proceed when the customer has entered the mobile number).</p>
+  						
+  						<p>Full details on the format of the request are detailed here:	<br/>
+  							<a href="http://api.boxpay.com/v1_5.asmx?op=SetMSISDN">http://api.boxpay.com/v1_5.asmx?op=SetMSISDN</a>
+  						</p>
+  						
+  						
+  						<h4>Request</h4>	
+  						  		
+  							
+  						<table>
+  						
+							<thead>
+								<tr>
+								<th>Parameter</th>
+								<th>Description</th>
+								<th>Required</th>
+								</tr>
+							</thead>
+							
+							
+							<tbody>
+								<tr>
+								<td>SessionId</td>
+								<td>The unique identifier for the payment session, as returned in <em>InitiatePayment</em>.</td>
+								<td>Yes</td>
+								</tr>
+								
+								<tr>
+								<td>MSISDN</td>
+								<td>The user’s mobile number, in international format. E.g <em>447123456789</em> (in the U.K.). 
+									See Appendix F for help in getting the international MSISDN.</td>
+								<td>Yes</td>
+								</tr>
+								
+								
+								<tr>
+								<td>NetworkId</td>
+								<td>An integer value indicating the user’s network operator (carrier). A list of Network ids and associated networks will be provided on request. The value 0 means as yet unidentified.</td>
+								<td>Yes</td>
+								</tr>
+								
+								<tr>
+								<td>AccessToken</td>
+								<td>If additional security is enabled then a valid token should be passed. By default, a blank string should be passed.</td>
+								<td>No</td>
+								</tr>
+
+								
+  							  </tbody>
+  							
+  						</table>	  		
+  							  	
+  							  	
+  							  	
+  					<h4>Response</h4>			  	
+  							  	
+  							  	
+  					<table>
+  					  						
+						<thead>
+							<tr>
+							<th>Parameter</th>
+							<th>Description</th>
+							<th>Required</th>
+							</tr>
+						</thead>
+						
+						
+						<tbody>
+							<tr>
+							<td>RequestProcessed</td>
+							<td>A Boolean value (true or false) to indicate whether or not the request was processed successfully.</td>
+							<td>Yes</td>
+							</tr>
+							
+							<tr>
+							<td>ReasonCode</td>
+							<td>An enumeration to give extra details on the reason for the result given by RequestProcessed</td>
+							<td>Yes</td>
+							</tr>
+							
+							
+							<tr>
+							<td>AdditionalInfo</td>
+							<td>Additional textual info for debugging purposes</td>
+							<td></td>
+							</tr>
+							
+							<tr>
+							<td>PaymentStatus</td>
+							<td>Refer to PaymentStatus in Appendix E for more details</td>
+							<td></td>
+							</tr>
+
+							
+							  </tbody>
+							
+						</table>	  		  		
   							  		
+  							  		
+  						<h3>3. GetPaymentInfo</h3>	 
+  						
+  						<p>This method can be used prior to calling InitiatePayment, to retrieve relevant information relating to a payment item for a given service. Information returned includes:</p> 	
+  							
+  						<ul>
+  							<li>End user charge</li>
+  							<li>Terms and Conditions</li>
+  							<li>Item Description</li>
+  						
+  						</ul>	
+  						  		
+  						<p>Full details on the format of the request are detailed here:<br />
+  							<a href="http://api.boxpay.com/v1_5.asmx?op=GetPaymentInfo">http://api.boxpay.com/v1_5.asmx?op=GetPaymentInfo</a>
+  						</p>	  		
+  							  		
+  							  		
+  					<h4>Request</h4>			  	
+  							  	
+  							  	
+  					<table>
+  					  						
+						<thead>
+							<tr>
+							<th>Parameter</th>
+							<th>Description</th>
+							<th>Required</th>
+							</tr>
+						</thead>
+						
+						
+						<tbody>
+							<tr>
+							<td>ServiceId</td>
+							<td>boxPAY service Id. This is the ID for your Payment Box.</td>
+							<td>Yes</td>
+							</tr>
+							
+							<tr>
+							<td>CountryCode</td>
+							<td>The ISO 3166-1 alpha-2 code (i.e. 2 letter code) for a country e.g FR</td>
+							<td>Yes</td>
+							</tr>
+							
+							
+							<tr>
+							<td>ItemCode</td>
+							<td>Your custom code for the payment item (this is unique to your service in any given country)</td>
+							<td>Yes</td>
+							</tr>
+							
+							<tr>
+							<td>LanguageCode</td>
+							<td>2-character ISO 639-1 code that specifies the language to be used. This must either be the default or another language that has been configured in the payment box admin.If not specified, then the default language of the country code will be used. E.g “en”</td>
+							<td>No</td>
+							</tr>
+							
+							
+							<tr>
+							<td>NetworkId</td>
+							<td>An integer value indicating the user’s network operator(carrier). A list of NetworkIds and associated networks is available in the <em>GetNetworks</em> and <em>GetAllNetworks</em> call. A value of 0 should be passed if network is not known.</td>
+							<td></td>
+							</tr>
+							
+							<tr>
+							<td>ClientPlatform</td>
+							<td>String value - Please refer to Appendix D – Client Platforms</td>
+							<td>Yes</td>
+							</tr>
+							
+							
+							<tr>
+							<td>ReturnAllResources</td>
+							<td>A Boolean (true/false) value to indicate if all resources should be returned. Resources provide the text that should be displayed to user throughout the payment process</td>
+							<td>Yes</td>
+							</tr>
+							
+							<tr>
+							<td>AccessToken</td>
+							<td>If additional security is enabled then a valid token should be passed. By default, a blank string should be passed.</td>
+							<td>No</td>
+							</tr>
+							
+
+							
+							  </tbody>
+							
+						</table>				  		
+  							
+  						
+		  		<h4>Response</h4>			  	
+		  				  	
+		  				  	
+		  		<table>
+		  		  						
+		  			<thead>
+		  				<tr>
+		  				<th>Parameter</th>
+		  				<th>Description</th>
+		  				
+		  				</tr>
+		  			</thead>
+		  			
+		  			
+		  			<tbody>
+		  				<tr>
+		  				<td>RequestProcessed</td>
+		  				<td>A Boolean value (true or false) to indicate whether or not the request was processed successfully.</td>
+		  				
+		  				</tr>
+		  				
+		  				<tr>
+		  				<td>ReasonCode</td>
+		  				<td>An enumeration to give extra details on the reason for the result given by RequestProcessed.</td>
+		  				
+		  				</tr>
+		  				
+		  				
+		  				<tr>
+		  				<td>AdditionalInfo</td>
+		  				<td>Additional textual info for debugging purposes</td>
+		  				
+		  				</tr>
+		  				
+		  				<tr>
+		  				<td>PaymentInfo</td>
+		  				<td>Refer to PaymentInfo in Appendix E for more details</td>
+		  				
+		  				</tr>
+		  		
+		  			</tbody>
+		  						
+  				</table>	
+  				
+  				
+  				<h3>CheckStatus</h3>	
+  				
+  				<p>This method is used to check the status of a payment session. It can be called at regular intervals until such time as:</p>
+  				
+  				<ul>
+  				
+  					<li>The payment is successful or</li>
+  					<li>The payment fails or</li>
+  					<li>The payment is still pending after a considerable period of time (in such cases the merchant will still be notified of an eventual successful payment via the server side request to the Notification URL)</li>
+  				
+  				
+  				</ul>
+  				
+  				<p>The merchant should allow at least 2 seconds between each <em>CheckStatus</em> request.</p>
+  				
+  				<p>Full details on the format of the request are detailed here: <br />
+  				<a href="http://api.boxpay.com/v1_5.asmx?op=CheckStatus">http://api.boxpay.com/v1_5.asmx?op=CheckStatus</a></p>
+  						
+  						
+  							
+  				<h4>Request</h4>			  		
   							  						
+  						
+  				<table>
+  				  						
+  					<thead>
+  						<tr>
+  						<th>Parameter</th>
+  						<th>Description</th>
+  						<th>Required</th>
+  						
+  						</tr>
+  					</thead>
+  					
+  					
+  					<tbody>
+  						<tr>
+  						<td>SessionId</td>
+  						<td>The unique identifier for the payment session, as returned in <em>InitiatePayment</em>.</td>
+  						<td>Yes</td>
+  						</tr>
+  						
+  						<tr>
+  						<td>AccessToken</td>
+  						<td>If additional security is enabled then a valid token should be passed. By default, a blank string should be passed.</td>
+  						<td>No</td>
+  						</tr>
+  						
+  					
+  				
+  					</tbody>
+  								
+  				</table>	
+  				
+  				
+  				
+  				
+  				<h4>Response</h4>			  		
+  							  						
+  						
+  				<table>
+  				  						
+  					<thead>
+  						<tr>
+  						<th>Parameter</th>
+  						<th>Description</th>
+  						  						
+  						</tr>
+  					</thead>
+  					
+  					
+  					<tbody>
+  						<tr>
+  						<td>RequestProcessed</td>
+  						<td>A Boolean value (true or false) to indicate whether or not the request was processed successfully. This has no bearing on the status of the payment.</td>
+  						
+  						</tr>
+  						
+  						<tr>
+  						<td>ReasonCode</td>
+  						<td>An enumeration to give extra details on the reason for the result given by RequestProcessed</td>
+  						</tr>
+  						
+  						<tr>
+  						<td>AdditionalInfo</td>
+  						<td>Additional textual info for debugging purposes</td>
+  						</tr>
+  						
+  						
+  						<tr>
+  						<td>PaymentStatus</td>
+  						<td>Refer to PaymentStatus in Appendix E for more details</td>
+  						</tr>
+  						
+  						
+  					
+  				
+  					</tbody>
+  								
+  				</table>					
+  						
+  						
+  						
+  				<h3>5. ValidatePIN</h3>		
+  				
+  				<p>This method should only be used where the Payment Capture Method for the payment session involves a PIN (i.e PaymentCaptureMethod=PINConfirm) and the user has received the PIN and has submitted it to the merchant’s application.</p>
+  				
+  				<p>Full details on the format of the request are detailed here:<br />
+  				<a href="http://api.boxpay.com/v1_5.asmx?op=ValidatePIN">http://api.boxpay.com/v1_5.asmx?op=ValidatePIN</a></p>
+  						
+  						
+  						
+			<h4>Request</h4>			  		
+						  						
+					
+			<table>
+			  						
+				<thead>
+					<tr>
+					<th>Parameter</th>
+					<th>Description</th>
+					<th>Required</th>
+					
+					</tr>
+				</thead>
+				
+				
+				<tbody>
+					<tr>
+					<td>SessionId</td>
+					<td>The unique identifier for the payment session, as returned in <em>InitiatePayment</em>.</td>
+					<td>Yes</td>
+					</tr>
+					
+					<tr>
+					<td>PIN</td>
+					<td>The PIN code sent to the user.</td>
+					<td>Yes</td>
+					</tr>
+					
+					
+					<tr>
+					<td>AccessToken</td>
+					<td>If additional security is enabled then a valid token should be passed. By default, a blank string should be passed.</td>
+					<td>No</td>
+					</tr>
+					
+				
+			
+				</tbody>
+							
+			</table>	
+			
+			
+			
+			
+			<h4>Response</h4>			  		
+						  						
+					
+			<table>
+			  						
+				<thead>
+					<tr>
+					<th>Parameter</th>
+					<th>Description</th>
+					  						
+					</tr>
+				</thead>
+				
+				
+				<tbody>
+	
+					<tr>
+					<td>PaymentStatus</td>
+					<td>Refer to PaymentStatus in Appendix E for more details</td>
+					</tr>
+					
+					<tr>
+					<td>ValidPin</td>
+					<td>A Boolean value (true or false) to indicate whether or not the PIN entered was correct. If correct, boxPAY will proceed to complete the payment.</td>
+					</tr>
+				
+			
+				</tbody>
+							
+			</table>					
+					  						
+  						
+  						
+  						
+  			<h3>6. SendSimulatedMessage</h3>		
+  			
+  			<p>In Simulation mode, this call can be used to simulate a message sent by the handset to boxPAY, as per the instructions given for the payment session. MSISDN or PaymentSessionId can be used to determine the mobile number from which the simulated message originates.</p>
+  			
+  			<p>Full details on the format of the request are detailed here:<br />
+  			<a href="http://api.boxpay.com/v1_5.asmx?op=ValidatePIN">http://api.boxpay.com/v1_5.asmx?op=ValidatePIN</a></p>
+  					
+  								
+  			
+  					<h4>Request</h4>			  		
+  								  						
+  							
+  					<table>
+  					  						
+  						<thead>
+  							<tr>
+  							<th>Parameter</th>
+  							<th>Description</th>
+  							<th>Required</th>
+  							
+  							</tr>
+  						</thead>
+  						
+  						
+  						<tbody>
+  							<tr>
+  							<td>Msg</td>
+  							<td>The simulated message, e.g BOX</td>
+  							<td>Yes</td>
+  							</tr>
+  							
+  							<tr>
+  							<td>MSISDN</td>
+  							<td>The user’s mobile number, in international format. <em>E.g 447123456789</em> (in the U.K.). If omitted, a valid PaymentSessionId value must be given.</td>
+  							<td>No</td>
+  							</tr>
+  							
+  							
+  							<tr>
+  							<td>NetworkId</td>
+  							<td>An integer value indicating the user’s network operator(carrier). A list of NetworkIds and associated networks is available in the <em>GetNetworks</em> and <em>GetAllNetworks</em> call. A value of 0 should be passed if network is not known.</td>
+  							<td>Yes</td>
+  							</tr>
+  							
+  							
+  							<tr>
+  							<td>PaymentSessionId</td>
+  							<td>If MSISDN is omitted then this value is used to retrieve the MSISDN associated with this payment session. If no MSISDN is set on the payment session then the message will not be sent.</td>
+  							<td>No</td>
+  							</tr>
+  							
+  							<tr>
+  							<td>Shortcode</td>
+  							<td>The shortcode to which the message will be sent. This is given in the response of <em>InitiatePayment</em></td>
+  							<td>Yes</td>
+  							</tr>
+  							
+  							
+  							<tr>
+  							<td>AccessToken</td>
+  							<td>If additional security is enabled then a valid token should be passed. By default, a blank string should be passed.</td>
+  							<td>No</td>
+  							</tr>
+  							
+  						
+  					
+  						</tbody>
+  									
+  					</table>	
+  					
+  					
+  					
+  					
+  					<h4>Response</h4>			  		
+  								  						
+  							
+  					<table>
+  					  						
+  						<thead>
+  							<tr>
+  							<th>Parameter</th>
+  							<th>Description</th>
+  							  						
+  							</tr>
+  						</thead>
+  						
+  						
+  						<tbody>
+  			
+  							<tr>
+  							<td>RequestProcessed</td>
+  							<td>A Boolean value (true or false) to indicate whether or not the request was processed successfully.</td>
+  							</tr>
+  							
+  							<tr>
+  							<td>ReasonCode</td>
+  							<td>An enumeration to give extra details on the reason for the result given by RequestProcessed</td>
+  							</tr>
+  							
+  							<tr>
+  							<td>AdditionalInfo</td>
+  							<td>Additional textual info for debugging purposes</td>
+  							</tr>
+  						
+  					
+  						</tbody>
+  									
+  					</table>	
+  					
+  					
+  					
+  					
+  					
+  					
+  					<h3>6. GetSimulatedMessages</h3>		
+  					
+  					<p>In Simulation mode, this call can be used to retrieve simulated messages sent by boxPAY to the end user’s handset. MSISDN or PaymentSessionId can be used to determine the mobile number for which to retrieve messages.</p>
+  					
+  					<p>Full details on the format of the request are detailed here:<br />
+  					<a href="http://api.boxpay.com/v1_5.asmx?op=ValidatePIN">http://api.boxpay.com/v1_5.asmx?op=ValidatePIN</a></p>
+  							
+  										
+  					
+  							<h4>Request</h4>			  		
+  										  						
+  									
+  							<table>
+  							  						
+  								<thead>
+  									<tr>
+  									<th>Parameter</th>
+  									<th>Description</th>
+  									<th>Required</th>
+  									
+  									</tr>
+  								</thead>
+  								
+  								
+  								<tbody>
+  									<tr>
+  									<td>Msg</td>
+  									<td>The simulated message, e.g BOX</td>
+  									<td>Yes</td>
+  									</tr>
+  									
+  									<tr>
+  									<td>MSISDN</td>
+  									<td>The user’s mobile number, in international format. <em>E.g 447123456789</em> (in the U.K.). If omitted, a valid PaymentSessionId value must be given.</td>
+  									<td>No</td>
+  									</tr>
+  									
+  									
+  									<tr>
+  									<td>PaymentSessionId</td>
+  									<td>If MSISDN is omitted then this value is used to retrieve the MSISDN associated with this payment session. If no MSISDN is set on the payment session then the message will not be sent.</td>
+  									<td>No</td>
+  									</tr>
+
+  									
+  									<tr>
+  									<td>AccessToken</td>
+  									<td>If additional security is enabled then a valid token should be passed. By default, a blank string should be passed.</td>
+  									<td>No</td>
+  									</tr>
+  									
+  								
+  							
+  								</tbody>
+  											
+  							</table>	
+  							
+  							
+  							
+  							
+  							<h4>Response</h4>			  		
+  										  						
+  									
+  							<table>
+  							  						
+  								<thead>
+  									<tr>
+  									<th>Parameter</th>
+  									<th>Description</th>
+  									  						
+  									</tr>
+  								</thead>
+  								
+  								
+  								<tbody>
+  					
+  									<tr>
+  									<td>RequestProcessed</td>
+  									<td>A Boolean value (true or false) to indicate whether or not the request was processed successfully.</td>
+  									</tr>
+  									
+  									<tr>
+  									<td>ReasonCode</td>
+  									<td>An enumeration to give extra details on the reason for the result given by RequestProcessed</td>
+  									</tr>
+  									
+  									<tr>
+  									<td>AdditionalInfo</td>
+  									<td>Additional textual info for debugging purposes</td>
+  									</tr>
+  									
+  									
+  									<tr>
+  									<td>Messages</td>
+  									<td>A an array of simulated messages (SMS) to be displayed to end user</td>
+  									</tr>
+  									
+  								
+  							
+  								</tbody>
+  											
+  							</table>						
+  								
+  					
+  					
+    					
+	<h3>7. IPAddressToCountryCode</h3>		
+	
+	<p>This method takes and IP and returns details on the country to which the IP address relates. This can be used by the merchant to determine the country of origin of the end user and use this information to initiate a payment session with the appropriate parameters.</p>
+	
+	<p>If no match is found then no country information will be returned.</p>
+	
+	<p>Full details on the format of the request are detailed here:<br />
+	<a href="http://api.boxpay.com/v1_5.asmx?op=IPAddressToCountryCode">http://api.boxpay.com/v1_5.asmx?op=IPAddressToCountryCode</a></p>
+			
+						
+	
+			<h4>Request</h4>			  		
+						  						
+					
+			<table>
+			  						
+				<thead>
+					<tr>
+					<th>Parameter</th>
+					<th>Description</th>
+					<th>Required</th>
+					
+					</tr>
+				</thead>
+				
+				
+				<tbody>
+					<tr>
+					<td>IPAdress</td>
+					<td>The end user’s IP address as a string value. This can be an empty string – in this case boxPAY will return the country information relating to the client making the request. For client side implementations, leave this parameter as an empty string.</td>
+					<td>No</td>
+					</tr>
+					
+				
+			
+				</tbody>
+							
+			</table>	
+			
+			
+			
+			
+			<h4>Response</h4>			  		
+						  						
+					
+			<table>
+			  						
+				<thead>
+					<tr>
+					<th>Parameter</th>
+					<th>Description</th>
+					  						
+					</tr>
+				</thead>
+				
+				
+				<tbody>
+	
+					<tr>
+					<td>RequestProcessed</td>
+					<td>A Boolean value (true or false) to indicate whether or not the request was processed successfully.</td>
+					</tr>
+					
+					<tr>
+					<td>ReasonCode</td>
+					<td>An enumeration to give extra details on the reason for the result given by RequestProcessed</td>
+					</tr>
+					
+					<tr>
+					<td>AdditionalInfo</td>
+					<td>Additional textual info for debugging purposes</td>
+					</tr>
+					
+					
+					<tr>
+					<td>Country</td>
+					<td>Refer to Country in Appendix E for more details</td>
+					</tr>
+					
+				
+			
+				</tbody>
+							
+			</table>						
+	
+	
+	
+		<h2>Helper Functions</h2>
+		
+		<h3>1. GetNetworks</h3>
+						
+						
+		<p>This method returns a list of network operators for a specified country</p>
+		
+		<p>Full details on the format of the request are detailed here:<br />
+		<a href="http://api.boxpay.com/v1_5.asmx?op=IPAddressToCountryCode">http://api.boxpay.com/v1_5.asmx?op=IPAddressToCountryCode</a></p>
+				
+							
+		
+				<h4>Request</h4>			  		
+							  						
+						
+				<table>
+				  						
+					<thead>
+						<tr>
+						<th>Parameter</th>
+						<th>Description</th>
+						<th>Required</th>
+						
+						</tr>
+					</thead>
+					
+					
+					<tbody>
+						<tr>
+						<td>CountryCode</td>
+						<td>Two letter ISO country code</td>
+						<td>Yes</td>
+						</tr>
+						
+						
+						<tr>
+						<td>AccessToken</td>
+						<td>If additional security is enabled then a valid token should be passed. By default, a blank string should be passed.</td>
+						<td>No</td>
+						</tr>
+						
+						
+					
+				
+					</tbody>
+								
+				</table>	
+				
+				
+				
+				
+				<h4>Response</h4>			  		
+							  						
+						
+				<table>
+				  						
+					<thead>
+						<tr>
+						<th>Parameter</th>
+						<th>Description</th>
+						  						
+						</tr>
+					</thead>
+					
+					
+					<tbody>
+		
+						<tr>
+						<td>RequestProcessed</td>
+						<td>A Boolean value (true or false) to indicate whether or not the request was processed successfully.</td>
+						</tr>
+						
+						<tr>
+						<td>ReasonCode</td>
+						<td>An enumeration to give extra details on the reason for the result given by RequestProcessed</td>
+						</tr>
+						
+						<tr>
+						<td>AdditionalInfo</td>
+						<td>Additional textual info for debugging purposes</td>
+						</tr>
+						
+						
+						<tr>
+						<td>List of Networks</td>
+						<td></td>
+						</tr>
+						
+						<tr>
+						<td>NetworkId</td>
+						<td>An integer value that uniquely identifies the user’s network operator (carrier) on the boxPAY platform.</td>
+						</tr>
+						
+						<tr>
+						<td>Name</td>
+						<td>The name of the network operator</td>
+						</tr>
+						
+						<tr>
+						<td>CountryCode</td>
+						<td>Two letter ISO country code</td>
+						</tr>
+						
+						<tr>
+						<td>MCCMNC</td>
+						<td>The combination of Mobile Country Code (MCC) and Mobile Network Code (MNC) that uniquely identifies a mobile phone operator/carrier using the GSM/LTE, CDMA, iDEN, TETRA and UMTS public land mobile networks and some satellite mobile networks. This value can generally be accessed by client apps, e.g. Android app.</td>
+						</tr>
+						
+					
+				
+					</tbody>
+								
+				</table>					
+		
+  						
+  						
+  						
+  						
+  				
+  				
+  				<h3>2. GetAllNetworks</h3>
+  								
+  								
+  				<p>This method returns a list of network operators all supported countries</p>
+  				
+  				<p>Full details on the format of the request are detailed here:<br />
+  				<a href="http://api.boxpay.com/v1_5.asmx?op=IPAddressToCountryCode">http://api.boxpay.com/v1_5.asmx?op=IPAddressToCountryCode</a></p>
+  						
+  									
+  				
+  						<h4>Request</h4>			  		
+  									  						
+  								
+  						<table>
+  						  						
+  							<thead>
+  								<tr>
+  								<th>Parameter</th>
+  								<th>Description</th>
+  								<th>Required</th>
+  								
+  								</tr>
+  							</thead>
+  							
+  							
+  							<tbody>
+  						
+  								
+  								<tr>
+  								<td>AccessToken</td>
+  								<td>If additional security is enabled then a valid token should be passed. By default, a blank string should be passed.</td>
+  								<td>No</td>
+  								</tr>
+  								
+  								
+  							
+  						
+  							</tbody>
+  										
+  						</table>	
+  						
+  						
+  						
+  						
+  						<h4>Response</h4>			  		
+  									  						
+  								
+  						<table>
+  						  						
+  							<thead>
+  								<tr>
+  								<th>Parameter</th>
+  								<th>Description</th>
+  								  						
+  								</tr>
+  							</thead>
+  							
+  							
+  							<tbody>
+  				
+  								<tr>
+  								<td>RequestProcessed</td>
+  								<td>A Boolean value (true or false) to indicate whether or not the request was processed successfully.</td>
+  								</tr>
+  								
+  								<tr>
+  								<td>ReasonCode</td>
+  								<td>An enumeration to give extra details on the reason for the result given by RequestProcessed</td>
+  								</tr>
+  								
+  								<tr>
+  								<td>AdditionalInfo</td>
+  								<td>Additional textual info for debugging purposes</td>
+  								</tr>
+  								
+  								
+  								<tr>
+  								<td>List of Networks</td>
+  								<td></td>
+  								</tr>
+  								
+  								<tr>
+  								<td>NetworkId</td>
+  								<td>An integer value that uniquely identifies the user’s network operator (carrier) on the boxPAY platform.</td>
+  								</tr>
+  								
+  								<tr>
+  								<td>Name</td>
+  								<td>The name of the network operator</td>
+  								</tr>
+  								
+  								<tr>
+  								<td>CountryCode</td>
+  								<td>Two letter ISO country code</td>
+  								</tr>
+  								
+  								<tr>
+  								<td>MCCMNC</td>
+  								<td>The combination of Mobile Country Code (MCC) and Mobile Network Code (MNC) that uniquely identifies a mobile phone operator/carrier using the GSM/LTE, CDMA, iDEN, TETRA and UMTS public land mobile networks and some satellite mobile networks. This value can generally be accessed by client apps, e.g. Android app.</td>
+  								</tr>
+  								
+  							
+  						
+  							</tbody>
+  										
+  						</table>	
+  				
+  				
+  				
+  						
+  						
+				<h3>Appendix A – Reason Codes</h3>
+				
+				<ul class="no-bullet">
+				
+				<li><strong>None</strong> – No extra information </li>
+				<li><strong>AwaitingUserAction</strong> – The payment can proceed once the user has completed the appropriate step (determined by the PaymentCaptureMethod). E.g the user must send a message to a shortcode. </li>
+				<li><strong>PaymentItemNotFound</strong> – A payment item was not found for the service, country and item code defined. </li>
+				<li><strong>InvalidMSISDN</strong> – The MSISDN passed is not in the valid international format required. </li>
+				<li><strong>CountryCodeNotRecognised</strong> - The country code was not recognised as a valid ISO 3166-1 alpha-2 code country code.</li>
+				<li><strong>PricepointNotFoundForPaymentItem</strong> – No active price point was found for the settings provided. Action: Check payment box settings and ensure appropriate values are passed. </li>
+				<li><strong>PaymentItemDescriptionNotFound</strong> – The description for the payment item was not found. </li>
+				<li><strong>ItemCodeNotValid</strong> – The item code was not provided </li>
+				<li><strong>PricepointNotFound</strong> – No active price point was found. </li>
+				<li><strong>LanguageCodeNotRecognised</strong> – The language code provided was not recognised as a valid 2- character ISO 639-1 code</li>
+				<li><strong>MerchantNotFound</strong> – A valid merchant was not found. Action: Check that the correct ServiceId is being passed.</li>
+				<li><strong>InvalidSignature</strong> – The signature does not match. Action: Check that the signature is being generated with the appropriate arguments in the correct order. </li>
+				<li><strong>PaymentSuccessful</strong> – The payment is successful. No further action is required. </li>
+				<li><strong>InvalidSessionId</strong> – The SessionId value provided is not a valid SessionId. </li>
+				<li><strong>SessionNotFound</strong> – The session relating to the SessionId could not be found. </li>
+				<li><strong>PaymentFailed</strong> – The payment failed. </li>
+				<li><strong>AwaitingSMSFromUser</strong> - The payment can proceed once the user has sent a message to the appropriate shortcode.</li>
+				<li><strong>AwaitingPINValidation</strong> - The payment can proceed once the user submits a PIN for validation.</li>
+				<li><strong>ValidatePINCallNotAllowedForThisPaymentCaptureMethod</strong> – This method should not be called for this PaymentCaptureMethod </li>
+				<li><strong>CorrectPinCompletingBilling</strong> – The PIN entered is correct. Billing will now be completed by boxPAY. </li>
+				<li><strong>InvalidPIN</strong> – The PIN entered is incorrect. </li>
+				<li><strong>ServiceNotFound</strong> – No information was found relating to the ServiceId provided. </li>
+				<li><strong>NotSubscribed</strong> – The user in question is not currently part of the subscription </li>
+				<li><strong>SuccessfullyUnsubscribed</strong> – The user has been successfully removed from the subscription </li>
+				<li><strong>AwaitingMSISDNEntry</strong> – The payment can proceed once the user enters the mobile number. The SetMSISDN call should then be used. </li>
+				<li><strong>OtherError</strong> – An unexpected error has occurred</li>
+				<li><strong>SubscriberNotFound</strong> – Details on the subscriber could not be found.</li>
+		
+				
+				</ul>
+				
+  						
+  						
+  				<h3>Appendix B – Subscription Status</h3>
+  				
+  				
+  				<p>The following enumeration is used to indicate the status of a payment in relation to a user’s subscription, i.e. whether the payment session successfully subscribed the user or otherwise.</p>
+  				
+  				<ul class="no-bullet definition">
+  				<li><strong>SUCCESS</strong> – The user was successfully subscribed </li>
+  				<li><strong>ALREADYSUBSCRIBED</strong> - The user is already subscribed to the service. </li>
+  				<li><strong>FAILED</strong> – An unexpected error occurred and the user was not subscribed to the service </li>
+  				<li><strong>NOTAPPLICABLE</strong> – Given for one-off (non-subscription) payments or for payment sessions that were not completed i.e. user did not complete payment	</li>	
+  				
+  				</ul>
+  				
+  				
+  				
+  				
+  				
+  				<h3>Appendix C – Payment Capture Methods</h3>
+  				
+  				
+  				<p>The “Payment Capture Method” is the name given to the process by which we complete a payment from a user. This process can differ based on a number of factors including country, client platform, mobile carrier, etc. The following are the Capture Methods used:</p>
+  				
+  				<ol>
+  				<li>MOConfirm – the user confirms payment by sending an SMS to a shortcode</li>
+  				<li>PinRequest – the user confirms payment in 2 steps: First by sending an SMS to a shortcode
+  				to receive a reply containing a PIN (or a unique link). The user enters the Pin (or clicks link) to
+  				complete payment process.</li>
+  				<li>PinConfirm – the user receives a PIN (or a unique link) by SMS and enters the Pin (or clicks
+  				link) to complete the payment process. This differs from 2. above as there is no message sent by the user.</li>	
+  				
+  				</ol>
+  						
+  						
+  						
+  				<p>In most cases the user’s mobile number (referred to by boxPAY as MSISDN) must be specified either in the <em>InitiatePayment</em> call or subsequently in <em>SetMSISDN</em>. This will require knowledge of the user’s mobile number prior to the the user’s interaction via SMS.</p>
+  				
+  				<p>In some cases, e.g for Android billing, the MSISDN is optional. This is specified in the <em>MSISDNRequired</em> field in the response of the <em>InitiatePayment</em> call.</p>
+  				
+  				<p>This section describes the possible payment capture methods that the user must follow to complete a payment. Based on the payment capture method being used, the merchant must prompt the user for the appropriate course of action.</p>		
+  						
+  						
+  				
+  				
+  				<h3>Appendix D – Client Platforms</h3>
+  				
+  				<p>The Client Platform refers to the platform through which the end user is completing the payment process. Options are:</p>
+  				
+  				<ul>
+  				<li>DesktopWeb</li>
+  				<li>AndroidPhone</li>
+  				<li>SmartphoneWeb</li>
+  				<li>FeaturePhoneWeb</li>
+  				<li>SmartTv</li>
+  					
+  				</li>		
+  				
+  				</ul>
+  				
+  				
+  				<h3>Appendix E – Common Response Objects</h3>
+  				<p>The following sets of parameters are used throughout a number of API calls, so are defined once here for clarity.</p>
+  				
+  				
+  				
+  				<h4>Payment Info</h4>			  		
+  							  						
+  						
+  				<table>
+  				  						
+  					<thead>
+  						<tr>
+  						<th>Parameter</th>
+  						<th>Description</th>
+  	
+  						
+  						</tr>
+  					</thead>
+  					
+  					
+  					<tbody>
+  				
+					
+					<tr>
+					<td>TermsHTML</td>
+					<td>Terms and Conditions that must be displayed to user before the user’s next action. This can include HTML markup.</td>
+					</tr>
+					
+					
+					<tr>
+					<td>LanguageCode</td>
+					<td>Specifies the language (2-character ISO 639-1 ) in which all user messages and terms are displayed.</td>
+					</tr>
+					
+					<tr>
+					<td><strong>PaymentItemInfo</strong></td>
+					<td></td>
+					</tr>
+					
+					
+					<tr>
+					<td>DisplayCharge</td>
+					<td>The payment amount in Local Currency, formatted with currency symbol/code e.g $2.00</td>
+					</tr>
+
+					
+					<tr>
+					<td>Charge</td>
+					<td>The payment amount as a decimal. E.g $2 will be 2.0</td>
+					</tr>
+					
+					<tr>
+					<td>ItemDescription</td>
+					<td>The description entered by the merchant for this item on setup. E.g. “30 Gold Coins”.</td>
+					</tr>
+					
+					<tr>
+					<td>Country</td>
+					<td>Refer to Country in Appendix E for more details</td>
+					</tr>
+					
+					
+					<tr>
+					<td><strong>ResourceSet</strong></td>
+					<td>A list of resource sets for each supported language</td>
+					</tr>
+					
+					
+					<tr>
+					<td>LanguageCode</td>
+					<td>The 2 letter ISO (639-1) language code</td>
+					</tr>
+					
+					
+					
+					<tr>
+					<td><strong>Resources</strong></td>
+					<td>A list of resources to be displayed to user throughout the payment process</td>
+					</tr>
+					
+					
+					<tr>
+					<td>Id</td>
+					<td>The Resource Id. A mapping of where each resource should be displayed will be provided on request.</td>
+					</tr>
+					
+					
+					<tr>
+					<td>Text</td>
+					<td>The resource text to be displayed</td>
+					</tr>
+					
+					
+					<tr>
+					<td>Subscription</td>
+					<td>A Boolean (true/false) value indicating if this payment is a one-off payment (Subscription=false) or is the first payment as part of a Subscription (Subscription=true). This value is false by default.</td>
+					</tr>
+					
+  						
+  					
+  				
+  					</tbody>
+  								
+  				</table>	
+  				
+  				
+  				
+  				<h3>PaymentStatus</h3>
+  						
+  				<p>The following “PaymentStatus” parameters are returned in a number of API calls: <em>InitiatePayment</em>, <em>CheckStatus</em> and <em>SetMSISDN</em></p>		
+  						
+  						
+  						
+  				<table>
+  						  						
+							<thead>
+								<tr>
+								<th>Parameter</th>
+								<th>Description</th>
+								  						
+								</tr>
+							</thead>
+							
+							
+							<tbody>
+				
+								<tr>
+								<td>Charged</td>
+								<td>The amount in local currency that has been charged to the user.</td>
+								</tr>
+								
+								<tr>
+								<td>UserMessageHTML</td>
+								<td>An instructional message that should be displayed to the user to direct the user on how to proceed. This can include HTML markup.</td>
+								</tr>
+								
+								<tr>
+								<td>MSISDN</td>
+								<td>The user’s mobile number, in international format. E.g a number in the UK will be of the form <em>447123456789</em>.</td>
+								</tr>
+								
+								
+								<tr>
+								<td>NetworkId</td>
+								<td>An integer value indicating the user’s network operator (carrier). A list of NetworkIds and associated networks is available in the <em>GetNetworks</em> and <em>GetAllNetworks</em> call. A value of 0 indicates the network is not known.</td>
+								</tr>
+								
+								<tr>
+								<td>SubscriptionStatus</td>
+								<td>Applicable to Subscription Services only (see Appendix B)</td>
+								</tr>
+								
+								<tr>
+								<td>Status</td>
+								<td>Indicates the success or otherwise of this call. Possible values are: -	
+								
+								<ul class="no-bullet">
+								<li><strong>SUCCESS:</strong> the request was processed successfully and the payment has been successfully completed. No further action is necessary.</li>
+								<li><strong>PENDING:</strong> the request was processed successfully. Payment has not yet been completed (may require user interaction)</li>
+								<li><strong>FAILED:</strong> the request and/or payment failed. More details provided in StatusReason</li>
+								
+								</ul>
+								
+								
+								
+								</td>
+								</tr>
+								
+								<tr>
+								<td>StatusReason</td>
+								<td>Provides extra details on the Status so that appropriate action can be taken. A detailed list of the Reason Codes is provided in Appendix A.</td>
+								</tr>
+								
+								<tr>
+								<td>ReturnUrl</td>
+								<td>The URL to which the user should be redirected on payment completion. This is defined by the merchant on payment session initialization. The merchant will not be required to use property.</td>
+								</tr>
+								
+							
+						
+							</tbody>
+  										
+  						</table>	
+  						
+  						
+  				
+  			<h4>Language</h4>			
+  						
+  			<table>
+  					  						
+				<thead>
+					<tr>
+					<th>Parameter</th>
+					<th>Description</th>
+					  						
+					</tr>
+				</thead>
+				
+				
+				<tbody>
+	
+					<tr>
+					<td>Name</td>
+					<td>The language name in English</td>
+					</tr>
+					
+					<tr>
+					<td>LanguageCode</td>
+					<td>The 2 letter ISO (639-1) language code</td>
+					</tr>
+					
+					<tr>
+					<td>LocalName</td>
+					<td>The language name in the specified language</td>
+					</tr>
+					
+					<tr>
+					<td>IsDefault</td>
+					<td>A Boolean value (true/false) indicating if the language is set as the default language for that country</td>
+					</tr>
+  				
+  				</tbody>
+  			
+  			</table>	
+  			
+  			
+  			<h4>Country</h4>			
+  									
+			<table>
+						  						
+				<thead>
+					<tr>
+					<th>Parameter</th>
+					<th>Description</th>
+					  						
+					</tr>
+				</thead>
+				
+				
+				<tbody>
+	
+					<tr>
+					<td>Name</td>
+					<td>The country name in English</td>
+					</tr>
+					
+					<tr>
+					<td>CountryCode</td>
+					<td>Two letter ISO country code</td>
+					</tr>
+					
+					<tr>
+					<td>CurrencyCode</td>
+					<td>The ISO 4217 currency code indicating the local currency</td>
+					</tr>
+					
+					<tr>
+					<td><strong>Languages (list)</strong></td>
+					<td>A list of supported languages for this country.</td>
+					</tr>
+					
+					<tr>
+					<td>InternationalPrefix</td>
+					<td>The international dialling prefix for the country. These digits are the starting digits for the international MSISDN (mobile number).</td>
+					</tr>
+					
+					<tr>
+					<td>DisplayMSISDN StartingDigits</td>
+					<td>Users should enter their number in local format. If provided, these digits should be prefilled in the MSISDN entry field. i.e. all user’s mobile numbers start with these digits. This can be used for mobile number validation.</td>
+					</tr>
+					
+					<tr>
+					<td>ValidStartingDigits</td>
+					<td>A comma separated list of digits that represent the valid starting digits of a local mobile number (not including trunk). This can be used for mobile number validation.</td>
+					</tr>
+					
+					
+					<tr>
+					<td>Trunk</td>
+					<td>A Trunk is the number to be dialled in a domestic telephone call, preceding any necessary area codes and subscriber numbers. This can be used for mobile number validation.</td>
+					</tr>
+					
+					<tr>
+					<td>ValidInternational Lengths</td>
+					<td>A list of integers that represent the valid lengths of MSISDNs (in international format) for this country. This can be used for mobile number validation.</td>
+					</tr>
+					
+					
+					
+					
+					
+					</tbody>
+				
+				</table>			
+				
+  					
+  					
+  					
+  				<h3>Appendix F - MSISDN Validation Code	</h3>
+  				
+  				<p>The code below can be used to get the MSISDN in international format. The country information (trunk, ValidStartingDigits etc) is included in the response to the calls listed below and more details on the Country information is detailed in Appendix E.</p>
+  				
+  				<ul> 
+  				<li>GetPaymentInfo</li>
+  				<li>GetCountries</li>
+  				<li>GetCountry</li>
+  				<li>InititiatePayment</li>
+  				
+  				</ul>
+  					
+  					
+  					
+<code>
+<pre>
+Validator: {
+
+//Returns false if number is invalid, otherwise returns the formatted valid international MSISDN 
+  ValidateMsisdn: function (msisdn, country) {
+    internationalMsisdn = null;
+    if (country.Trunk.Length > 0 && !msisdn.StartsWith(country.Trunk)) {
+    return false;
+    }
+    
+   var startingDigits = BoxPay.Validator.ProcessMsisdnCode(country.ValidStartingDigits);
+   if (isNaN(msisdn)) {
+    return false;
+   }
+   
+  var startingDigitsAccepted = false; 
+  for (i in startingDigits) {
+    if (BoxPay.Utils.StartsWith(msisdn, country.Trunk + startingDigits[i])) { 
+      startingDigitsAccepted = true;
+      break;
+    } 
+  }  
+  if (!startingDigitsAccepted) {
+    return false;
+  }
+
+  if (country.Trunk.length > 0) {
+    msisdn = msisdn.substring(country.Trunk.length);
+  } 
+  for (i in country.ValidInternationalLengths) {
+    if ((country.InternationalPrefix + msisdn).length == parseInt(country.ValidInternationalLengths[i], 10)) { internationalMsisdn = country.InternationalPrefix + msisdn;
+    } 
+  }
+ 
+  return internationalMsisdn;
+},  
+  
+
+//Splits a comma or ‘–‘ separated list of digits that represent the valid starting digits 
+    ProcessMsisdnCode: function (msisdnCodes) {
+      var startingDigits = new Array();
+      if (msisdnCodes.indexOf(',') != -1) {
+        startingDigits = msisdnCodes.split(',');
+      }
+      
+      else if (msisdnCodes.indexOf('-') != -1) {
+        var minMax = msisdnCodes.split('-');
+        for (var Val = minMax[0]; Val <= minMax[1]; Val++) {
+          startingDigits.push(Val.toString()); 
+        }
+      } 
+      else {
+        startingDigits.push(msisdnCodes);
+      }
+      return startingDigits;
+    }
+  }
+ 
+
+
+</pre>
+</code>  					
+  					
+  					<h3>Appendix G - Flow Diagram and Resource Map (in-app)</h3><br/>
+  					
+  					<img src="/static/images/docs/api-flow-app.gif" alt="Flow Diagram and Resource Map (In-app)" />
+  					
+  					<br/>
+  					
+  					
+  					<h3>Appendix H - Flow Diagram and Resource Map (Desktop)</h3> <br/>
+  						
+  					<img src="/static/images/docs/api-flow-desktop.gif" alt="Flow Diagram and Resource Map (Desktop)" />	
+  						
+  						
+  						
+  						
+  						
+  						
+  						
+  						
   						
   						
   						

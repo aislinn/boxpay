@@ -16,100 +16,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   					
   						<div class="three columns">
   							
-  							
-  							
-  							<ul class="no-bullet documentation-nav nav-bar vertical">
-	  							<li class="has-flyout">
-	  								<a href="#">Getting Started</a>
-	  								<ul class="flyout">
-		  								<li><a href="#">How it works</a></li>
-		  								<li><a href="#">Sign up</a></li>
-		  								<li><a href="#">Your account</a></li>
-	  								</ul>
-	  							</li>
-	  							
-	  							
-	  							
-	  								  							
-	  								<li class="has-flyout">
-	  									<a href="#">Self Serve Widget</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">Create a New Payment Box</a></li>
-	  										<li><a href="#">Integrate Into Your Website</a></li>
-	  										<li><a href="#">Payment Notification</a></li>
-	  										<li><a href="#">Testing</a></li>
-	  										<li><a href="#">Desktop Demo</a></li>
-	  										<li><a href="#">Mobile Optimized Demo</a></li>
-	  									
-	  									</ul>
-	  								</li>
-	  								
-
-	  								<li class="has-flyout">
-	  									<a href="#">Android Billing SDK</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">Documentation</a></li>
-	  										<li><a href="#">Download</a></li>
-	  										<li><a href="#">Demo</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">Smart TV Billing</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">Smart TV Documentation</a></li>
-	  										<li><a href="#">Demo</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">White Label and API</a>
-	  									<ul class="flyout">
-	  										<li class="active"><a href="#">CSS Override / White label Documentation</a></li>
-	  										<li><a href="#">Merchant API Documentation</a></li>
-	  										<li><a href="#">Core API Documentation</a></li>
-	  										<li><a href="#">Getting Access</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">Application Forms</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">USA Direct Carrier Billing</a></li>
-	  										<li><a href="#">General Service Approval</a></li>
-	  										<li><a href="#">Subscription</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">General</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">Merchant FAQ</a></li>
-	  										<li><a href="#">Security</a></li>
-	  										<li><a href="#">Pricing</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">Integration Support</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">Integration Support</a></li>
-	  									</ul>
-	  								</li>
-	  								
-	  								<li class="has-flyout">
-	  									<a href="#">Sales Support</a>
-	  									<ul class="flyout">
-	  										<li><a href="#">Sales Support</a></li>
-	  									</ul>
-	  								</li>
-	  							
-	  							
-	  							
-
-  							</ul>
+  								
+  							<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/sidebar-docs.php')?>
   							
   							
   						</div>
@@ -117,7 +25,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   						
   						<div class="seven columns offset-by-one end passage">
   						
-  							<h1>CSS override / White label documentation</h1>
+  							<h2>CSS override / White label documentation</h2>
   							<h3>Loading the widget popup</h3>
   							
   							<p>To load the widget popup, one needs to set the id of the element that’s going to load the popup to the property “CtrlId” in integration code.</p>
@@ -160,7 +68,11 @@ jQuery(document).ready(function() {
 					 	
 
 							<h3>HTML Structure for Payment Item Selection Page with CSS framework</h3>
+							
+							
+					<img src="/static/images/docs/css-01.gif" alt="HTML Structure for Payment Item Selection Page Diagram" />
 									
+							
   						
   						
 <code>
@@ -216,7 +128,8 @@ jQuery(document).ready(function() {
 
 						  							<h3>HTML Structure for Enter Your Mobile Number Page with CSS framework</h3>
   						
-  						
+  									<img src="/static/images/docs/css-02.gif" alt="HTML Structure for Enter Your Mobile Number Page with CSS framework Diagram" />
+  													
   						
 <code>
 <pre>
@@ -276,7 +189,7 @@ jQuery(document).ready(function() {
 
 							<h3>HTML Structure for Payment processing page with CSS framework</h3>
 							
-							
+							<img src="/static/images/docs/css-03.gif" alt="HTML Structure for Payment processing page with CSS framework Diagram" />
 
 
 <code>
