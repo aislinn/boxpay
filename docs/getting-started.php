@@ -24,12 +24,24 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   						
   						<div class="seven columns offset-by-one end passage">
   						
-  							<h2>Getting Started</h1>
-  							<h3>Accept mobile payments on your website in 4 easy steps</h3>
+  							<div class="row">
   							
-  							<h4>We have made it very easy for developers to get started and provide full integration code and examples.</h4>
-  						  	<p>Inside the merchant portal, after creating your account, there are four steps. </p>
+								<div class="twelve columns">
+							
+								<h2>Getting Started</h2>
+								<h3>Accept mobile payments on your website in 4 easy steps</h3>
+								
+								<h4>We have made it very easy for developers to get started and provide full integration code and examples.</h4>
+							  	<p>Inside the merchant portal, after creating your account, there are four steps. </p>
+							  		
+							  	</div>
+  						  	
+  						 	 </div>
   						  		
+  						  		
+  						  	<div class="row">	
+  						  		<div class="divider"></div>	
+  						  	</div>	
   						  		
   						  	<h4>1) Create a New Payment Box</h4>	
   						  	
@@ -206,7 +218,7 @@ src="http://www.boxpay.com/pay_with_your_mobile.png" /></pre></code>
   						  			<tr>
   						  			<td>Status</td>
   						  			<td>The status of the payment session. Possible values are:
-	  						  			<ul>
+	  						  			<ul class="no-bullet">
 		  						  			<li><strong>Success</strong> - The payment was completely successful and the user was charged the full amount.</li>
 		  						  			<li><strong>Failed</strong> - The payment session failed or partially failed. If a partial payment was charged to the end user then this will be indicated by the LocalCharged field.</li>
 		  						  			<li><strong>Pending</strong> - The status of the payment session is not final, we are still waiting for confirmation of payment.</li>
@@ -234,7 +246,7 @@ src="http://www.boxpay.com/pay_with_your_mobile.png" /></pre></code>
   						  			
   						  			<tr>
   						  			<td>LocalPayout</td>
-  						  			<td>The expected payout amount to you, in local currency./td>
+  						  			<td>The expected payout amount to you, in local currency.</td>
   						  			</tr>
   						  			
   						  			<tr>
@@ -271,7 +283,7 @@ src="http://www.boxpay.com/pay_with_your_mobile.png" /></pre></code>
 		  	
 
 <dl class="tabs pill">
-  <dd class="active"><a href="#code1">C#</a></dd>
+  <dd><a href="#code1">C#</a></dd>
   <dd><a href="#code2">PHP</a></dd>
   <dd><a href="#code3">Java</a></dd>
   <dd><a href="#code4">Python</a></dd>

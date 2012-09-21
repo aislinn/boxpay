@@ -53,7 +53,7 @@
 	<script src="/static/js/app.js"></script>
 	<script src="/static/js/jquery-ui-1.8.23.custom.min.js"></script>	
 	<script src="/static/js/jquery.offcanvas.js"></script>
-	<script src="/static/js/jquery.foundation.tabs.js"></script>	
+<!--	<script src="/static/js/jquery.foundation.tabs.js"></script>	-->
 	
 	
 
@@ -99,6 +99,20 @@
 		});
 	</script>
 	
+	
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			//ipad and iphone fix
+			if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+			    $(".documentation-nav li").click(function(){
+			        //we just need to attach a click event listener to provoke iPhone/iPod/iPad's hover event
+			        //strange
+			    });
+			}
+		});
+	</script>
 	
 
 </head>

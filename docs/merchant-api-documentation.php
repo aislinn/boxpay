@@ -92,7 +92,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   							
   					
   					
-  							<h3>General API calls</h3>
+  							<h2>General API calls</h2>
   							<p>The following API calls are applicable to both payment models (subscription/one-off payments).</p>
   							
   							
@@ -188,7 +188,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
 								<td>Status</td>
 								<td>Indicates the success or otherwise of this call. Possible values are: 
 								
-								<ul>
+								<ul class="no-bullet">
 								
 								<li><strong>SUCCESS:</strong> the request was processed successfully and the payment has
 								been successfully completed. No further action is necessary.</li> 

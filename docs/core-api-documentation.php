@@ -49,7 +49,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   							<p>By default, the API can be called by any client device. Fulfilment of service depends on reliable communication of the status of the payment between boxPAY and merchant. This communication consists of:</p>
   							
   							<ul>
-  							<li>Server to Server push notification between boxPAY and the merchant. This is the NotificationURL that is defined by the merchant when setting up the payment box on the boxPAY portal (www.boxpay.com). boxPAY call this URL every time there is a change in the status of a payment.</li>
+  							<li>Server to Server push notification between boxPAY and the merchant. This is the NotificationURL that is defined by the merchant when setting up the payment box on the boxPAY portal (<a href="http://www.boxpay.com">www.boxpay.com</a>). boxPAY call this URL every time there is a change in the status of a payment.</li>
   							<li><em>CheckStatus</em> API call. This can be called by client device or merchant server to provide details on the status of a payment. boxPAY recommend that fulfilment of the service to the customer be handled by the merchant system, not by the client side solution (e.g client app). boxPAY provides a more secure <em>CheckStatus</em> API call in the <strong>Merchant API</strong> which is discussed later in this document.</li>
   							</ul>  							
   							
@@ -58,7 +58,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
 					 		
 					 		<h3>Merchant API</h3>
 					 
-					 		<p>boxPAY also provides a Merchant API that provides extra security and is accessible only by the merchant. Fulfilment of service to the customer should rely on the CheckStatus API call of the Merchant API or the boxPAY to Merchant notification (server-to-server) via the “NotificationURL”. This is described further on the boxPAY portal at www.boxpay.com</p>
+					 		<p>boxPAY also provides a Merchant API that provides extra security and is accessible only by the merchant. Fulfilment of service to the customer should rely on the CheckStatus API call of the Merchant API or the boxPAY to Merchant notification (server-to-server) via the “NotificationURL”. This is described further on the boxPAY portal at <a href="http://www.boxpay.com">www.boxpay.com</a></p>
 					 		
 					 		<p>Documentation on the Merchant API will be provided separately.</p>
 					 		
@@ -547,7 +547,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   				</table>	
   				
   				
-  				<h3>CheckStatus</h3>	
+  				<h3>4. CheckStatus</h3>	
   				
   				<p>This method is used to check the status of a payment session. It can be called at regular intervals until such time as:</p>
   				
@@ -1351,7 +1351,222 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php')?>
   				<p>In some cases, e.g for Android billing, the MSISDN is optional. This is specified in the <em>MSISDNRequired</em> field in the response of the <em>InitiatePayment</em> call.</p>
   				
   				<p>This section describes the possible payment capture methods that the user must follow to complete a payment. Based on the payment capture method being used, the merchant must prompt the user for the appropriate course of action.</p>		
+  				<hr />	
+  				
+  				
+  				
+  				<!--    - - - - - - - - - - - - -->
   						
+  						
+  				<h6>Payment Capture Method</h6>		
+  				<h6 class="em">MOConfirm <span>MSISDNRequired=true</span></h6>	
+  				
+  				
+  				<p><strong>Expected StatusReason on InitiatePayment:</strong> 
+  				
+  				<br />
+  				If MSISDN not set then StatusReason will be AwaitingMSISDNEntry
+  				
+  				<br />
+  				If MSISDN is set then StatusReason will be AwaitingSMSFromUser</p>
+  				<p><strong>Test case:</strong> UK payment box with ClientPlatform=Desktop Web.</p>
+  						
+  						
+  				<h6>User Experience</h6>
+  				<ul class="square">
+  				<li>User enters MSISDN on merchant application/portal</li>
+  				<li>User is prompted to send keyword to shortcode, e.g. BOX to 1995</li>
+  				<li>Payment is completed by boxPAY</li>
+  				
+  				</ul>		
+  					
+  					
+  				<h6>Course of Action on InitiatePayment</h6>		
+  					
+  				<ul class="no-bullet">
+  				<li>1) If MSISDN has been omitted from the InitiatePayment call then SetMSISDN must be called before proceeding to 2)</li>
+  				<li>2) Merchant should prompt user to send Keyword to Shortcode. This prompt is included in the UserMessageHTML, which can be displayed as is to the user.</li>
+  				<li>3) Merchant can initiate CheckStatus calls</li>
+  				
+  				
+  				</ul>		
+  						
+  				<h6>Course of Action on ValidatePIN</h6>	
+  				<p>Not applicable</p>	
+  						
+  						
+  				<h6>Course of Action on CheckStatus</h6>
+  				
+  				<ul class="no-bullet">
+  				<li><strong>Status: Success/Failure</strong> - An appropriate message (UserMessageHTML) may be displayed to the user. No further action is required as the payment status is final.</li>
+  				<li><strong>Status: Pending</strong> - The merchant should continue to poll CheckStatus.</li>
+  				
+  				</ul>		
+  						
+  				<hr />		
+  				
+  				
+  				<!--    - - - - - - - - - - - - -->
+  						
+  						
+  				<h6>Payment Capture Method</h6>		
+  				<h6 class="em">MOConfirm <span>MSISDNRequired=false</span></h6>	
+  				
+  				
+  				<p><strong>Expected StatusReason on InitiatePayment:</strong> 
+  				
+  				<br />
+  				StatusReason will be AwaitingSMSFromUser</p>
+  				
+  				<p><strong>Test case:</strong> UK payment box with ClientPlatform=AndroidPhone.</p>
+  						
+  						
+  				<h6>User Experience</h6>
+  				<ul class="square">
+  				<li>User is prompted to send keyword to shortcode, e.g. BOX to 1995</li>
+  				<li>Payment is completed by boxPAY</li>
+  				
+  				</ul>		
+  					
+  					
+  				<h6>Course of Action on InitiatePayment</h6>		
+  					
+  				<ul class="no-bullet">
+  				<li>1) Merchant should prompt user to send Keyword to Shortcode. This prompt is included in the UserMessageHTML, which can be displayed as is to the user.</li>
+  				<li>2) Merchant can initiate CheckStatus calls</li>
+  				
+  				
+  				</ul>		
+  						
+  				<h6>Course of Action on ValidatePIN</h6>	
+  				<p>Not applicable</p>	
+  						
+  						
+  				<h6>Course of Action on CheckStatus</h6>
+  				
+  				<ul class="no-bullet">
+  				<li><strong>Status: Success/Failure</strong> - An appropriate message (UserMessageHTML) may be displayed to the user. No further action is required as the payment status is final.</li>
+  				<li><strong>Status: Pending</strong> - The merchant should continue to poll CheckStatus.</li>
+  				
+  				</ul>	
+  				
+  				
+  				<hr />		
+  				
+  				
+  				<!--    - - - - - - - - - - - - -->
+  						
+  						
+  				<h6>Payment Capture Method</h6>		
+  				<h6 class="em">PINRequest <span>MSISDNRequired=true/ false</span></h6>	
+  				
+  				
+  				<p><strong>Expected StatusReason on InitiatePayment:</strong> 
+  				
+  				<br />
+  				StatusReason will be AwaitingSMSFromUser</p>
+  				
+  				<p><strong>Test case:</strong> Malaysia payment box with ClientPlatform=Desktop Web.</p>
+  						
+  						
+  				<h6>User Experience</h6>
+  				<ul class="square">
+  				<li>If MSISDNRequired = true: User enters MSISDN</li>
+  				<li>User is prompted to send keyword to shortcode, e.g. BOX to 1995</li>
+  				<li>User is sent a PIN by SMS</li>
+  				<li>User enters PIN</li>
+  				<li>Payment is completed by boxPAY</li>
+  				
+  				</ul>		
+  					
+  					
+  				<h6>Course of Action on InitiatePayment</h6>		
+  					
+  				<ul class="no-bullet">
+  				
+  				<li>1) If MSISDNRequired = true and MSISDN has been omitted from the InitiatePayment call then SetMSISDN must be called before proceeding</li>
+  				<li>2) Merchant should prompt user to send Keyword to Shortcode. This prompt is included in the UserMessageHTML, which can be displayed as is to the user.</li>
+  				<li>3) An appropriate message (UserMessageHTML) should be displayed to the user prompting to enter the PIN.</li>
+  				<li>4) Call ValidatePin with PIN supplied by user</li>
+  				
+  				</ul>		
+  						
+  				<h6>Course of Action on ValidatePIN</h6>	
+  				<ul class="square">
+  				<li>If ValidPin=true: An appropriate message (UserMessageHTML) may be displayed to the user. If the payment status is Pending then initiate calls to CheckStatus</li>
+  				<li>If ValidPin=false: An appropriate message (UserMessageHTML) may be displayed to the user and prompt for another PIN entry.</li>
+  				
+  				</ul>
+  						
+  						
+  				<h6>Course of Action on CheckStatus</h6>
+  				
+  				<ul class="no-bullet">
+  				<li><strong>Status: Success/Failure</strong> - An appropriate message (UserMessageHTML) may be displayed to the user. No further action is required as the payment status is final.</li>
+  				<li><strong>Status: Pending</strong> - The merchant should continue to poll CheckStatus.</li>
+  				
+  				</ul>			
+  				
+  					
+  				<hr />		
+  				
+  				
+  				<!--    - - - - - - - - - - - - -->
+  						
+  						
+  				<h6>Payment Capture Method</h6>		
+  				<h6 class="em">PINConfirm <span>MSISDNRequired=true</span></h6>	
+  				
+  				
+  				<p><strong>Expected StatusReason on InitiatePayment:</strong> 
+  				
+  				<br />
+  				StatusReason will be AwaitingSMSFromUser</p>
+  				
+  				<p><strong>Test case:</strong> Germany payment box with ClientPlatform=Desktop Web.</p>
+  						
+  						
+  				<h6>User Experience</h6>
+  				<ul class="square">
+  				<li>User enters MSISDN</li>
+   				<li>User is sent a PIN by SMS</li>
+  				<li>User enters PIN</li>
+  				<li>Payment is completed by boxPAY</li>
+  				
+  				</ul>		
+  					
+  					
+  				<h6>Course of Action on InitiatePayment</h6>		
+  					
+  				<ul class="no-bullet">
+  				
+  				<li>1) If MSISDN has been omitted from the InitiatePayment call then SetMSISDN must be called before proceeding to 2)</li>
+  				<li>2) An appropriate message (UserMessageHTML) should be displayed to the user prompting to enter the PIN.</li>
+   				<li>3) Call ValidatePin with PIN supplied by user</li>
+  				
+  				</ul>		
+  						
+  				<h6>Course of Action on ValidatePIN</h6>	
+  				<ul class="square">
+  				<li><strong>Status: Success</strong> - An appropriate message (UserMessageHTML) may be displayed to the user. No further action is required as the payment is successful</li>
+  				<li><strong>Status: Pending ReasonCode: CorrectPinCompletingBilling</strong> - An appropriate message (UserMessageHTML) should be displayed to the user. The merchant should then poll the status of the transaction via CheckStatus</li>
+  				
+  				</ul>
+  						
+  						
+  				<h6>Course of Action on CheckStatus</h6>
+  				
+  				<ul class="no-bullet">
+  				<li><strong>Status: Success/Failure</strong> - An appropriate message (UserMessageHTML) may be displayed to the user. No further action is required as the payment status is final.</li>
+  				<li><strong>Status: Pending</strong> - The merchant should continue to poll CheckStatus.</li>
+  				
+  				</ul>			
+  				
+  				
+  				
+  				
+  				<hr />		
+  				<br />		
   						
   				
   				

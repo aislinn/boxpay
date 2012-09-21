@@ -15,7 +15,7 @@
 				<li><a href="/subscription.php">Subscription</a></li>
 		
 				<li><a href="/about.php">About</a></li>
-				<li><a href="/docs/index.php">Developers</a></li>
+				<li><a href="/docs/getting-started.php">Developers</a></li>
 		
 				<li><a href="/merchant-faq.php">Merchant FAQ</a></li>
 				<li><a href="/customer-faq.php">Customer FAQ</a></li>

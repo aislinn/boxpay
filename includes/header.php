@@ -29,7 +29,7 @@
     					
     					
     					<li><a href="/about.php">About</a></li>
-    					<li><a href="#">Developers</a></li>
+    					<li><a href="/docs/getting-started.php">Developers</a></li>
     					
     					
     					<li class="has-flyout">
