@@ -1,9 +1,26 @@
 <section id="sidebar" role="complementary">
 		<nav id="sideMenu" role="navigation">
 		<ul id="sideMainNav" class="nav-bar">
+		
+		
+		<!-- - - - - - - - NOT SIGNED IN - - - - - - - -->	
 			
-				<li><a href="/sign-in.php">Login</a></li>
-				<li><a href="/sign-up.php">Sign Up</a></li>	
+<!--				<li><a href="/sign-in.php">Login</a></li>
+				<li><a href="/sign-up.php">Sign Up</a></li>	-->
+				
+		<!-- - - - - - - -  SIGNED IN - - - - - - - -->			
+				
+				<li class="sidebar-user">
+					<span>design@aislinnkelly.com</span>
+					<br />
+					<span>Merchant ID: 2331</span></li>
+				
+				
+				<li><a href="#">Sign Out</a></li>	
+				
+		<!-- - - - - - - -  END - - - - - - - -->					
+				
+				
 				
 				<li><a href="/country/ireland.php">Countries</a></li>
 				<li><a href="/features.php">Features</a></li>

@@ -66,6 +66,7 @@
 			});
 		});
 		$(document).foundationNavigation();
+		$(document).foundationTopBar();
 		$(document).foundationTabs();
 		$(document).foundationCustomForms();
 	</script>
